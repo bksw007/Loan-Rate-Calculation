@@ -1,0 +1,738 @@
+{\rtf1\ansi\ansicpg874\cocoartf2868
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 Menlo-Regular;}
+{\colortbl;\red255\green255\blue255;\red71\green137\blue205;\red141\green212\blue254;\red202\green202\blue202;
+\red109\green109\blue109;\red194\green126\blue101;\red109\green115\blue120;\red212\green212\blue212;\red112\green192\blue130;
+\red246\green123\blue48;\red54\green192\blue160;\red167\green197\blue151;\red184\green112\blue248;}
+{\*\expandedcolortbl;;\cssrgb\c33936\c61427\c84130;\cssrgb\c61361\c86489\c99746;\cssrgb\c83229\c83229\c83125;
+\cssrgb\c50251\c50251\c50189;\cssrgb\c80778\c56830\c46925;\cssrgb\c50266\c52623\c54521;\cssrgb\c86370\c86370\c86262;\cssrgb\c50513\c78754\c58273;
+\cssrgb\c97898\c56271\c23991;\cssrgb\c23956\c78894\c69047;\cssrgb\c71008\c80807\c65805;\cssrgb\c77501\c54380\c97841;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww28600\viewh14420\viewkind0
+\deftab720
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs28 \cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 <!DOCTYPE\cf3 \strokec3  html\cf2 \strokec2 >\cf4 \strokec4 \
+\pard\pardeftab720\partightenfactor0
+\cf5 \strokec5 <\cf2 \strokec2 html\cf4 \strokec4  \cf3 \strokec3 lang\cf5 \strokec5 =\cf6 \strokec6 "th"\cf5 \strokec5 >\cf4 \strokec4 \
+\cf5 \strokec5 <\cf2 \strokec2 head\cf5 \strokec5 >\cf4 \strokec4 \
+    \cf5 \strokec5 <\cf2 \strokec2 meta\cf4 \strokec4  \cf3 \strokec3 charset\cf5 \strokec5 =\cf6 \strokec6 "UTF-8"\cf5 \strokec5 >\cf4 \strokec4 \
+    \cf5 \strokec5 <\cf2 \strokec2 meta\cf4 \strokec4  \cf3 \strokec3 name\cf5 \strokec5 =\cf6 \strokec6 "viewport"\cf4 \strokec4  \cf3 \strokec3 content\cf5 \strokec5 =\cf6 \strokec6 "width=device-width, initial-scale=1.0"\cf5 \strokec5 >\cf4 \strokec4 \
+    \cf5 \strokec5 <\cf2 \strokec2 title\cf5 \strokec5 >\cf4 \strokec4 \uc0\u3648 \u3588 \u3619 \u3639 \u3656 \u3629 \u3591 \u3617 \u3639 \u3629 \u3623 \u3636 \u3648 \u3588 \u3619 \u3634 \u3632 \u3627 \u3660 \u3649 \u3621 \u3632 \u3588 \u3635 \u3609 \u3623 \u3603 \u3588 \u3656 \u3634 \u3591 \u3623 \u3604 \u3619 \u3606 \u3618 \u3609 \u3605 \u3660  (Car Loan Analytics)\cf5 \strokec5 </\cf2 \strokec2 title\cf5 \strokec5 >\cf4 \strokec4 \
+    \
+    \cf7 \strokec7 <!-- Tailwind CSS -->\cf4 \strokec4 \
+    \cf5 \strokec5 <\cf2 \strokec2 script\cf4 \strokec4  \cf3 \strokec3 src\cf5 \strokec5 =\cf6 \strokec6 "https://cdn.tailwindcss.com"\cf5 \strokec5 ></\cf2 \strokec2 script\cf5 \strokec5 >\cf4 \strokec4 \
+    \
+    \cf7 \strokec7 <!-- Google Fonts: Sarabun for professional Thai typography -->\cf4 \strokec4 \
+    \cf5 \strokec5 <\cf2 \strokec2 link\cf4 \strokec4  \cf3 \strokec3 rel\cf5 \strokec5 =\cf6 \strokec6 "preconnect"\cf4 \strokec4  \cf3 \strokec3 href\cf5 \strokec5 =\cf6 \strokec6 "https://fonts.googleapis.com"\cf5 \strokec5 >\cf4 \strokec4 \
+    \cf5 \strokec5 <\cf2 \strokec2 link\cf4 \strokec4  \cf3 \strokec3 rel\cf5 \strokec5 =\cf6 \strokec6 "preconnect"\cf4 \strokec4  \cf3 \strokec3 href\cf5 \strokec5 =\cf6 \strokec6 "https://fonts.gstatic.com"\cf4 \strokec4  \cf3 \strokec3 crossorigin\cf5 \strokec5 >\cf4 \strokec4 \
+    \cf5 \strokec5 <\cf2 \strokec2 link\cf4 \strokec4  \cf3 \strokec3 href\cf5 \strokec5 =\cf6 \strokec6 "https://fonts.googleapis.com/css2?family=Sarabun:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap"\cf4 \strokec4  \cf3 \strokec3 rel\cf5 \strokec5 =\cf6 \strokec6 "stylesheet"\cf5 \strokec5 >\cf4 \strokec4 \
+    \
+    \cf7 \strokec7 <!-- Chart.js -->\cf4 \strokec4 \
+    \cf5 \strokec5 <\cf2 \strokec2 script\cf4 \strokec4  \cf3 \strokec3 src\cf5 \strokec5 =\cf6 \strokec6 "https://cdn.jsdelivr.net/npm/chart.js"\cf5 \strokec5 ></\cf2 \strokec2 script\cf5 \strokec5 >\cf4 \strokec4 \
+\
+    \cf5 \strokec5 <\cf2 \strokec2 script\cf5 \strokec5 >\cf4 \strokec4 \
+        tailwind\cf8 \strokec8 .\cf4 \strokec4 config \cf8 \strokec8 =\cf4 \strokec4  \cf8 \strokec8 \{\cf4 \strokec4 \
+            theme\cf8 \strokec8 :\cf4 \strokec4  \cf8 \strokec8 \{\cf4 \strokec4 \
+                extend\cf8 \strokec8 :\cf4 \strokec4  \cf8 \strokec8 \{\cf4 \strokec4 \
+                    fontFamily\cf8 \strokec8 :\cf4 \strokec4  \cf8 \strokec8 \{\cf4 \strokec4 \
+                        sans\cf8 \strokec8 :\cf4 \strokec4  \cf8 \strokec8 [\cf9 \strokec9 'Sarabun'\cf8 \strokec8 ,\cf4 \strokec4  \cf9 \strokec9 'sans-serif'\cf8 \strokec8 ],\cf4 \strokec4 \
+                    \cf8 \strokec8 \},\cf4 \strokec4 \
+                    colors\cf8 \strokec8 :\cf4 \strokec4  \cf8 \strokec8 \{\cf4 \strokec4 \
+                        brand\cf8 \strokec8 :\cf4 \strokec4  \cf8 \strokec8 \{\cf4 \strokec4 \
+                            \cf10 \strokec10 50\cf8 \strokec8 :\cf4 \strokec4  \cf9 \strokec9 '#f0f9ff'\cf8 \strokec8 ,\cf4 \strokec4 \
+                            \cf10 \strokec10 100\cf8 \strokec8 :\cf4 \strokec4  \cf9 \strokec9 '#e0f2fe'\cf8 \strokec8 ,\cf4 \strokec4 \
+                            \cf10 \strokec10 500\cf8 \strokec8 :\cf4 \strokec4  \cf9 \strokec9 '#0ea5e9'\cf8 \strokec8 ,\cf4 \strokec4 \
+                            \cf10 \strokec10 600\cf8 \strokec8 :\cf4 \strokec4  \cf9 \strokec9 '#0284c7'\cf8 \strokec8 ,\cf4 \strokec4 \
+                            \cf10 \strokec10 700\cf8 \strokec8 :\cf4 \strokec4  \cf9 \strokec9 '#0369a1'\cf8 \strokec8 ,\cf4 \strokec4 \
+                            \cf10 \strokec10 900\cf8 \strokec8 :\cf4 \strokec4  \cf9 \strokec9 '#0c4a6e'\cf8 \strokec8 ,\cf4 \strokec4 \
+                        \cf8 \strokec8 \},\cf4 \strokec4 \
+                        accent\cf8 \strokec8 :\cf4 \strokec4  \cf8 \strokec8 \{\cf4 \strokec4 \
+                            light\cf8 \strokec8 :\cf4 \strokec4  \cf9 \strokec9 '#fef3c7'\cf8 \strokec8 ,\cf4 \strokec4 \
+                            \cf11 \strokec11 DEFAULT\cf8 \strokec8 :\cf4 \strokec4  \cf9 \strokec9 '#d97706'\cf8 \strokec8 ,\cf4 \strokec4 \
+                        \cf8 \strokec8 \}\cf4 \strokec4 \
+                    \cf8 \strokec8 \}\cf4 \strokec4 \
+                \cf8 \strokec8 \}\cf4 \strokec4 \
+            \cf8 \strokec8 \}\cf4 \strokec4 \
+        \cf8 \strokec8 \}\cf4 \strokec4 \
+    \cf5 \strokec5 </\cf2 \strokec2 script\cf5 \strokec5 >\cf4 \strokec4 \
+\
+    \cf5 \strokec5 <\cf2 \strokec2 style\cf5 \strokec5 >\cf4 \strokec4 \
+        \cf7 \strokec7 /* Custom styles for chart containers as per requirements */\cf4 \strokec4 \
+        \cf2 \strokec2 .chart-container\cf4 \strokec4  \cf8 \strokec8 \{\cf4 \strokec4 \
+            \cf3 \strokec3 position:\cf4 \strokec4  \cf6 \strokec6 relative\cf8 \strokec8 ;\cf4 \strokec4 \
+            \cf3 \strokec3 width:\cf4 \strokec4  \cf12 \strokec12 100%\cf8 \strokec8 ;\cf4 \strokec4 \
+            \cf3 \strokec3 max-width:\cf4 \strokec4  \cf12 \strokec12 600px\cf8 \strokec8 ;\cf4 \strokec4  \cf7 \strokec7 /* Constraint width */\cf4 \strokec4 \
+            \cf3 \strokec3 margin-left:\cf4 \strokec4  \cf6 \strokec6 auto\cf8 \strokec8 ;\cf4 \strokec4 \
+            \cf3 \strokec3 margin-right:\cf4 \strokec4  \cf6 \strokec6 auto\cf8 \strokec8 ;\cf4 \strokec4 \
+            \cf3 \strokec3 height:\cf4 \strokec4  \cf12 \strokec12 300px\cf8 \strokec8 ;\cf4 \strokec4  \cf7 \strokec7 /* Base height */\cf4 \strokec4 \
+            \cf3 \strokec3 max-height:\cf4 \strokec4  \cf12 \strokec12 400px\cf8 \strokec8 ;\cf4 \strokec4 \
+        \cf8 \strokec8 \}\cf4 \strokec4 \
+        @\cf2 \strokec2 media\cf4 \strokec4  (\cf2 \strokec2 min-width:\cf4 \strokec4  768\cf2 \strokec2 px\cf4 \strokec4 ) \cf8 \strokec8 \{\cf4 \strokec4 \
+            .chart-container \{\
+                \cf3 \strokec3 height:\cf4 \strokec4  \cf12 \strokec12 350px\cf8 \strokec8 ;\cf4 \strokec4  \cf7 \strokec7 /* Slightly taller on desktop */\cf4 \strokec4 \
+            \cf8 \strokec8 \}\cf4 \strokec4 \
+        \}\
+        \cf2 \strokec2 body\cf4 \strokec4  \cf8 \strokec8 \{\cf4 \strokec4 \
+            \cf3 \strokec3 background-color:\cf4 \strokec4  #f8fafc\cf8 \strokec8 ;\cf4 \strokec4  \cf7 \strokec7 /* Warm neutral/light background */\cf4 \strokec4 \
+        \cf8 \strokec8 \}\cf4 \strokec4 \
+        \cf7 \strokec7 /* Slider styling */\cf4 \strokec4 \
+        \cf2 \strokec2 input\cf8 \strokec8 [\cf6 \strokec6 type\cf8 \strokec8 =\cf6 \strokec6 range\cf8 \strokec8 ]\cf4 \strokec4  \cf8 \strokec8 \{\cf4 \strokec4 \
+            \cf3 \strokec3 -webkit-appearance:\cf4 \strokec4  \cf6 \strokec6 none\cf8 \strokec8 ;\cf4 \strokec4  \
+        \cf8 \strokec8 \}\cf4 \strokec4 \
+        \cf2 \strokec2 input\cf8 \strokec8 [\cf6 \strokec6 type\cf8 \strokec8 =\cf6 \strokec6 range\cf8 \strokec8 ]\cf2 \strokec2 ::-webkit-slider-thumb\cf4 \strokec4  \cf8 \strokec8 \{\cf4 \strokec4 \
+            \cf3 \strokec3 -webkit-appearance:\cf4 \strokec4  \cf6 \strokec6 none\cf8 \strokec8 ;\cf4 \strokec4 \
+            \cf3 \strokec3 height:\cf4 \strokec4  \cf12 \strokec12 18px\cf8 \strokec8 ;\cf4 \strokec4 \
+            \cf3 \strokec3 width:\cf4 \strokec4  \cf12 \strokec12 18px\cf8 \strokec8 ;\cf4 \strokec4 \
+            \cf3 \strokec3 border-radius:\cf4 \strokec4  \cf12 \strokec12 50%\cf8 \strokec8 ;\cf4 \strokec4 \
+            \cf3 \strokec3 background:\cf4 \strokec4  #0284c7\cf8 \strokec8 ;\cf4 \strokec4  \cf7 \strokec7 /* \uc0\u3626 \u3637  brand-600 */\cf4 \strokec4 \
+            \cf3 \strokec3 cursor:\cf4 \strokec4  \cf6 \strokec6 pointer\cf8 \strokec8 ;\cf4 \strokec4 \
+            \cf3 \strokec3 box-shadow:\cf4 \strokec4  \cf12 \strokec12 0\cf4 \strokec4  \cf12 \strokec12 1px\cf4 \strokec4  \cf12 \strokec12 3px\cf4 \strokec4  \cf6 \strokec6 rgba(\cf12 \strokec12 0\cf8 \strokec8 ,\cf12 \strokec12 0\cf8 \strokec8 ,\cf12 \strokec12 0\cf8 \strokec8 ,\cf12 \strokec12 0.3\cf6 \strokec6 )\cf8 \strokec8 ;\cf4 \strokec4 \
+        \cf8 \strokec8 \}\cf4 \strokec4 \
+        \cf2 \strokec2 input\cf8 \strokec8 [\cf6 \strokec6 type\cf8 \strokec8 =\cf6 \strokec6 range\cf8 \strokec8 ]\cf2 \strokec2 ::-moz-range-thumb\cf4 \strokec4  \cf8 \strokec8 \{\cf4 \strokec4 \
+            \cf3 \strokec3 height:\cf4 \strokec4  \cf12 \strokec12 18px\cf8 \strokec8 ;\cf4 \strokec4 \
+            \cf3 \strokec3 width:\cf4 \strokec4  \cf12 \strokec12 18px\cf8 \strokec8 ;\cf4 \strokec4 \
+            \cf3 \strokec3 border-radius:\cf4 \strokec4  \cf12 \strokec12 50%\cf8 \strokec8 ;\cf4 \strokec4 \
+            \cf3 \strokec3 background:\cf4 \strokec4  #0284c7\cf8 \strokec8 ;\cf4 \strokec4 \
+            \cf3 \strokec3 cursor:\cf4 \strokec4  \cf6 \strokec6 pointer\cf8 \strokec8 ;\cf4 \strokec4 \
+            \cf3 \strokec3 border:\cf4 \strokec4  \cf6 \strokec6 none\cf8 \strokec8 ;\cf4 \strokec4 \
+            \cf3 \strokec3 box-shadow:\cf4 \strokec4  \cf12 \strokec12 0\cf4 \strokec4  \cf12 \strokec12 1px\cf4 \strokec4  \cf12 \strokec12 3px\cf4 \strokec4  \cf6 \strokec6 rgba(\cf12 \strokec12 0\cf8 \strokec8 ,\cf12 \strokec12 0\cf8 \strokec8 ,\cf12 \strokec12 0\cf8 \strokec8 ,\cf12 \strokec12 0.3\cf6 \strokec6 )\cf8 \strokec8 ;\cf4 \strokec4 \
+        \cf8 \strokec8 \}\cf4 \strokec4 \
+        \cf2 \strokec2 input\cf8 \strokec8 [\cf6 \strokec6 type\cf8 \strokec8 =\cf6 \strokec6 range\cf8 \strokec8 ]\cf2 \strokec2 :focus\cf4 \strokec4  \cf8 \strokec8 \{\cf4 \strokec4 \
+            \cf3 \strokec3 outline:\cf4 \strokec4  \cf6 \strokec6 none\cf8 \strokec8 ;\cf4 \strokec4  \
+        \cf8 \strokec8 \}\cf4 \strokec4 \
+    \cf5 \strokec5 </\cf2 \strokec2 style\cf5 \strokec5 >\cf4 \strokec4 \
+    \
+    \cf7 \strokec7 <!-- Chosen Palette: Corporate Blue & Warm Neutral (Trustworthy & Clean) -->\cf4 \strokec4 \
+    \cf7 \strokec7 <!-- Application Structure Plan: \cf4 \strokec4 \
+\pard\pardeftab720\partightenfactor0
+\cf7 \strokec7          1. Header: Clear context.\cf4 \strokec4 \
+\cf7 \strokec7          2. Control Panel (Left/Top): Inputs for Price, Down Payment, Interest, Term. Interactive sliders for exploration.\cf4 \strokec4 \
+\cf7 \strokec7          3. Dashboard (Right/Bottom): Real-time Key Metrics (Monthly, Total Interest).\cf4 \strokec4 \
+\cf7 \strokec7          4. Visualization Section: \cf4 \strokec4 \
+\cf7 \strokec7             - Doughnut Chart: Breakdown of Total Cost (Principal vs Interest vs Down Payment).\cf4 \strokec4 \
+\cf7 \strokec7             - Bar Chart: Term Comparison (Impact of choosing 4 vs 5 vs 6 years).\cf4 \strokec4 \
+\cf7 \strokec7          5. Educational Breakdown: Step-by-step formula explanation using CURRENT values to teach the user.\cf4 \strokec4 \
+\cf7 \strokec7     -->\cf4 \strokec4 \
+    \cf7 \strokec7 <!-- Visualization & Content Choices:\cf4 \strokec4 \
+\cf7 \strokec7          - Metrics: Big Numbers for immediate answers.\cf4 \strokec4 \
+\cf7 \strokec7          - Doughnut Chart (Chart.js): To visualize the proportion of "Lost Money" (Interest) vs "Asset Value" (Car).\cf4 \strokec4 \
+\cf7 \strokec7          - Bar Chart (Chart.js): To compare monthly burden vs total interest cost across different loan terms.\cf4 \strokec4 \
+\cf7 \strokec7          - Text: Dynamic text replacement to explain formulas from the source report.\cf4 \strokec4 \
+\cf7 \strokec7     -->\cf4 \strokec4 \
+    \cf7 \strokec7 <!-- CONFIRMATION: NO SVG graphics used. NO Mermaid JS used. -->\cf4 \strokec4 \
+\pard\pardeftab720\partightenfactor0
+\cf5 \strokec5 </\cf2 \strokec2 head\cf5 \strokec5 >\cf4 \strokec4 \
+\cf5 \strokec5 <\cf2 \strokec2 body\cf4 \strokec4  \cf3 \strokec3 class\cf5 \strokec5 =\cf6 \strokec6 "text-slate-800 antialiased selection:bg-brand-200 selection:text-brand-900"\cf5 \strokec5 >\cf4 \strokec4 \
+\
+    \cf7 \strokec7 <!-- Navbar -->\cf4 \strokec4 \
+    \cf5 \strokec5 <\cf2 \strokec2 nav\cf4 \strokec4  \cf3 \strokec3 class\cf5 \strokec5 =\cf6 \strokec6 "bg-white shadow-sm border-b border-slate-200 sticky top-0 z-50"\cf5 \strokec5 >\cf4 \strokec4 \
+        \cf5 \strokec5 <\cf2 \strokec2 div\cf4 \strokec4  \cf3 \strokec3 class\cf5 \strokec5 =\cf6 \strokec6 "max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"\cf5 \strokec5 >\cf4 \strokec4 \
+            \cf5 \strokec5 <\cf2 \strokec2 div\cf4 \strokec4  \cf3 \strokec3 class\cf5 \strokec5 =\cf6 \strokec6 "flex justify-between h-16 items-center"\cf5 \strokec5 >\cf4 \strokec4 \
+                \cf5 \strokec5 <\cf2 \strokec2 div\cf4 \strokec4  \cf3 \strokec3 class\cf5 \strokec5 =\cf6 \strokec6 "flex items-center gap-2"\cf5 \strokec5 >\cf4 \strokec4 \
+                    \cf5 \strokec5 <\cf2 \strokec2 svg\cf4 \strokec4  \cf3 \strokec3 xmlns\cf5 \strokec5 =\cf6 \strokec6 "http://www.w3.org/2000/svg"\cf4 \strokec4  \cf3 \strokec3 width\cf5 \strokec5 =\cf6 \strokec6 "28"\cf4 \strokec4  \cf3 \strokec3 height\cf5 \strokec5 =\cf6 \strokec6 "28"\cf4 \strokec4  \cf3 \strokec3 viewBox\cf5 \strokec5 =\cf6 \strokec6 "0 0 24 24"\cf4 \strokec4  \cf3 \strokec3 fill\cf5 \strokec5 =\cf6 \strokec6 "none"\cf4 \strokec4  \cf3 \strokec3 stroke\cf5 \strokec5 =\cf6 \strokec6 "currentColor"\cf4 \strokec4  \cf3 \strokec3 stroke-width\cf5 \strokec5 =\cf6 \strokec6 "2"\cf4 \strokec4  \cf3 \strokec3 stroke-linecap\cf5 \strokec5 =\cf6 \strokec6 "round"\cf4 \strokec4  \cf3 \strokec3 stroke-linejoin\cf5 \strokec5 =\cf6 \strokec6 "round"\cf4 \strokec4  \cf3 \strokec3 class\cf5 \strokec5 =\cf6 \strokec6 "text-brand-600"\cf5 \strokec5 >\cf4 \strokec4 \
+                        \cf5 \strokec5 <\cf2 \strokec2 path\cf4 \strokec4  \cf3 \strokec3 d\cf5 \strokec5 =\cf6 \strokec6 "M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.4 2.9A3.7 3.7 0 0 0 2 12v4c0 .6.4 1 1 1h2"\cf5 \strokec5 />\cf4 \strokec4 \
+                        \cf5 \strokec5 <\cf2 \strokec2 circle\cf4 \strokec4  \cf3 \strokec3 cx\cf5 \strokec5 =\cf6 \strokec6 "7"\cf4 \strokec4  \cf3 \strokec3 cy\cf5 \strokec5 =\cf6 \strokec6 "17"\cf4 \strokec4  \cf3 \strokec3 r\cf5 \strokec5 =\cf6 \strokec6 "2"\cf5 \strokec5 />\cf4 \strokec4 \
+                        \cf5 \strokec5 <\cf2 \strokec2 path\cf4 \strokec4  \cf3 \strokec3 d\cf5 \strokec5 =\cf6 \strokec6 "M9 17h6"\cf5 \strokec5 />\cf4 \strokec4 \
+                        \cf5 \strokec5 <\cf2 \strokec2 circle\cf4 \strokec4  \cf3 \strokec3 cx\cf5 \strokec5 =\cf6 \strokec6 "17"\cf4 \strokec4  \cf3 \strokec3 cy\cf5 \strokec5 =\cf6 \strokec6 "17"\cf4 \strokec4  \cf3 \strokec3 r\cf5 \strokec5 =\cf6 \strokec6 "2"\cf5 \strokec5 />\cf4 \strokec4 \
+                    \cf5 \strokec5 </\cf2 \strokec2 svg\cf5 \strokec5 >\cf4 \strokec4 \
+                    \cf5 \strokec5 <\cf2 \strokec2 h1\cf4 \strokec4  \cf3 \strokec3 class\cf5 \strokec5 =\cf6 \strokec6 "text-xl font-bold text-slate-800"\cf5 \strokec5 >\cf4 \strokec4 \uc0\u3650 \u3611 \u3619 \u3649 \u3585 \u3619 \u3617 \u3588 \u3635 \u3609 \u3623 \u3603 \u3588 \u3656 \u3634 \u3591 \u3623 \u3604 \u3619 \u3606 \u3618 \u3609 \u3605 \u3660  \cf5 \strokec5 <\cf2 \strokec2 span\cf4 \strokec4  \cf3 \strokec3 class\cf5 \strokec5 =\cf6 \strokec6 "text-slate-500 font-normal text-sm hidden sm:inline-block"\cf5 \strokec5 >\cf4 \strokec4 | Flat Rate Calculation\cf5 \strokec5 </\cf2 \strokec2 span\cf5 \strokec5 ></\cf2 \strokec2 h1\cf5 \strokec5 >\cf4 \strokec4 \
+                \cf5 \strokec5 </\cf2 \strokec2 div\cf5 \strokec5 >\cf4 \strokec4 \
+                \cf5 \strokec5 <\cf2 \strokec2 div\cf4 \strokec4  \cf3 \strokec3 class\cf5 \strokec5 =\cf6 \strokec6 "text-sm text-slate-500"\cf5 \strokec5 >\cf4 \strokec4 \
+                    \uc0\u3629 \u3657 \u3634 \u3591 \u3629 \u3636 \u3591 \u3627 \u3621 \u3633 \u3585 \u3585 \u3634 \u3619 \u3588 \u3635 \u3609 \u3623 \u3603 \u3649 \u3610 \u3610 \u3604 \u3629 \u3585 \u3648 \u3610 \u3637 \u3657 \u3618 \u3588 \u3591 \u3607 \u3637 \u3656 \
+                \cf5 \strokec5 </\cf2 \strokec2 div\cf5 \strokec5 >\cf4 \strokec4 \
+            \cf5 \strokec5 </\cf2 \strokec2 div\cf5 \strokec5 >\cf4 \strokec4 \
+        \cf5 \strokec5 </\cf2 \strokec2 div\cf5 \strokec5 >\cf4 \strokec4 \
+    \cf5 \strokec5 </\cf2 \strokec2 nav\cf5 \strokec5 >\cf4 \strokec4 \
+\
+    \cf5 \strokec5 <\cf2 \strokec2 main\cf4 \strokec4  \cf3 \strokec3 class\cf5 \strokec5 =\cf6 \strokec6 "max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8"\cf5 \strokec5 >\cf4 \strokec4 \
+        \
+        \cf7 \strokec7 <!-- Intro Section -->\cf4 \strokec4 \
+        \cf5 \strokec5 <\cf2 \strokec2 div\cf4 \strokec4  \cf3 \strokec3 class\cf5 \strokec5 =\cf6 \strokec6 "mb-8 max-w-3xl"\cf5 \strokec5 >\cf4 \strokec4 \
+            \cf5 \strokec5 <\cf2 \strokec2 h2\cf4 \strokec4  \cf3 \strokec3 class\cf5 \strokec5 =\cf6 \strokec6 "text-2xl font-bold text-slate-900 mb-2"\cf5 \strokec5 >\cf4 \strokec4 \uc0\u3623 \u3634 \u3591 \u3649 \u3612 \u3609 \u3585 \u3634 \u3619 \u3648 \u3591 \u3636 \u3609 \u3626 \u3635 \u3627 \u3619 \u3633 \u3610 \u3585 \u3634 \u3619 \u3629 \u3629 \u3585 \u3619 \u3606 \cf5 \strokec5 </\cf2 \strokec2 h2\cf5 \strokec5 >\cf4 \strokec4 \
+            \cf5 \strokec5 <\cf2 \strokec2 p\cf4 \strokec4  \cf3 \strokec3 class\cf5 \strokec5 =\cf6 \strokec6 "text-slate-600 leading-relaxed"\cf5 \strokec5 >\cf4 \strokec4 \
+                \uc0\u3648 \u3588 \u3619 \u3639 \u3656 \u3629 \u3591 \u3617 \u3639 \u3629 \u3609 \u3637 \u3657 \u3594 \u3656 \u3623 \u3618 \u3651 \u3627 \u3657 \u3588 \u3640 \u3603 \u3592 \u3635 \u3621 \u3629 \u3591 \u3626 \u3606 \u3634 \u3609 \u3585 \u3634 \u3619 \u3603 \u3660 \u3585 \u3634 \u3619 \u3612 \u3656 \u3629 \u3609 \u3594 \u3635 \u3619 \u3632 \u3619 \u3606 \u3618 \u3609 \u3605 \u3660 \u3605 \u3634 \u3617 \u3626 \u3641 \u3605 \u3619 \u3585 \u3634 \u3619 \u3588 \u3635 \u3609 \u3623 \u3603 \u3617 \u3634 \u3605 \u3619 \u3600 \u3634 \u3609  (Flat Rate) \u3607 \u3637 \u3656 \u3651 \u3594 \u3657 \u3585 \u3633 \u3609 \u3607 \u3633 \u3656 \u3623 \u3652 \u3611 \u3651 \u3609 \u3611 \u3619 \u3632 \u3648 \u3607 \u3624 \u3652 \u3607 \u3618  \
+                \uc0\u3588 \u3640 \u3603 \u3626 \u3634 \u3617 \u3634 \u3619 \u3606 \u3611 \u3619 \u3633 \u3610 \u3648 \u3611 \u3621 \u3637 \u3656 \u3618 \u3609  \cf5 \strokec5 <\cf2 \strokec2 strong\cf5 \strokec5 >\cf4 \strokec4 \uc0\u3619 \u3634 \u3588 \u3634 \u3619 \u3606  \u3648 \u3591 \u3636 \u3609 \u3604 \u3634 \u3623 \u3609 \u3660  \u3649 \u3621 \u3632 \u3604 \u3629 \u3585 \u3648 \u3610 \u3637 \u3657 \u3618 \cf5 \strokec5 </\cf2 \strokec2 strong\cf5 \strokec5 >\cf4 \strokec4  \uc0\u3648 \u3614 \u3639 \u3656 \u3629 \u3604 \u3641 \u3612 \u3621 \u3585 \u3619 \u3632 \u3607 \u3610 \u3605 \u3656 \u3629 \u3588 \u3656 \u3634 \u3591 \u3623 \u3604 \u3619 \u3634 \u3618 \u3648 \u3604 \u3639 \u3629 \u3609 \u3649 \u3621 \u3632 \u3604 \u3629 \u3585 \u3648 \u3610 \u3637 \u3657 \u3618 \u3619 \u3623 \u3617 \u3607 \u3637 \u3656 \u3588 \u3640 \u3603 \u3605 \u3657 \u3629 \u3591 \u3592 \u3656 \u3634 \u3618 \u3592 \u3619 \u3636 \u3591  \
+                \uc0\u3619 \u3623 \u3617 \u3606 \u3638 \u3591 \u3619 \u3629 \u3591 \u3619 \u3633 \u3610 \u3585 \u3634 \u3619 \u3588 \u3635 \u3609 \u3623 \u3603 \u3616 \u3634 \u3625 \u3637 \u3617 \u3641 \u3621 \u3588 \u3656 \u3634 \u3648 \u3614 \u3636 \u3656 \u3617  (VAT) \u3626 \u3635 \u3627 \u3619 \u3633 \u3610 \u3619 \u3606 \u3618 \u3609 \u3605 \u3660 \u3617 \u3639 \u3629 \u3626 \u3629 \u3591 \
+            \cf5 \strokec5 </\cf2 \strokec2 p\cf5 \strokec5 >\cf4 \strokec4 \
+        \cf5 \strokec5 </\cf2 \strokec2 div\cf5 \strokec5 >\cf4 \strokec4 \
+\
+        \cf5 \strokec5 <\cf2 \strokec2 div\cf4 \strokec4  \cf3 \strokec3 class\cf5 \strokec5 =\cf6 \strokec6 "grid grid-cols-1 lg:grid-cols-12 gap-8"\cf5 \strokec5 >\cf4 \strokec4 \
+            \
+            \cf7 \strokec7 <!-- LEFT COLUMN: Controls -->\cf4 \strokec4 \
+            \cf5 \strokec5 <\cf2 \strokec2 div\cf4 \strokec4  \cf3 \strokec3 class\cf5 \strokec5 =\cf6 \strokec6 "lg:col-span-5 space-y-6"\cf5 \strokec5 >\cf4 \strokec4 \
+                \cf5 \strokec5 <\cf2 \strokec2 div\cf4 \strokec4  \cf3 \strokec3 class\cf5 \strokec5 =\cf6 \strokec6 "bg-white rounded-xl shadow-sm border border-slate-200 p-6"\cf5 \strokec5 >\cf4 \strokec4 \
+                    \cf5 \strokec5 <\cf2 \strokec2 h3\cf4 \strokec4  \cf3 \strokec3 class\cf5 \strokec5 =\cf6 \strokec6 "text-lg font-semibold text-slate-800 mb-4 border-b border-slate-100 pb-2 flex items-center gap-2"\cf5 \strokec5 >\cf4 \strokec4 \
+                        \cf5 \strokec5 <\cf2 \strokec2 svg\cf4 \strokec4  \cf3 \strokec3 xmlns\cf5 \strokec5 =\cf6 \strokec6 "http://www.w3.org/2000/svg"\cf4 \strokec4  \cf3 \strokec3 width\cf5 \strokec5 =\cf6 \strokec6 "20"\cf4 \strokec4  \cf3 \strokec3 height\cf5 \strokec5 =\cf6 \strokec6 "20"\cf4 \strokec4  \cf3 \strokec3 viewBox\cf5 \strokec5 =\cf6 \strokec6 "0 0 24 24"\cf4 \strokec4  \cf3 \strokec3 fill\cf5 \strokec5 =\cf6 \strokec6 "none"\cf4 \strokec4  \cf3 \strokec3 stroke\cf5 \strokec5 =\cf6 \strokec6 "currentColor"\cf4 \strokec4  \cf3 \strokec3 stroke-width\cf5 \strokec5 =\cf6 \strokec6 "2"\cf4 \strokec4  \cf3 \strokec3 stroke-linecap\cf5 \strokec5 =\cf6 \strokec6 "round"\cf4 \strokec4  \cf3 \strokec3 stroke-linejoin\cf5 \strokec5 =\cf6 \strokec6 "round"\cf4 \strokec4  \cf3 \strokec3 class\cf5 \strokec5 =\cf6 \strokec6 "text-slate-500"\cf5 \strokec5 ><\cf2 \strokec2 line\cf4 \strokec4  \cf3 \strokec3 x1\cf5 \strokec5 =\cf6 \strokec6 "4"\cf4 \strokec4  \cf3 \strokec3 y1\cf5 \strokec5 =\cf6 \strokec6 "21"\cf4 \strokec4  \cf3 \strokec3 x2\cf5 \strokec5 =\cf6 \strokec6 "4"\cf4 \strokec4  \cf3 \strokec3 y2\cf5 \strokec5 =\cf6 \strokec6 "14"\cf5 \strokec5 ></\cf2 \strokec2 line\cf5 \strokec5 ><\cf2 \strokec2 line\cf4 \strokec4  \cf3 \strokec3 x1\cf5 \strokec5 =\cf6 \strokec6 "4"\cf4 \strokec4  \cf3 \strokec3 y1\cf5 \strokec5 =\cf6 \strokec6 "10"\cf4 \strokec4  \cf3 \strokec3 x2\cf5 \strokec5 =\cf6 \strokec6 "4"\cf4 \strokec4  \cf3 \strokec3 y2\cf5 \strokec5 =\cf6 \strokec6 "3"\cf5 \strokec5 ></\cf2 \strokec2 line\cf5 \strokec5 ><\cf2 \strokec2 line\cf4 \strokec4  \cf3 \strokec3 x1\cf5 \strokec5 =\cf6 \strokec6 "12"\cf4 \strokec4  \cf3 \strokec3 y1\cf5 \strokec5 =\cf6 \strokec6 "21"\cf4 \strokec4  \cf3 \strokec3 x2\cf5 \strokec5 =\cf6 \strokec6 "12"\cf4 \strokec4  \cf3 \strokec3 y2\cf5 \strokec5 =\cf6 \strokec6 "12"\cf5 \strokec5 ></\cf2 \strokec2 line\cf5 \strokec5 ><\cf2 \strokec2 line\cf4 \strokec4  \cf3 \strokec3 x1\cf5 \strokec5 =\cf6 \strokec6 "12"\cf4 \strokec4  \cf3 \strokec3 y1\cf5 \strokec5 =\cf6 \strokec6 "8"\cf4 \strokec4  \cf3 \strokec3 x2\cf5 \strokec5 =\cf6 \strokec6 "12"\cf4 \strokec4  \cf3 \strokec3 y2\cf5 \strokec5 =\cf6 \strokec6 "3"\cf5 \strokec5 ></\cf2 \strokec2 line\cf5 \strokec5 ><\cf2 \strokec2 line\cf4 \strokec4  \cf3 \strokec3 x1\cf5 \strokec5 =\cf6 \strokec6 "20"\cf4 \strokec4  \cf3 \strokec3 y1\cf5 \strokec5 =\cf6 \strokec6 "21"\cf4 \strokec4  \cf3 \strokec3 x2\cf5 \strokec5 =\cf6 \strokec6 "20"\cf4 \strokec4  \cf3 \strokec3 y2\cf5 \strokec5 =\cf6 \strokec6 "16"\cf5 \strokec5 ></\cf2 \strokec2 line\cf5 \strokec5 ><\cf2 \strokec2 line\cf4 \strokec4  \cf3 \strokec3 x1\cf5 \strokec5 =\cf6 \strokec6 "20"\cf4 \strokec4  \cf3 \strokec3 y1\cf5 \strokec5 =\cf6 \strokec6 "12"\cf4 \strokec4  \cf3 \strokec3 x2\cf5 \strokec5 =\cf6 \strokec6 "20"\cf4 \strokec4  \cf3 \strokec3 y2\cf5 \strokec5 =\cf6 \strokec6 "3"\cf5 \strokec5 ></\cf2 \strokec2 line\cf5 \strokec5 ><\cf2 \strokec2 line\cf4 \strokec4  \cf3 \strokec3 x1\cf5 \strokec5 =\cf6 \strokec6 "1"\cf4 \strokec4  \cf3 \strokec3 y1\cf5 \strokec5 =\cf6 \strokec6 "14"\cf4 \strokec4  \cf3 \strokec3 x2\cf5 \strokec5 =\cf6 \strokec6 "7"\cf4 \strokec4  \cf3 \strokec3 y2\cf5 \strokec5 =\cf6 \strokec6 "14"\cf5 \strokec5 ></\cf2 \strokec2 line\cf5 \strokec5 ><\cf2 \strokec2 line\cf4 \strokec4  \cf3 \strokec3 x1\cf5 \strokec5 =\cf6 \strokec6 "9"\cf4 \strokec4  \cf3 \strokec3 y1\cf5 \strokec5 =\cf6 \strokec6 "8"\cf4 \strokec4  \cf3 \strokec3 x2\cf5 \strokec5 =\cf6 \strokec6 "15"\cf4 \strokec4  \cf3 \strokec3 y2\cf5 \strokec5 =\cf6 \strokec6 "8"\cf5 \strokec5 ></\cf2 \strokec2 line\cf5 \strokec5 ><\cf2 \strokec2 line\cf4 \strokec4  \cf3 \strokec3 x1\cf5 \strokec5 =\cf6 \strokec6 "17"\cf4 \strokec4  \cf3 \strokec3 y1\cf5 \strokec5 =\cf6 \strokec6 "16"\cf4 \strokec4  \cf3 \strokec3 x2\cf5 \strokec5 =\cf6 \strokec6 "23"\cf4 \strokec4  \cf3 \strokec3 y2\cf5 \strokec5 =\cf6 \strokec6 "16"\cf5 \strokec5 ></\cf2 \strokec2 line\cf5 \strokec5 ></\cf2 \strokec2 svg\cf5 \strokec5 >\cf4 \strokec4  \
+                        \uc0\u3585 \u3635 \u3627 \u3609 \u3604 \u3605 \u3633 \u3623 \u3649 \u3611 \u3619  (Parameters)\
+                    \cf5 \strokec5 </\cf2 \strokec2 h3\cf5 \strokec5 >\cf4 \strokec4 \
+\
+                    \cf7 \strokec7 <!-- Car Type Toggle -->\cf4 \strokec4 \
+                    \cf5 \strokec5 <\cf2 \strokec2 div\cf4 \strokec4  \cf3 \strokec3 class\cf5 \strokec5 =\cf6 \strokec6 "mb-6"\cf5 \strokec5 >\cf4 \strokec4 \
+                        \cf5 \strokec5 <\cf2 \strokec2 label\cf4 \strokec4  \cf3 \strokec3 class\cf5 \strokec5 =\cf6 \strokec6 "block text-sm font-medium text-slate-700 mb-2"\cf5 \strokec5 >\cf4 \strokec4 \uc0\u3611 \u3619 \u3632 \u3648 \u3616 \u3607 \u3619 \u3606 \u3618 \u3609 \u3605 \u3660  (Car Type)\cf5 \strokec5 </\cf2 \strokec2 label\cf5 \strokec5 >\cf4 \strokec4 \
+                        \cf5 \strokec5 <\cf2 \strokec2 div\cf4 \strokec4  \cf3 \strokec3 class\cf5 \strokec5 =\cf6 \strokec6 "grid grid-cols-2 bg-slate-100 p-1 rounded-lg"\cf5 \strokec5 >\cf4 \strokec4 \
+                            \cf5 \strokec5 <\cf2 \strokec2 button\cf4 \strokec4  \cf3 \strokec3 id\cf5 \strokec5 =\cf6 \strokec6 "btn-new-car"\cf4 \strokec4  \cf3 \strokec3 class\cf5 \strokec5 =\cf6 \strokec6 "py-2 px-4 rounded-md text-sm font-medium transition-all bg-white text-brand-600 shadow-sm"\cf4 \strokec4  \cf3 \strokec3 onclick\cf5 \strokec5 =\cf6 \strokec6 "setCarType('new')"\cf5 \strokec5 >\cf4 \strokec4 \uc0\u3619 \u3606 \u3651 \u3627 \u3617 \u3656 \u3611 \u3657 \u3634 \u3618 \u3649 \u3604 \u3591 \cf5 \strokec5 </\cf2 \strokec2 button\cf5 \strokec5 >\cf4 \strokec4 \
+                            \cf5 \strokec5 <\cf2 \strokec2 button\cf4 \strokec4  \cf3 \strokec3 id\cf5 \strokec5 =\cf6 \strokec6 "btn-used-car"\cf4 \strokec4  \cf3 \strokec3 class\cf5 \strokec5 =\cf6 \strokec6 "py-2 px-4 rounded-md text-sm font-medium transition-all text-slate-500 hover:text-slate-700"\cf4 \strokec4  \cf3 \strokec3 onclick\cf5 \strokec5 =\cf6 \strokec6 "setCarType('used')"\cf5 \strokec5 >\cf4 \strokec4 \uc0\u3619 \u3606 \u3617 \u3639 \u3629 \u3626 \u3629 \u3591  (+VAT 7%)\cf5 \strokec5 </\cf2 \strokec2 button\cf5 \strokec5 >\cf4 \strokec4 \
+                        \cf5 \strokec5 </\cf2 \strokec2 div\cf5 \strokec5 >\cf4 \strokec4 \
+                        \cf5 \strokec5 <\cf2 \strokec2 p\cf4 \strokec4  \cf3 \strokec3 id\cf5 \strokec5 =\cf6 \strokec6 "vat-warning"\cf4 \strokec4  \cf3 \strokec3 class\cf5 \strokec5 =\cf6 \strokec6 "text-xs text-orange-600 mt-2 hidden flex items-center gap-1"\cf5 \strokec5 >\cf4 \strokec4 \
+                            \cf5 \strokec5 <\cf2 \strokec2 svg\cf4 \strokec4  \cf3 \strokec3 xmlns\cf5 \strokec5 =\cf6 \strokec6 "http://www.w3.org/2000/svg"\cf4 \strokec4  \cf3 \strokec3 width\cf5 \strokec5 =\cf6 \strokec6 "14"\cf4 \strokec4  \cf3 \strokec3 height\cf5 \strokec5 =\cf6 \strokec6 "14"\cf4 \strokec4  \cf3 \strokec3 viewBox\cf5 \strokec5 =\cf6 \strokec6 "0 0 24 24"\cf4 \strokec4  \cf3 \strokec3 fill\cf5 \strokec5 =\cf6 \strokec6 "none"\cf4 \strokec4  \cf3 \strokec3 stroke\cf5 \strokec5 =\cf6 \strokec6 "currentColor"\cf4 \strokec4  \cf3 \strokec3 stroke-width\cf5 \strokec5 =\cf6 \strokec6 "2"\cf4 \strokec4  \cf3 \strokec3 stroke-linecap\cf5 \strokec5 =\cf6 \strokec6 "round"\cf4 \strokec4  \cf3 \strokec3 stroke-linejoin\cf5 \strokec5 =\cf6 \strokec6 "round"\cf5 \strokec5 ><\cf2 \strokec2 path\cf4 \strokec4  \cf3 \strokec3 d\cf5 \strokec5 =\cf6 \strokec6 "m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3Z"\cf5 \strokec5 /><\cf2 \strokec2 line\cf4 \strokec4  \cf3 \strokec3 x1\cf5 \strokec5 =\cf6 \strokec6 "12"\cf4 \strokec4  \cf3 \strokec3 y1\cf5 \strokec5 =\cf6 \strokec6 "9"\cf4 \strokec4  \cf3 \strokec3 x2\cf5 \strokec5 =\cf6 \strokec6 "12"\cf4 \strokec4  \cf3 \strokec3 y2\cf5 \strokec5 =\cf6 \strokec6 "13"\cf5 \strokec5 /><\cf2 \strokec2 line\cf4 \strokec4  \cf3 \strokec3 x1\cf5 \strokec5 =\cf6 \strokec6 "12"\cf4 \strokec4  \cf3 \strokec3 y1\cf5 \strokec5 =\cf6 \strokec6 "17"\cf4 \strokec4  \cf3 \strokec3 x2\cf5 \strokec5 =\cf6 \strokec6 "12.01"\cf4 \strokec4  \cf3 \strokec3 y2\cf5 \strokec5 =\cf6 \strokec6 "17"\cf5 \strokec5 /></\cf2 \strokec2 svg\cf5 \strokec5 >\cf4 \strokec4 \
+                            \uc0\u3619 \u3606 \u3617 \u3639 \u3629 \u3626 \u3629 \u3591 \u3592 \u3632 \u3617 \u3637 \u3585 \u3634 \u3619 \u3610 \u3623 \u3585  VAT 7% \u3651 \u3609 \u3588 \u3656 \u3634 \u3591 \u3623 \u3604 \u3619 \u3634 \u3618 \u3648 \u3604 \u3639 \u3629 \u3609 \
+                        \cf5 \strokec5 </\cf2 \strokec2 p\cf5 \strokec5 >\cf4 \strokec4 \
+                    \cf5 \strokec5 </\cf2 \strokec2 div\cf5 \strokec5 >\cf4 \strokec4 \
+\
+                    \cf7 \strokec7 <!-- Car Price -->\cf4 \strokec4 \
+                    \cf5 \strokec5 <\cf2 \strokec2 div\cf4 \strokec4  \cf3 \strokec3 class\cf5 \strokec5 =\cf6 \strokec6 "mb-6"\cf5 \strokec5 >\cf4 \strokec4 \
+                        \cf5 \strokec5 <\cf2 \strokec2 label\cf4 \strokec4  \cf3 \strokec3 class\cf5 \strokec5 =\cf6 \strokec6 "block text-sm font-medium text-slate-700 mb-1"\cf5 \strokec5 >\cf4 \strokec4 \uc0\u3619 \u3634 \u3588 \u3634 \u3619 \u3606 \u3618 \u3609 \u3605 \u3660  (\u3610 \u3634 \u3607 )\cf5 \strokec5 </\cf2 \strokec2 label\cf5 \strokec5 >\cf4 \strokec4 \
+                        \cf5 \strokec5 <\cf2 \strokec2 div\cf4 \strokec4  \cf3 \strokec3 class\cf5 \strokec5 =\cf6 \strokec6 "relative rounded-md shadow-sm"\cf5 \strokec5 >\cf4 \strokec4 \
+                            \cf5 \strokec5 <\cf2 \strokec2 div\cf4 \strokec4  \cf3 \strokec3 class\cf5 \strokec5 =\cf6 \strokec6 "absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none"\cf5 \strokec5 >\cf4 \strokec4 \
+                                \cf5 \strokec5 <\cf2 \strokec2 span\cf4 \strokec4  \cf3 \strokec3 class\cf5 \strokec5 =\cf6 \strokec6 "text-slate-500 sm:text-sm"\cf5 \strokec5 >\cf4 \strokec4 \uc0\u3647 \cf5 \strokec5 </\cf2 \strokec2 span\cf5 \strokec5 >\cf4 \strokec4 \
+                            \cf5 \strokec5 </\cf2 \strokec2 div\cf5 \strokec5 >\cf4 \strokec4 \
+                            \cf5 \strokec5 <\cf2 \strokec2 input\cf4 \strokec4  \cf3 \strokec3 type\cf5 \strokec5 =\cf6 \strokec6 "number"\cf4 \strokec4  \cf3 \strokec3 id\cf5 \strokec5 =\cf6 \strokec6 "input-price"\cf4 \strokec4  \cf3 \strokec3 class\cf5 \strokec5 =\cf6 \strokec6 "focus:ring-brand-500 focus:border-brand-500 block w-full pl-7 pr-12 sm:text-sm border-slate-300 rounded-md py-2"\cf4 \strokec4  \cf3 \strokec3 placeholder\cf5 \strokec5 =\cf6 \strokec6 "0"\cf4 \strokec4  \cf3 \strokec3 value\cf5 \strokec5 =\cf6 \strokec6 "800000"\cf5 \strokec5 >\cf4 \strokec4 \
+                        \cf5 \strokec5 </\cf2 \strokec2 div\cf5 \strokec5 >\cf4 \strokec4 \
+                        \cf5 \strokec5 <\cf2 \strokec2 input\cf4 \strokec4  \cf3 \strokec3 type\cf5 \strokec5 =\cf6 \strokec6 "range"\cf4 \strokec4  \cf3 \strokec3 id\cf5 \strokec5 =\cf6 \strokec6 "slider-price"\cf4 \strokec4  \cf3 \strokec3 min\cf5 \strokec5 =\cf6 \strokec6 "100000"\cf4 \strokec4  \cf3 \strokec3 max\cf5 \strokec5 =\cf6 \strokec6 "5000000"\cf4 \strokec4  \cf3 \strokec3 step\cf5 \strokec5 =\cf6 \strokec6 "10000"\cf4 \strokec4  \cf3 \strokec3 value\cf5 \strokec5 =\cf6 \strokec6 "800000"\cf4 \strokec4  \cf3 \strokec3 class\cf5 \strokec5 =\cf6 \strokec6 "w-full mt-2 h-2 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-brand-600"\cf5 \strokec5 >\cf4 \strokec4 \
+                    \cf5 \strokec5 </\cf2 \strokec2 div\cf5 \strokec5 >\cf4 \strokec4 \
+\
+                    \cf7 \strokec7 <!-- Down Payment -->\cf4 \strokec4 \
+                    \cf5 \strokec5 <\cf2 \strokec2 div\cf4 \strokec4  \cf3 \strokec3 class\cf5 \strokec5 =\cf6 \strokec6 "mb-6"\cf5 \strokec5 >\cf4 \strokec4 \
+                        \cf5 \strokec5 <\cf2 \strokec2 div\cf4 \strokec4  \cf3 \strokec3 class\cf5 \strokec5 =\cf6 \strokec6 "flex justify-between items-center mb-1"\cf5 \strokec5 >\cf4 \strokec4 \
+                            \cf5 \strokec5 <\cf2 \strokec2 label\cf4 \strokec4  \cf3 \strokec3 class\cf5 \strokec5 =\cf6 \strokec6 "block text-sm font-medium text-slate-700"\cf5 \strokec5 >\cf4 \strokec4 \uc0\u3648 \u3591 \u3636 \u3609 \u3604 \u3634 \u3623 \u3609 \u3660  (Down Payment)\cf5 \strokec5 </\cf2 \strokec2 label\cf5 \strokec5 >\cf4 \strokec4 \
+                            \cf5 \strokec5 <\cf2 \strokec2 span\cf4 \strokec4  \cf3 \strokec3 id\cf5 \strokec5 =\cf6 \strokec6 "down-payment-display"\cf4 \strokec4  \cf3 \strokec3 class\cf5 \strokec5 =\cf6 \strokec6 "text-sm font-bold text-brand-600"\cf5 \strokec5 >\cf4 \strokec4 25%\cf5 \strokec5 </\cf2 \strokec2 span\cf5 \strokec5 >\cf4 \strokec4 \
+                        \cf5 \strokec5 </\cf2 \strokec2 div\cf5 \strokec5 >\cf4 \strokec4 \
+                        \cf5 \strokec5 <\cf2 \strokec2 div\cf4 \strokec4  \cf3 \strokec3 class\cf5 \strokec5 =\cf6 \strokec6 "flex gap-4 items-center"\cf5 \strokec5 >\cf4 \strokec4 \
+                            \cf5 \strokec5 <\cf2 \strokec2 div\cf4 \strokec4  \cf3 \strokec3 class\cf5 \strokec5 =\cf6 \strokec6 "relative w-24"\cf5 \strokec5 >\cf4 \strokec4 \
+                                \cf5 \strokec5 <\cf2 \strokec2 input\cf4 \strokec4  \cf3 \strokec3 type\cf5 \strokec5 =\cf6 \strokec6 "number"\cf4 \strokec4  \cf3 \strokec3 id\cf5 \strokec5 =\cf6 \strokec6 "input-down-percent"\cf4 \strokec4  \cf3 \strokec3 class\cf5 \strokec5 =\cf6 \strokec6 "focus:ring-brand-500 focus:border-brand-500 block w-full pr-8 sm:text-sm border-slate-300 rounded-md py-2"\cf4 \strokec4  \cf3 \strokec3 value\cf5 \strokec5 =\cf6 \strokec6 "25"\cf5 \strokec5 >\cf4 \strokec4 \
+                                \cf5 \strokec5 <\cf2 \strokec2 div\cf4 \strokec4  \cf3 \strokec3 class\cf5 \strokec5 =\cf6 \strokec6 "absolute inset-y-0 right-0 pr-3 flex items-center pointer-events-none"\cf5 \strokec5 >\cf4 \strokec4 \
+                                    \cf5 \strokec5 <\cf2 \strokec2 span\cf4 \strokec4  \cf3 \strokec3 class\cf5 \strokec5 =\cf6 \strokec6 "text-slate-500 sm:text-sm"\cf5 \strokec5 >\cf4 \strokec4 %\cf5 \strokec5 </\cf2 \strokec2 span\cf5 \strokec5 >\cf4 \strokec4 \
+                                \cf5 \strokec5 </\cf2 \strokec2 div\cf5 \strokec5 >\cf4 \strokec4 \
+                            \cf5 \strokec5 </\cf2 \strokec2 div\cf5 \strokec5 >\cf4 \strokec4 \
+                            \cf5 \strokec5 <\cf2 \strokec2 input\cf4 \strokec4  \cf3 \strokec3 type\cf5 \strokec5 =\cf6 \strokec6 "range"\cf4 \strokec4  \cf3 \strokec3 id\cf5 \strokec5 =\cf6 \strokec6 "slider-down"\cf4 \strokec4  \cf3 \strokec3 min\cf5 \strokec5 =\cf6 \strokec6 "0"\cf4 \strokec4  \cf3 \strokec3 max\cf5 \strokec5 =\cf6 \strokec6 "50"\cf4 \strokec4  \cf3 \strokec3 step\cf5 \strokec5 =\cf6 \strokec6 "5"\cf4 \strokec4  \cf3 \strokec3 value\cf5 \strokec5 =\cf6 \strokec6 "25"\cf4 \strokec4  \cf3 \strokec3 class\cf5 \strokec5 =\cf6 \strokec6 "w-full h-2 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-brand-600"\cf5 \strokec5 >\cf4 \strokec4 \
+                        \cf5 \strokec5 </\cf2 \strokec2 div\cf5 \strokec5 >\cf4 \strokec4 \
+                        \cf5 \strokec5 <\cf2 \strokec2 p\cf4 \strokec4  \cf3 \strokec3 class\cf5 \strokec5 =\cf6 \strokec6 "text-xs text-slate-500 mt-1"\cf5 \strokec5 >\cf4 \strokec4 \uc0\u3592 \u3635 \u3609 \u3623 \u3609 \u3648 \u3591 \u3636 \u3609 \u3604 \u3634 \u3623 \u3609 \u3660 : \cf5 \strokec5 <\cf2 \strokec2 span\cf4 \strokec4  \cf3 \strokec3 id\cf5 \strokec5 =\cf6 \strokec6 "down-amount-text"\cf4 \strokec4  \cf3 \strokec3 class\cf5 \strokec5 =\cf6 \strokec6 "font-medium"\cf5 \strokec5 >\cf4 \strokec4 200,000\cf5 \strokec5 </\cf2 \strokec2 span\cf5 \strokec5 >\cf4 \strokec4  \uc0\u3610 \u3634 \u3607 \cf5 \strokec5 </\cf2 \strokec2 p\cf5 \strokec5 >\cf4 \strokec4 \
+                    \cf5 \strokec5 </\cf2 \strokec2 div\cf5 \strokec5 >\cf4 \strokec4 \
+\
+                    \cf7 \strokec7 <!-- Interest Rate -->\cf4 \strokec4 \
+                    \cf5 \strokec5 <\cf2 \strokec2 div\cf4 \strokec4  \cf3 \strokec3 class\cf5 \strokec5 =\cf6 \strokec6 "mb-6"\cf5 \strokec5 >\cf4 \strokec4 \
+                        \cf5 \strokec5 <\cf2 \strokec2 div\cf4 \strokec4  \cf3 \strokec3 class\cf5 \strokec5 =\cf6 \strokec6 "flex justify-between items-center mb-1"\cf5 \strokec5 >\cf4 \strokec4 \
+                            \cf5 \strokec5 <\cf2 \strokec2 label\cf4 \strokec4  \cf3 \strokec3 class\cf5 \strokec5 =\cf6 \strokec6 "block text-sm font-medium text-slate-700"\cf5 \strokec5 >\cf4 \strokec4 \uc0\u3629 \u3633 \u3605 \u3619 \u3634 \u3604 \u3629 \u3585 \u3648 \u3610 \u3637 \u3657 \u3618  (\u3605 \u3656 \u3629 \u3611 \u3637 )\cf5 \strokec5 </\cf2 \strokec2 label\cf5 \strokec5 >\cf4 \strokec4 \
+                            \cf5 \strokec5 <\cf2 \strokec2 span\cf4 \strokec4  \cf3 \strokec3 id\cf5 \strokec5 =\cf6 \strokec6 "interest-display"\cf4 \strokec4  \cf3 \strokec3 class\cf5 \strokec5 =\cf6 \strokec6 "text-sm font-bold text-brand-600"\cf5 \strokec5 >\cf4 \strokec4 2.50%\cf5 \strokec5 </\cf2 \strokec2 span\cf5 \strokec5 >\cf4 \strokec4 \
+                        \cf5 \strokec5 </\cf2 \strokec2 div\cf5 \strokec5 >\cf4 \strokec4 \
+                        \cf5 \strokec5 <\cf2 \strokec2 input\cf4 \strokec4  \cf3 \strokec3 type\cf5 \strokec5 =\cf6 \strokec6 "range"\cf4 \strokec4  \cf3 \strokec3 id\cf5 \strokec5 =\cf6 \strokec6 "slider-interest"\cf4 \strokec4  \cf3 \strokec3 min\cf5 \strokec5 =\cf6 \strokec6 "0.5"\cf4 \strokec4  \cf3 \strokec3 max\cf5 \strokec5 =\cf6 \strokec6 "10.0"\cf4 \strokec4  \cf3 \strokec3 step\cf5 \strokec5 =\cf6 \strokec6 "0.1"\cf4 \strokec4  \cf3 \strokec3 value\cf5 \strokec5 =\cf6 \strokec6 "2.5"\cf4 \strokec4  \cf3 \strokec3 class\cf5 \strokec5 =\cf6 \strokec6 "w-full mt-2 h-2 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-brand-600"\cf5 \strokec5 >\cf4 \strokec4 \
+                        \cf5 \strokec5 <\cf2 \strokec2 div\cf4 \strokec4  \cf3 \strokec3 class\cf5 \strokec5 =\cf6 \strokec6 "mt-2 flex justify-between text-xs text-slate-400"\cf5 \strokec5 >\cf4 \strokec4 \
+                            \cf5 \strokec5 <\cf2 \strokec2 span\cf5 \strokec5 >\cf4 \strokec4 0.5%\cf5 \strokec5 </\cf2 \strokec2 span\cf5 \strokec5 >\cf4 \strokec4 \
+                            \cf5 \strokec5 <\cf2 \strokec2 span\cf5 \strokec5 >\cf4 \strokec4 5.0%\cf5 \strokec5 </\cf2 \strokec2 span\cf5 \strokec5 >\cf4 \strokec4 \
+                            \cf5 \strokec5 <\cf2 \strokec2 span\cf5 \strokec5 >\cf4 \strokec4 10.0%\cf5 \strokec5 </\cf2 \strokec2 span\cf5 \strokec5 >\cf4 \strokec4 \
+                        \cf5 \strokec5 </\cf2 \strokec2 div\cf5 \strokec5 >\cf4 \strokec4 \
+                    \cf5 \strokec5 </\cf2 \strokec2 div\cf5 \strokec5 >\cf4 \strokec4 \
+\
+                    \cf7 \strokec7 <!-- Loan Term -->\cf4 \strokec4 \
+                    \cf5 \strokec5 <\cf2 \strokec2 div\cf4 \strokec4  \cf3 \strokec3 class\cf5 \strokec5 =\cf6 \strokec6 "mb-2"\cf5 \strokec5 >\cf4 \strokec4 \
+                        \cf5 \strokec5 <\cf2 \strokec2 label\cf4 \strokec4  \cf3 \strokec3 class\cf5 \strokec5 =\cf6 \strokec6 "block text-sm font-medium text-slate-700 mb-2"\cf5 \strokec5 >\cf4 \strokec4 \uc0\u3619 \u3632 \u3618 \u3632 \u3648 \u3623 \u3621 \u3634 \u3612 \u3656 \u3629 \u3609  (\u3611 \u3637 )\cf5 \strokec5 </\cf2 \strokec2 label\cf5 \strokec5 >\cf4 \strokec4 \
+                        \cf5 \strokec5 <\cf2 \strokec2 div\cf4 \strokec4  \cf3 \strokec3 class\cf5 \strokec5 =\cf6 \strokec6 "grid grid-cols-7 gap-1"\cf5 \strokec5 >\cf4 \strokec4 \
+                            \cf5 \strokec5 <\cf2 \strokec2 button\cf4 \strokec4  \cf3 \strokec3 class\cf5 \strokec5 =\cf6 \strokec6 "term-btn py-2 rounded border border-slate-200 text-sm hover:bg-brand-50 hover:border-brand-200 transition-colors"\cf4 \strokec4  \cf3 \strokec3 data-year\cf5 \strokec5 =\cf6 \strokec6 "2"\cf5 \strokec5 >\cf4 \strokec4 2\cf5 \strokec5 </\cf2 \strokec2 button\cf5 \strokec5 >\cf4 \strokec4 \
+                            \cf5 \strokec5 <\cf2 \strokec2 button\cf4 \strokec4  \cf3 \strokec3 class\cf5 \strokec5 =\cf6 \strokec6 "term-btn py-2 rounded border border-slate-200 text-sm hover:bg-brand-50 hover:border-brand-200 transition-colors"\cf4 \strokec4  \cf3 \strokec3 data-year\cf5 \strokec5 =\cf6 \strokec6 "3"\cf5 \strokec5 >\cf4 \strokec4 3\cf5 \strokec5 </\cf2 \strokec2 button\cf5 \strokec5 >\cf4 \strokec4 \
+                            \cf5 \strokec5 <\cf2 \strokec2 button\cf4 \strokec4  \cf3 \strokec3 class\cf5 \strokec5 =\cf6 \strokec6 "term-btn py-2 rounded border border-slate-200 text-sm hover:bg-brand-50 hover:border-brand-200 transition-colors"\cf4 \strokec4  \cf3 \strokec3 data-year\cf5 \strokec5 =\cf6 \strokec6 "4"\cf5 \strokec5 >\cf4 \strokec4 4\cf5 \strokec5 </\cf2 \strokec2 button\cf5 \strokec5 >\cf4 \strokec4 \
+                            \cf5 \strokec5 <\cf2 \strokec2 button\cf4 \strokec4  \cf3 \strokec3 class\cf5 \strokec5 =\cf6 \strokec6 "term-btn py-2 rounded border border-brand-500 bg-brand-500 text-white text-sm font-bold shadow-md"\cf4 \strokec4  \cf3 \strokec3 data-year\cf5 \strokec5 =\cf6 \strokec6 "5"\cf5 \strokec5 >\cf4 \strokec4 5\cf5 \strokec5 </\cf2 \strokec2 button\cf5 \strokec5 >\cf4 \strokec4 \
+                            \cf5 \strokec5 <\cf2 \strokec2 button\cf4 \strokec4  \cf3 \strokec3 class\cf5 \strokec5 =\cf6 \strokec6 "term-btn py-2 rounded border border-slate-200 text-sm hover:bg-brand-50 hover:border-brand-200 transition-colors"\cf4 \strokec4  \cf3 \strokec3 data-year\cf5 \strokec5 =\cf6 \strokec6 "6"\cf5 \strokec5 >\cf4 \strokec4 6\cf5 \strokec5 </\cf2 \strokec2 button\cf5 \strokec5 >\cf4 \strokec4 \
+                            \cf5 \strokec5 <\cf2 \strokec2 button\cf4 \strokec4  \cf3 \strokec3 class\cf5 \strokec5 =\cf6 \strokec6 "term-btn py-2 rounded border border-slate-200 text-sm hover:bg-brand-50 hover:border-brand-200 transition-colors"\cf4 \strokec4  \cf3 \strokec3 data-year\cf5 \strokec5 =\cf6 \strokec6 "7"\cf5 \strokec5 >\cf4 \strokec4 7\cf5 \strokec5 </\cf2 \strokec2 button\cf5 \strokec5 >\cf4 \strokec4 \
+                            \cf5 \strokec5 <\cf2 \strokec2 button\cf4 \strokec4  \cf3 \strokec3 class\cf5 \strokec5 =\cf6 \strokec6 "term-btn py-2 rounded border border-slate-200 text-sm hover:bg-brand-50 hover:border-brand-200 transition-colors"\cf4 \strokec4  \cf3 \strokec3 data-year\cf5 \strokec5 =\cf6 \strokec6 "8"\cf5 \strokec5 >\cf4 \strokec4 8\cf5 \strokec5 </\cf2 \strokec2 button\cf5 \strokec5 >\cf4 \strokec4 \
+                        \cf5 \strokec5 </\cf2 \strokec2 div\cf5 \strokec5 >\cf4 \strokec4 \
+                        \cf5 \strokec5 <\cf2 \strokec2 p\cf4 \strokec4  \cf3 \strokec3 class\cf5 \strokec5 =\cf6 \strokec6 "text-xs text-slate-500 mt-2 text-center"\cf5 \strokec5 >\cf4 \strokec4 \uc0\u3592 \u3635 \u3609 \u3623 \u3609 \u3591 \u3623 \u3604 : \cf5 \strokec5 <\cf2 \strokec2 span\cf4 \strokec4  \cf3 \strokec3 id\cf5 \strokec5 =\cf6 \strokec6 "term-months-text"\cf4 \strokec4  \cf3 \strokec3 class\cf5 \strokec5 =\cf6 \strokec6 "font-bold"\cf5 \strokec5 >\cf4 \strokec4 60\cf5 \strokec5 </\cf2 \strokec2 span\cf5 \strokec5 >\cf4 \strokec4  \uc0\u3591 \u3623 \u3604 \cf5 \strokec5 </\cf2 \strokec2 p\cf5 \strokec5 >\cf4 \strokec4 \
+                    \cf5 \strokec5 </\cf2 \strokec2 div\cf5 \strokec5 >\cf4 \strokec4 \
+                \cf5 \strokec5 </\cf2 \strokec2 div\cf5 \strokec5 >\cf4 \strokec4 \
+\
+                \cf7 \strokec7 <!-- Info Box -->\cf4 \strokec4 \
+                \cf5 \strokec5 <\cf2 \strokec2 div\cf4 \strokec4  \cf3 \strokec3 class\cf5 \strokec5 =\cf6 \strokec6 "bg-blue-50 border border-blue-100 rounded-lg p-4"\cf5 \strokec5 >\cf4 \strokec4 \
+                    \cf5 \strokec5 <\cf2 \strokec2 h4\cf4 \strokec4  \cf3 \strokec3 class\cf5 \strokec5 =\cf6 \strokec6 "text-sm font-bold text-blue-800 mb-1 flex items-center gap-1"\cf5 \strokec5 >\cf4 \strokec4 \
+                        \cf5 \strokec5 <\cf2 \strokec2 svg\cf4 \strokec4  \cf3 \strokec3 xmlns\cf5 \strokec5 =\cf6 \strokec6 "http://www.w3.org/2000/svg"\cf4 \strokec4  \cf3 \strokec3 width\cf5 \strokec5 =\cf6 \strokec6 "16"\cf4 \strokec4  \cf3 \strokec3 height\cf5 \strokec5 =\cf6 \strokec6 "16"\cf4 \strokec4  \cf3 \strokec3 viewBox\cf5 \strokec5 =\cf6 \strokec6 "0 0 24 24"\cf4 \strokec4  \cf3 \strokec3 fill\cf5 \strokec5 =\cf6 \strokec6 "none"\cf4 \strokec4  \cf3 \strokec3 stroke\cf5 \strokec5 =\cf6 \strokec6 "currentColor"\cf4 \strokec4  \cf3 \strokec3 stroke-width\cf5 \strokec5 =\cf6 \strokec6 "2"\cf4 \strokec4  \cf3 \strokec3 stroke-linecap\cf5 \strokec5 =\cf6 \strokec6 "round"\cf4 \strokec4  \cf3 \strokec3 stroke-linejoin\cf5 \strokec5 =\cf6 \strokec6 "round"\cf5 \strokec5 ><\cf2 \strokec2 path\cf4 \strokec4  \cf3 \strokec3 d\cf5 \strokec5 =\cf6 \strokec6 "M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1.3.5 2.6 1.5 3.5.8.8 1.3 1.5 1.5 2.5"\cf5 \strokec5 /><\cf2 \strokec2 path\cf4 \strokec4  \cf3 \strokec3 d\cf5 \strokec5 =\cf6 \strokec6 "M9 18h6"\cf5 \strokec5 /><\cf2 \strokec2 path\cf4 \strokec4  \cf3 \strokec3 d\cf5 \strokec5 =\cf6 \strokec6 "M10 22h4"\cf5 \strokec5 /></\cf2 \strokec2 svg\cf5 \strokec5 >\cf4 \strokec4 \
+                        Tips\
+                    \cf5 \strokec5 </\cf2 \strokec2 h4\cf5 \strokec5 >\cf4 \strokec4 \
+                    \cf5 \strokec5 <\cf2 \strokec2 p\cf4 \strokec4  \cf3 \strokec3 class\cf5 \strokec5 =\cf6 \strokec6 "text-xs text-blue-700"\cf5 \strokec5 >\cf4 \strokec4 \
+                        \uc0\u3585 \u3634 \u3619 \u3648 \u3614 \u3636 \u3656 \u3617 \u3648 \u3591 \u3636 \u3609 \u3604 \u3634 \u3623 \u3609 \u3660 \u3592 \u3632 \u3594 \u3656 \u3623 \u3618 \u3621 \u3604  "\u3618 \u3629 \u3604 \u3592 \u3633 \u3604 " (\u3648 \u3591 \u3636 \u3609 \u3605 \u3657 \u3609 ) \u3595 \u3638 \u3656 \u3591 \u3648 \u3611 \u3655 \u3609 \u3600 \u3634 \u3609 \u3651 \u3609 \u3585 \u3634 \u3619 \u3588 \u3635 \u3609 \u3623 \u3603 \u3604 \u3629 \u3585 \u3648 \u3610 \u3637 \u3657 \u3618  \u3607 \u3635 \u3651 \u3627 \u3657 \u3611 \u3619 \u3632 \u3627 \u3618 \u3633 \u3604 \u3604 \u3629 \u3585 \u3648 \u3610 \u3637 \u3657 \u3618 \u3619 \u3623 \u3617 \u3652 \u3604 \u3657 \u3617 \u3634 \u3585 \
+                    \cf5 \strokec5 </\cf2 \strokec2 p\cf5 \strokec5 >\cf4 \strokec4 \
+                \cf5 \strokec5 </\cf2 \strokec2 div\cf5 \strokec5 >\cf4 \strokec4 \
+            \cf5 \strokec5 </\cf2 \strokec2 div\cf5 \strokec5 >\cf4 \strokec4 \
+\
+            \cf7 \strokec7 <!-- RIGHT COLUMN: Results & Visuals -->\cf4 \strokec4 \
+            \cf5 \strokec5 <\cf2 \strokec2 div\cf4 \strokec4  \cf3 \strokec3 class\cf5 \strokec5 =\cf6 \strokec6 "lg:col-span-7 space-y-6"\cf5 \strokec5 >\cf4 \strokec4 \
+                \
+                \cf7 \strokec7 <!-- Main Result Card -->\cf4 \strokec4 \
+                \cf5 \strokec5 <\cf2 \strokec2 div\cf4 \strokec4  \cf3 \strokec3 class\cf5 \strokec5 =\cf6 \strokec6 "bg-white rounded-xl shadow-lg border border-slate-200 overflow-hidden"\cf5 \strokec5 >\cf4 \strokec4 \
+                    \cf5 \strokec5 <\cf2 \strokec2 div\cf4 \strokec4  \cf3 \strokec3 class\cf5 \strokec5 =\cf6 \strokec6 "bg-brand-600 p-6 text-white text-center"\cf5 \strokec5 >\cf4 \strokec4 \
+                        \cf5 \strokec5 <\cf2 \strokec2 p\cf4 \strokec4  \cf3 \strokec3 class\cf5 \strokec5 =\cf6 \strokec6 "text-brand-100 text-sm font-medium uppercase tracking-wider mb-1"\cf5 \strokec5 >\cf4 \strokec4 \uc0\u3588 \u3656 \u3634 \u3591 \u3623 \u3604 \u3605 \u3656 \u3629 \u3648 \u3604 \u3639 \u3629 \u3609  (Monthly Payment)\cf5 \strokec5 </\cf2 \strokec2 p\cf5 \strokec5 >\cf4 \strokec4 \
+                        \cf5 \strokec5 <\cf2 \strokec2 h2\cf4 \strokec4  \cf3 \strokec3 class\cf5 \strokec5 =\cf6 \strokec6 "text-4xl sm:text-5xl font-extrabold tracking-tight"\cf4 \strokec4  \cf3 \strokec3 id\cf5 \strokec5 =\cf6 \strokec6 "result-monthly"\cf5 \strokec5 >\cf4 \strokec4 11,250\cf5 \strokec5 </\cf2 \strokec2 h2\cf5 \strokec5 >\cf4 \strokec4 \
+                        \cf5 \strokec5 <\cf2 \strokec2 p\cf4 \strokec4  \cf3 \strokec3 class\cf5 \strokec5 =\cf6 \strokec6 "text-brand-100 text-sm mt-2"\cf5 \strokec5 >\cf4 \strokec4 \uc0\u3610 \u3634 \u3607  / \u3591 \u3623 \u3604 \cf5 \strokec5 </\cf2 \strokec2 p\cf5 \strokec5 >\cf4 \strokec4 \
+                    \cf5 \strokec5 </\cf2 \strokec2 div\cf5 \strokec5 >\cf4 \strokec4 \
+                    \cf5 \strokec5 <\cf2 \strokec2 div\cf4 \strokec4  \cf3 \strokec3 class\cf5 \strokec5 =\cf6 \strokec6 "grid grid-cols-1 sm:grid-cols-3 divide-y sm:divide-y-0 sm:divide-x divide-slate-100"\cf5 \strokec5 >\cf4 \strokec4 \
+                        \cf5 \strokec5 <\cf2 \strokec2 div\cf4 \strokec4  \cf3 \strokec3 class\cf5 \strokec5 =\cf6 \strokec6 "p-4 text-center"\cf5 \strokec5 >\cf4 \strokec4 \
+                            \cf5 \strokec5 <\cf2 \strokec2 p\cf4 \strokec4  \cf3 \strokec3 class\cf5 \strokec5 =\cf6 \strokec6 "text-xs text-slate-500"\cf5 \strokec5 >\cf4 \strokec4 \uc0\u3618 \u3629 \u3604 \u3592 \u3633 \u3604 \u3652 \u3615 \u3649 \u3609 \u3609 \u3595 \u3660  (Loan)\cf5 \strokec5 </\cf2 \strokec2 p\cf5 \strokec5 >\cf4 \strokec4 \
+                            \cf5 \strokec5 <\cf2 \strokec2 p\cf4 \strokec4  \cf3 \strokec3 class\cf5 \strokec5 =\cf6 \strokec6 "text-lg font-bold text-slate-800"\cf4 \strokec4  \cf3 \strokec3 id\cf5 \strokec5 =\cf6 \strokec6 "result-finance"\cf5 \strokec5 >\cf4 \strokec4 600,000\cf5 \strokec5 </\cf2 \strokec2 p\cf5 \strokec5 >\cf4 \strokec4 \
+                            \cf5 \strokec5 <\cf2 \strokec2 p\cf4 \strokec4  \cf3 \strokec3 class\cf5 \strokec5 =\cf6 \strokec6 "text-xs text-slate-400"\cf5 \strokec5 >\cf4 \strokec4 \uc0\u3610 \u3634 \u3607 \cf5 \strokec5 </\cf2 \strokec2 p\cf5 \strokec5 >\cf4 \strokec4 \
+                        \cf5 \strokec5 </\cf2 \strokec2 div\cf5 \strokec5 >\cf4 \strokec4 \
+                        \cf5 \strokec5 <\cf2 \strokec2 div\cf4 \strokec4  \cf3 \strokec3 class\cf5 \strokec5 =\cf6 \strokec6 "p-4 text-center bg-red-50/30"\cf5 \strokec5 >\cf4 \strokec4 \
+                            \cf5 \strokec5 <\cf2 \strokec2 p\cf4 \strokec4  \cf3 \strokec3 class\cf5 \strokec5 =\cf6 \strokec6 "text-xs text-slate-500"\cf5 \strokec5 >\cf4 \strokec4 \uc0\u3604 \u3629 \u3585 \u3648 \u3610 \u3637 \u3657 \u3618 \u3619 \u3623 \u3617  (Total Interest)\cf5 \strokec5 </\cf2 \strokec2 p\cf5 \strokec5 >\cf4 \strokec4 \
+                            \cf5 \strokec5 <\cf2 \strokec2 p\cf4 \strokec4  \cf3 \strokec3 class\cf5 \strokec5 =\cf6 \strokec6 "text-lg font-bold text-red-600"\cf4 \strokec4  \cf3 \strokec3 id\cf5 \strokec5 =\cf6 \strokec6 "result-interest"\cf5 \strokec5 >\cf4 \strokec4 75,000\cf5 \strokec5 </\cf2 \strokec2 p\cf5 \strokec5 >\cf4 \strokec4 \
+                            \cf5 \strokec5 <\cf2 \strokec2 p\cf4 \strokec4  \cf3 \strokec3 class\cf5 \strokec5 =\cf6 \strokec6 "text-xs text-slate-400"\cf5 \strokec5 >\cf4 \strokec4 \uc0\u3610 \u3634 \u3607  \u3605 \u3621 \u3629 \u3604 \u3629 \u3634 \u3618 \u3640 \u3626 \u3633 \u3597 \u3597 \u3634 \cf5 \strokec5 </\cf2 \strokec2 p\cf5 \strokec5 >\cf4 \strokec4 \
+                        \cf5 \strokec5 </\cf2 \strokec2 div\cf5 \strokec5 >\cf4 \strokec4 \
+                        \cf5 \strokec5 <\cf2 \strokec2 div\cf4 \strokec4  \cf3 \strokec3 class\cf5 \strokec5 =\cf6 \strokec6 "p-4 text-center"\cf5 \strokec5 >\cf4 \strokec4 \
+                            \cf5 \strokec5 <\cf2 \strokec2 p\cf4 \strokec4  \cf3 \strokec3 class\cf5 \strokec5 =\cf6 \strokec6 "text-xs text-slate-500"\cf5 \strokec5 >\cf4 \strokec4 \uc0\u3619 \u3623 \u3617 \u3607 \u3637 \u3656 \u3605 \u3657 \u3629 \u3591 \u3592 \u3656 \u3634 \u3618 \u3592 \u3619 \u3636 \u3591  (Grand Total)\cf5 \strokec5 </\cf2 \strokec2 p\cf5 \strokec5 >\cf4 \strokec4 \
+                            \cf5 \strokec5 <\cf2 \strokec2 p\cf4 \strokec4  \cf3 \strokec3 class\cf5 \strokec5 =\cf6 \strokec6 "text-lg font-bold text-slate-800"\cf4 \strokec4  \cf3 \strokec3 id\cf5 \strokec5 =\cf6 \strokec6 "result-total"\cf5 \strokec5 >\cf4 \strokec4 875,000\cf5 \strokec5 </\cf2 \strokec2 p\cf5 \strokec5 >\cf4 \strokec4 \
+                            \cf5 \strokec5 <\cf2 \strokec2 p\cf4 \strokec4  \cf3 \strokec3 class\cf5 \strokec5 =\cf6 \strokec6 "text-xs text-slate-400"\cf5 \strokec5 >\cf4 \strokec4 \uc0\u3619 \u3634 \u3588 \u3634 \u3619 \u3606  + \u3604 \u3629 \u3585 \u3648 \u3610 \u3637 \u3657 \u3618 \cf5 \strokec5 </\cf2 \strokec2 p\cf5 \strokec5 >\cf4 \strokec4 \
+                        \cf5 \strokec5 </\cf2 \strokec2 div\cf5 \strokec5 >\cf4 \strokec4 \
+                    \cf5 \strokec5 </\cf2 \strokec2 div\cf5 \strokec5 >\cf4 \strokec4 \
+                \cf5 \strokec5 </\cf2 \strokec2 div\cf5 \strokec5 >\cf4 \strokec4 \
+\
+                \cf7 \strokec7 <!-- Visualizations Grid -->\cf4 \strokec4 \
+                \cf5 \strokec5 <\cf2 \strokec2 div\cf4 \strokec4  \cf3 \strokec3 class\cf5 \strokec5 =\cf6 \strokec6 "grid grid-cols-1 md:grid-cols-2 gap-6"\cf5 \strokec5 >\cf4 \strokec4 \
+                    \
+                    \cf7 \strokec7 <!-- Chart 1: Cost Structure -->\cf4 \strokec4 \
+                    \cf5 \strokec5 <\cf2 \strokec2 div\cf4 \strokec4  \cf3 \strokec3 class\cf5 \strokec5 =\cf6 \strokec6 "bg-white p-4 rounded-xl shadow-sm border border-slate-200"\cf5 \strokec5 >\cf4 \strokec4 \
+                        \cf5 \strokec5 <\cf2 \strokec2 h3\cf4 \strokec4  \cf3 \strokec3 class\cf5 \strokec5 =\cf6 \strokec6 "text-sm font-bold text-slate-700 mb-4 text-center"\cf5 \strokec5 >\cf4 \strokec4 \uc0\u3650 \u3588 \u3619 \u3591 \u3626 \u3619 \u3657 \u3634 \u3591 \u3619 \u3634 \u3588 \u3634 \u3607 \u3637 \u3656 \u3605 \u3657 \u3629 \u3591 \u3592 \u3656 \u3634 \u3618  (Cost Structure)\cf5 \strokec5 </\cf2 \strokec2 h3\cf5 \strokec5 >\cf4 \strokec4 \
+                        \cf5 \strokec5 <\cf2 \strokec2 p\cf4 \strokec4  \cf3 \strokec3 class\cf5 \strokec5 =\cf6 \strokec6 "text-xs text-slate-500 mb-2 text-center h-8"\cf5 \strokec5 >\cf4 \strokec4 \uc0\u3626 \u3633 \u3604 \u3626 \u3656 \u3623 \u3609 \u3586 \u3629 \u3591 \u3619 \u3634 \u3588 \u3634 \u3619 \u3606 \u3648 \u3607 \u3637 \u3618 \u3610 \u3585 \u3633 \u3610 \u3604 \u3629 \u3585 \u3648 \u3610 \u3637 \u3657 \u3618 \u3607 \u3637 \u3656 \u3588 \u3640 \u3603 \u3648 \u3626 \u3637 \u3618 \u3652 \u3611 \cf5 \strokec5 </\cf2 \strokec2 p\cf5 \strokec5 >\cf4 \strokec4 \
+                        \cf5 \strokec5 <\cf2 \strokec2 div\cf4 \strokec4  \cf3 \strokec3 class\cf5 \strokec5 =\cf6 \strokec6 "chart-container"\cf5 \strokec5 >\cf4 \strokec4 \
+                            \cf5 \strokec5 <\cf2 \strokec2 canvas\cf4 \strokec4  \cf3 \strokec3 id\cf5 \strokec5 =\cf6 \strokec6 "structureChart"\cf5 \strokec5 ></\cf2 \strokec2 canvas\cf5 \strokec5 >\cf4 \strokec4 \
+                        \cf5 \strokec5 </\cf2 \strokec2 div\cf5 \strokec5 >\cf4 \strokec4 \
+                    \cf5 \strokec5 </\cf2 \strokec2 div\cf5 \strokec5 >\cf4 \strokec4 \
+\
+                    \cf7 \strokec7 <!-- Chart 2: Term Comparison -->\cf4 \strokec4 \
+                    \cf5 \strokec5 <\cf2 \strokec2 div\cf4 \strokec4  \cf3 \strokec3 class\cf5 \strokec5 =\cf6 \strokec6 "bg-white p-4 rounded-xl shadow-sm border border-slate-200"\cf5 \strokec5 >\cf4 \strokec4 \
+                        \cf5 \strokec5 <\cf2 \strokec2 h3\cf4 \strokec4  \cf3 \strokec3 class\cf5 \strokec5 =\cf6 \strokec6 "text-sm font-bold text-slate-700 mb-4 text-center"\cf5 \strokec5 >\cf4 \strokec4 \uc0\u3648 \u3611 \u3619 \u3637 \u3618 \u3610 \u3648 \u3607 \u3637 \u3618 \u3610 \u3619 \u3632 \u3618 \u3632 \u3648 \u3623 \u3621 \u3634 \u3612 \u3656 \u3629 \u3609  (Term Analysis)\cf5 \strokec5 </\cf2 \strokec2 h3\cf5 \strokec5 >\cf4 \strokec4 \
+                        \cf5 \strokec5 <\cf2 \strokec2 p\cf4 \strokec4  \cf3 \strokec3 class\cf5 \strokec5 =\cf6 \strokec6 "text-xs text-slate-500 mb-2 text-center h-8"\cf5 \strokec5 >\cf4 \strokec4 \uc0\u3612 \u3656 \u3629 \u3609 \u3609 \u3634 \u3609 \u3586 \u3638 \u3657 \u3609  \u3592 \u3656 \u3634 \u3618 \u3605 \u3656 \u3629 \u3591 \u3623 \u3604 \u3609 \u3657 \u3629 \u3618 \u3621 \u3591  \u3649 \u3605 \u3656 \u3648 \u3626 \u3637 \u3618 \u3604 \u3629 \u3585 \u3648 \u3610 \u3637 \u3657 \u3618 \u3617 \u3634 \u3585 \u3586 \u3638 \u3657 \u3609 \cf5 \strokec5 </\cf2 \strokec2 p\cf5 \strokec5 >\cf4 \strokec4 \
+                        \cf5 \strokec5 <\cf2 \strokec2 div\cf4 \strokec4  \cf3 \strokec3 class\cf5 \strokec5 =\cf6 \strokec6 "chart-container"\cf5 \strokec5 >\cf4 \strokec4 \
+                            \cf5 \strokec5 <\cf2 \strokec2 canvas\cf4 \strokec4  \cf3 \strokec3 id\cf5 \strokec5 =\cf6 \strokec6 "comparisonChart"\cf5 \strokec5 ></\cf2 \strokec2 canvas\cf5 \strokec5 >\cf4 \strokec4 \
+                        \cf5 \strokec5 </\cf2 \strokec2 div\cf5 \strokec5 >\cf4 \strokec4 \
+                    \cf5 \strokec5 </\cf2 \strokec2 div\cf5 \strokec5 >\cf4 \strokec4 \
+                \cf5 \strokec5 </\cf2 \strokec2 div\cf5 \strokec5 >\cf4 \strokec4 \
+\
+                \cf7 \strokec7 <!-- Detailed Breakdown Accordion-style -->\cf4 \strokec4 \
+                \cf5 \strokec5 <\cf2 \strokec2 div\cf4 \strokec4  \cf3 \strokec3 class\cf5 \strokec5 =\cf6 \strokec6 "bg-white rounded-xl shadow-sm border border-slate-200 p-6"\cf5 \strokec5 >\cf4 \strokec4 \
+                    \cf5 \strokec5 <\cf2 \strokec2 h3\cf4 \strokec4  \cf3 \strokec3 class\cf5 \strokec5 =\cf6 \strokec6 "text-lg font-bold text-slate-800 mb-4 flex items-center gap-2"\cf5 \strokec5 >\cf4 \strokec4 \
+                        \cf5 \strokec5 <\cf2 \strokec2 svg\cf4 \strokec4  \cf3 \strokec3 xmlns\cf5 \strokec5 =\cf6 \strokec6 "http://www.w3.org/2000/svg"\cf4 \strokec4  \cf3 \strokec3 width\cf5 \strokec5 =\cf6 \strokec6 "22"\cf4 \strokec4  \cf3 \strokec3 height\cf5 \strokec5 =\cf6 \strokec6 "22"\cf4 \strokec4  \cf3 \strokec3 viewBox\cf5 \strokec5 =\cf6 \strokec6 "0 0 24 24"\cf4 \strokec4  \cf3 \strokec3 fill\cf5 \strokec5 =\cf6 \strokec6 "none"\cf4 \strokec4  \cf3 \strokec3 stroke\cf5 \strokec5 =\cf6 \strokec6 "currentColor"\cf4 \strokec4  \cf3 \strokec3 stroke-width\cf5 \strokec5 =\cf6 \strokec6 "2"\cf4 \strokec4  \cf3 \strokec3 stroke-linecap\cf5 \strokec5 =\cf6 \strokec6 "round"\cf4 \strokec4  \cf3 \strokec3 stroke-linejoin\cf5 \strokec5 =\cf6 \strokec6 "round"\cf4 \strokec4  \cf3 \strokec3 class\cf5 \strokec5 =\cf6 \strokec6 "text-slate-500"\cf5 \strokec5 ><\cf2 \strokec2 rect\cf4 \strokec4  \cf3 \strokec3 x\cf5 \strokec5 =\cf6 \strokec6 "4"\cf4 \strokec4  \cf3 \strokec3 y\cf5 \strokec5 =\cf6 \strokec6 "2"\cf4 \strokec4  \cf3 \strokec3 width\cf5 \strokec5 =\cf6 \strokec6 "16"\cf4 \strokec4  \cf3 \strokec3 height\cf5 \strokec5 =\cf6 \strokec6 "20"\cf4 \strokec4  \cf3 \strokec3 rx\cf5 \strokec5 =\cf6 \strokec6 "2"\cf4 \strokec4  \cf3 \strokec3 ry\cf5 \strokec5 =\cf6 \strokec6 "2"\cf5 \strokec5 /><\cf2 \strokec2 line\cf4 \strokec4  \cf3 \strokec3 x1\cf5 \strokec5 =\cf6 \strokec6 "8"\cf4 \strokec4  \cf3 \strokec3 y1\cf5 \strokec5 =\cf6 \strokec6 "6"\cf4 \strokec4  \cf3 \strokec3 x2\cf5 \strokec5 =\cf6 \strokec6 "16"\cf4 \strokec4  \cf3 \strokec3 y2\cf5 \strokec5 =\cf6 \strokec6 "6"\cf5 \strokec5 /><\cf2 \strokec2 line\cf4 \strokec4  \cf3 \strokec3 x1\cf5 \strokec5 =\cf6 \strokec6 "16"\cf4 \strokec4  \cf3 \strokec3 y1\cf5 \strokec5 =\cf6 \strokec6 "14"\cf4 \strokec4  \cf3 \strokec3 x2\cf5 \strokec5 =\cf6 \strokec6 "16"\cf4 \strokec4  \cf3 \strokec3 y2\cf5 \strokec5 =\cf6 \strokec6 "18"\cf5 \strokec5 /><\cf2 \strokec2 path\cf4 \strokec4  \cf3 \strokec3 d\cf5 \strokec5 =\cf6 \strokec6 "M16 10h.01"\cf5 \strokec5 /><\cf2 \strokec2 path\cf4 \strokec4  \cf3 \strokec3 d\cf5 \strokec5 =\cf6 \strokec6 "M12 10h.01"\cf5 \strokec5 /><\cf2 \strokec2 path\cf4 \strokec4  \cf3 \strokec3 d\cf5 \strokec5 =\cf6 \strokec6 "M8 10h.01"\cf5 \strokec5 /><\cf2 \strokec2 path\cf4 \strokec4  \cf3 \strokec3 d\cf5 \strokec5 =\cf6 \strokec6 "M12 14h.01"\cf5 \strokec5 /><\cf2 \strokec2 path\cf4 \strokec4  \cf3 \strokec3 d\cf5 \strokec5 =\cf6 \strokec6 "M8 14h.01"\cf5 \strokec5 /><\cf2 \strokec2 path\cf4 \strokec4  \cf3 \strokec3 d\cf5 \strokec5 =\cf6 \strokec6 "M12 18h.01"\cf5 \strokec5 /><\cf2 \strokec2 path\cf4 \strokec4  \cf3 \strokec3 d\cf5 \strokec5 =\cf6 \strokec6 "M8 18h.01"\cf5 \strokec5 /></\cf2 \strokec2 svg\cf5 \strokec5 >\cf4 \strokec4 \
+                        \uc0\u3607 \u3637 \u3656 \u3617 \u3634 \u3586 \u3629 \u3591 \u3605 \u3633 \u3623 \u3648 \u3621 \u3586  (Calculation Breakdown)\
+                    \cf5 \strokec5 </\cf2 \strokec2 h3\cf5 \strokec5 >\cf4 \strokec4 \
+                    \cf5 \strokec5 <\cf2 \strokec2 p\cf4 \strokec4  \cf3 \strokec3 class\cf5 \strokec5 =\cf6 \strokec6 "text-sm text-slate-600 mb-4"\cf5 \strokec5 >\cf4 \strokec4 \
+                        \uc0\u3604 \u3657 \u3634 \u3609 \u3621 \u3656 \u3634 \u3591 \u3609 \u3637 \u3657 \u3588 \u3639 \u3629 \u3585 \u3634 \u3619 \u3588 \u3635 \u3609 \u3623 \u3603 \u3607 \u3637 \u3621 \u3632 \u3586 \u3633 \u3657 \u3609 \u3605 \u3629 \u3609 \u3605 \u3634 \u3617 \u3626 \u3641 \u3605 \u3619  Flat Rate \u3650 \u3604 \u3618 \u3651 \u3594 \u3657 \u3605 \u3633 \u3623 \u3648 \u3621 \u3586 \u3607 \u3637 \u3656 \u3588 \u3640 \u3603 \u3585 \u3635 \u3627 \u3609 \u3604 \u3652 \u3623 \u3657 \u3604 \u3657 \u3634 \u3609 \u3610 \u3609 :\
+                    \cf5 \strokec5 </\cf2 \strokec2 p\cf5 \strokec5 >\cf4 \strokec4 \
+                    \
+                    \cf5 \strokec5 <\cf2 \strokec2 div\cf4 \strokec4  \cf3 \strokec3 class\cf5 \strokec5 =\cf6 \strokec6 "space-y-4 text-sm font-mono bg-slate-50 p-4 rounded-lg border border-slate-200"\cf5 \strokec5 >\cf4 \strokec4 \
+                        \
+                        \cf7 \strokec7 <!-- Step 1 -->\cf4 \strokec4 \
+                        \cf5 \strokec5 <\cf2 \strokec2 div\cf4 \strokec4  \cf3 \strokec3 class\cf5 \strokec5 =\cf6 \strokec6 "pb-3 border-b border-slate-200"\cf5 \strokec5 >\cf4 \strokec4 \
+                            \cf5 \strokec5 <\cf2 \strokec2 p\cf4 \strokec4  \cf3 \strokec3 class\cf5 \strokec5 =\cf6 \strokec6 "font-sans font-semibold text-slate-700 mb-1"\cf5 \strokec5 >\cf4 \strokec4 1. \uc0\u3627 \u3634 \u3648 \u3591 \u3636 \u3609 \u3604 \u3634 \u3623 \u3609 \u3660  \u3649 \u3621 \u3632  \u3618 \u3629 \u3604 \u3592 \u3633 \u3604 \cf5 \strokec5 </\cf2 \strokec2 p\cf5 \strokec5 >\cf4 \strokec4 \
+                            \cf5 \strokec5 <\cf2 \strokec2 div\cf4 \strokec4  \cf3 \strokec3 class\cf5 \strokec5 =\cf6 \strokec6 "flex flex-col gap-1 text-slate-600"\cf5 \strokec5 >\cf4 \strokec4 \
+                                \cf5 \strokec5 <\cf2 \strokec2 div\cf4 \strokec4  \cf3 \strokec3 class\cf5 \strokec5 =\cf6 \strokec6 "flex justify-between"\cf5 \strokec5 >\cf4 \strokec4 \
+                                    \cf5 \strokec5 <\cf2 \strokec2 span\cf5 \strokec5 >\cf4 \strokec4 \uc0\u3648 \u3591 \u3636 \u3609 \u3604 \u3634 \u3623 \u3609 \u3660  = \cf5 \strokec5 <\cf2 \strokec2 span\cf4 \strokec4  \cf3 \strokec3 id\cf5 \strokec5 =\cf6 \strokec6 "calc-price-1"\cf5 \strokec5 >\cf4 \strokec4 800,000\cf5 \strokec5 </\cf2 \strokec2 span\cf5 \strokec5 >\cf4 \strokec4  \'d7 \cf5 \strokec5 <\cf2 \strokec2 span\cf4 \strokec4  \cf3 \strokec3 id\cf5 \strokec5 =\cf6 \strokec6 "calc-down-percent"\cf5 \strokec5 >\cf4 \strokec4 25\cf5 \strokec5 </\cf2 \strokec2 span\cf5 \strokec5 >\cf4 \strokec4 %\cf5 \strokec5 </\cf2 \strokec2 span\cf5 \strokec5 >\cf4 \strokec4 \
+                                    \cf5 \strokec5 <\cf2 \strokec2 span\cf4 \strokec4  \cf3 \strokec3 class\cf5 \strokec5 =\cf6 \strokec6 "font-bold text-slate-800"\cf5 \strokec5 >\cf4 \strokec4 = \cf5 \strokec5 <\cf2 \strokec2 span\cf4 \strokec4  \cf3 \strokec3 id\cf5 \strokec5 =\cf6 \strokec6 "calc-down-total"\cf5 \strokec5 >\cf4 \strokec4 200,000\cf5 \strokec5 </\cf2 \strokec2 span\cf5 \strokec5 ></\cf2 \strokec2 span\cf5 \strokec5 >\cf4 \strokec4 \
+                                \cf5 \strokec5 </\cf2 \strokec2 div\cf5 \strokec5 >\cf4 \strokec4 \
+                                \cf5 \strokec5 <\cf2 \strokec2 div\cf4 \strokec4  \cf3 \strokec3 class\cf5 \strokec5 =\cf6 \strokec6 "flex justify-between"\cf5 \strokec5 >\cf4 \strokec4 \
+                                    \cf5 \strokec5 <\cf2 \strokec2 span\cf5 \strokec5 >\cf4 \strokec4 \uc0\u3618 \u3629 \u3604 \u3592 \u3633 \u3604  (\u3648 \u3591 \u3636 \u3609 \u3605 \u3657 \u3609 ) = \cf5 \strokec5 <\cf2 \strokec2 span\cf4 \strokec4  \cf3 \strokec3 id\cf5 \strokec5 =\cf6 \strokec6 "calc-price-2"\cf5 \strokec5 >\cf4 \strokec4 800,000\cf5 \strokec5 </\cf2 \strokec2 span\cf5 \strokec5 >\cf4 \strokec4  - \cf5 \strokec5 <\cf2 \strokec2 span\cf4 \strokec4  \cf3 \strokec3 id\cf5 \strokec5 =\cf6 \strokec6 "calc-down-total-2"\cf5 \strokec5 >\cf4 \strokec4 200,000\cf5 \strokec5 </\cf2 \strokec2 span\cf5 \strokec5 ></\cf2 \strokec2 span\cf5 \strokec5 >\cf4 \strokec4 \
+                                    \cf5 \strokec5 <\cf2 \strokec2 span\cf4 \strokec4  \cf3 \strokec3 class\cf5 \strokec5 =\cf6 \strokec6 "font-bold text-brand-600"\cf5 \strokec5 >\cf4 \strokec4 = \cf5 \strokec5 <\cf2 \strokec2 span\cf4 \strokec4  \cf3 \strokec3 id\cf5 \strokec5 =\cf6 \strokec6 "calc-finance"\cf5 \strokec5 >\cf4 \strokec4 600,000\cf5 \strokec5 </\cf2 \strokec2 span\cf5 \strokec5 ></\cf2 \strokec2 span\cf5 \strokec5 >\cf4 \strokec4 \
+                                \cf5 \strokec5 </\cf2 \strokec2 div\cf5 \strokec5 >\cf4 \strokec4 \
+                            \cf5 \strokec5 </\cf2 \strokec2 div\cf5 \strokec5 >\cf4 \strokec4 \
+                        \cf5 \strokec5 </\cf2 \strokec2 div\cf5 \strokec5 >\cf4 \strokec4 \
+\
+                        \cf7 \strokec7 <!-- Step 2 -->\cf4 \strokec4 \
+                        \cf5 \strokec5 <\cf2 \strokec2 div\cf4 \strokec4  \cf3 \strokec3 class\cf5 \strokec5 =\cf6 \strokec6 "pb-3 border-b border-slate-200"\cf5 \strokec5 >\cf4 \strokec4 \
+                            \cf5 \strokec5 <\cf2 \strokec2 p\cf4 \strokec4  \cf3 \strokec3 class\cf5 \strokec5 =\cf6 \strokec6 "font-sans font-semibold text-slate-700 mb-1"\cf5 \strokec5 >\cf4 \strokec4 2. \uc0\u3627 \u3634 \u3604 \u3629 \u3585 \u3648 \u3610 \u3637 \u3657 \u3618 \u3607 \u3633 \u3657 \u3591 \u3627 \u3617 \u3604  (Flat Rate)\cf5 \strokec5 </\cf2 \strokec2 p\cf5 \strokec5 >\cf4 \strokec4 \
+                            \cf5 \strokec5 <\cf2 \strokec2 div\cf4 \strokec4  \cf3 \strokec3 class\cf5 \strokec5 =\cf6 \strokec6 "flex flex-col gap-1 text-slate-600"\cf5 \strokec5 >\cf4 \strokec4 \
+                                \cf5 \strokec5 <\cf2 \strokec2 div\cf4 \strokec4  \cf3 \strokec3 class\cf5 \strokec5 =\cf6 \strokec6 "flex justify-between"\cf5 \strokec5 >\cf4 \strokec4 \
+                                    \cf5 \strokec5 <\cf2 \strokec2 span\cf5 \strokec5 >\cf4 \strokec4 \uc0\u3604 \u3629 \u3585 \u3648 \u3610 \u3637 \u3657 \u3618 \u3619 \u3623 \u3617  = \cf5 \strokec5 <\cf2 \strokec2 span\cf4 \strokec4  \cf3 \strokec3 id\cf5 \strokec5 =\cf6 \strokec6 "calc-finance-2"\cf5 \strokec5 >\cf4 \strokec4 600,000\cf5 \strokec5 </\cf2 \strokec2 span\cf5 \strokec5 >\cf4 \strokec4  \'d7 \cf5 \strokec5 <\cf2 \strokec2 span\cf4 \strokec4  \cf3 \strokec3 id\cf5 \strokec5 =\cf6 \strokec6 "calc-interest"\cf5 \strokec5 >\cf4 \strokec4 2.5\cf5 \strokec5 </\cf2 \strokec2 span\cf5 \strokec5 >\cf4 \strokec4 % \'d7 \cf5 \strokec5 <\cf2 \strokec2 span\cf4 \strokec4  \cf3 \strokec3 id\cf5 \strokec5 =\cf6 \strokec6 "calc-years"\cf5 \strokec5 >\cf4 \strokec4 5\cf5 \strokec5 </\cf2 \strokec2 span\cf5 \strokec5 >\cf4 \strokec4  \uc0\u3611 \u3637 \cf5 \strokec5 </\cf2 \strokec2 span\cf5 \strokec5 >\cf4 \strokec4 \
+                                    \cf5 \strokec5 <\cf2 \strokec2 span\cf4 \strokec4  \cf3 \strokec3 class\cf5 \strokec5 =\cf6 \strokec6 "font-bold text-red-600"\cf5 \strokec5 >\cf4 \strokec4 = \cf5 \strokec5 <\cf2 \strokec2 span\cf4 \strokec4  \cf3 \strokec3 id\cf5 \strokec5 =\cf6 \strokec6 "calc-total-interest"\cf5 \strokec5 >\cf4 \strokec4 75,000\cf5 \strokec5 </\cf2 \strokec2 span\cf5 \strokec5 ></\cf2 \strokec2 span\cf5 \strokec5 >\cf4 \strokec4 \
+                                \cf5 \strokec5 </\cf2 \strokec2 div\cf5 \strokec5 >\cf4 \strokec4 \
+                            \cf5 \strokec5 </\cf2 \strokec2 div\cf5 \strokec5 >\cf4 \strokec4 \
+                        \cf5 \strokec5 </\cf2 \strokec2 div\cf5 \strokec5 >\cf4 \strokec4 \
+\
+                        \cf7 \strokec7 <!-- Step 3 & 4 -->\cf4 \strokec4 \
+                        \cf5 \strokec5 <\cf2 \strokec2 div\cf5 \strokec5 >\cf4 \strokec4 \
+                            \cf5 \strokec5 <\cf2 \strokec2 p\cf4 \strokec4  \cf3 \strokec3 class\cf5 \strokec5 =\cf6 \strokec6 "font-sans font-semibold text-slate-700 mb-1"\cf5 \strokec5 >\cf4 \strokec4 3. \uc0\u3627 \u3634 \u3588 \u3656 \u3634 \u3591 \u3623 \u3604 \u3605 \u3656 \u3629 \u3648 \u3604 \u3639 \u3629 \u3609 \cf5 \strokec5 </\cf2 \strokec2 p\cf5 \strokec5 >\cf4 \strokec4 \
+                            \cf5 \strokec5 <\cf2 \strokec2 div\cf4 \strokec4  \cf3 \strokec3 class\cf5 \strokec5 =\cf6 \strokec6 "flex flex-col gap-1 text-slate-600"\cf5 \strokec5 >\cf4 \strokec4 \
+                                \cf5 \strokec5 <\cf2 \strokec2 div\cf4 \strokec4  \cf3 \strokec3 class\cf5 \strokec5 =\cf6 \strokec6 "flex justify-between"\cf5 \strokec5 >\cf4 \strokec4 \
+                                    \cf5 \strokec5 <\cf2 \strokec2 span\cf5 \strokec5 >\cf4 \strokec4 \uc0\u3618 \u3629 \u3604 \u3627 \u3609 \u3637 \u3657 \u3619 \u3623 \u3617  = \cf5 \strokec5 <\cf2 \strokec2 span\cf4 \strokec4  \cf3 \strokec3 id\cf5 \strokec5 =\cf6 \strokec6 "calc-finance-3"\cf5 \strokec5 >\cf4 \strokec4 600,000\cf5 \strokec5 </\cf2 \strokec2 span\cf5 \strokec5 >\cf4 \strokec4  + \cf5 \strokec5 <\cf2 \strokec2 span\cf4 \strokec4  \cf3 \strokec3 id\cf5 \strokec5 =\cf6 \strokec6 "calc-total-interest-2"\cf5 \strokec5 >\cf4 \strokec4 75,000\cf5 \strokec5 </\cf2 \strokec2 span\cf5 \strokec5 ></\cf2 \strokec2 span\cf5 \strokec5 >\cf4 \strokec4 \
+                                    \cf5 \strokec5 <\cf2 \strokec2 span\cf4 \strokec4  \cf3 \strokec3 class\cf5 \strokec5 =\cf6 \strokec6 "font-bold text-slate-800"\cf5 \strokec5 >\cf4 \strokec4 = \cf5 \strokec5 <\cf2 \strokec2 span\cf4 \strokec4  \cf3 \strokec3 id\cf5 \strokec5 =\cf6 \strokec6 "calc-grand-total"\cf5 \strokec5 >\cf4 \strokec4 675,000\cf5 \strokec5 </\cf2 \strokec2 span\cf5 \strokec5 ></\cf2 \strokec2 span\cf5 \strokec5 >\cf4 \strokec4 \
+                                \cf5 \strokec5 </\cf2 \strokec2 div\cf5 \strokec5 >\cf4 \strokec4 \
+                                \cf5 \strokec5 <\cf2 \strokec2 div\cf4 \strokec4  \cf3 \strokec3 class\cf5 \strokec5 =\cf6 \strokec6 "flex justify-between mt-2"\cf5 \strokec5 >\cf4 \strokec4 \
+                                    \cf5 \strokec5 <\cf2 \strokec2 span\cf5 \strokec5 >\cf4 \strokec4 \uc0\u3588 \u3656 \u3634 \u3591 \u3623 \u3604  (\u3585 \u3656 \u3629 \u3609  VAT) = \cf5 \strokec5 <\cf2 \strokec2 span\cf4 \strokec4  \cf3 \strokec3 id\cf5 \strokec5 =\cf6 \strokec6 "calc-grand-total-2"\cf5 \strokec5 >\cf4 \strokec4 675,000\cf5 \strokec5 </\cf2 \strokec2 span\cf5 \strokec5 >\cf4 \strokec4  \'f7 \cf5 \strokec5 <\cf2 \strokec2 span\cf4 \strokec4  \cf3 \strokec3 id\cf5 \strokec5 =\cf6 \strokec6 "calc-months"\cf5 \strokec5 >\cf4 \strokec4 60\cf5 \strokec5 </\cf2 \strokec2 span\cf5 \strokec5 >\cf4 \strokec4  \uc0\u3591 \u3623 \u3604 \cf5 \strokec5 </\cf2 \strokec2 span\cf5 \strokec5 >\cf4 \strokec4 \
+                                    \cf5 \strokec5 <\cf2 \strokec2 span\cf4 \strokec4  \cf3 \strokec3 class\cf5 \strokec5 =\cf6 \strokec6 "font-bold text-brand-600"\cf5 \strokec5 >\cf4 \strokec4 = \cf5 \strokec5 <\cf2 \strokec2 span\cf4 \strokec4  \cf3 \strokec3 id\cf5 \strokec5 =\cf6 \strokec6 "calc-monthly-base"\cf5 \strokec5 >\cf4 \strokec4 11,250\cf5 \strokec5 </\cf2 \strokec2 span\cf5 \strokec5 ></\cf2 \strokec2 span\cf5 \strokec5 >\cf4 \strokec4 \
+                                \cf5 \strokec5 </\cf2 \strokec2 div\cf5 \strokec5 >\cf4 \strokec4 \
+                                \cf7 \strokec7 <!-- VAT Section (Hidden by default) -->\cf4 \strokec4 \
+                                \cf5 \strokec5 <\cf2 \strokec2 div\cf4 \strokec4  \cf3 \strokec3 id\cf5 \strokec5 =\cf6 \strokec6 "calc-vat-section"\cf4 \strokec4  \cf3 \strokec3 class\cf5 \strokec5 =\cf6 \strokec6 "hidden mt-2 pt-2 border-t border-dashed border-slate-300"\cf5 \strokec5 >\cf4 \strokec4 \
+                                    \cf5 \strokec5 <\cf2 \strokec2 div\cf4 \strokec4  \cf3 \strokec3 class\cf5 \strokec5 =\cf6 \strokec6 "flex justify-between text-orange-600"\cf5 \strokec5 >\cf4 \strokec4 \
+                                        \cf5 \strokec5 <\cf2 \strokec2 span\cf5 \strokec5 >\cf4 \strokec4 + VAT 7% (\uc0\u3619 \u3606 \u3617 \u3639 \u3629 \u3626 \u3629 \u3591 )\cf5 \strokec5 </\cf2 \strokec2 span\cf5 \strokec5 >\cf4 \strokec4 \
+                                        \cf5 \strokec5 <\cf2 \strokec2 span\cf4 \strokec4  \cf3 \strokec3 class\cf5 \strokec5 =\cf6 \strokec6 "font-bold"\cf5 \strokec5 >\cf4 \strokec4 = \cf5 \strokec5 <\cf2 \strokec2 span\cf4 \strokec4  \cf3 \strokec3 id\cf5 \strokec5 =\cf6 \strokec6 "calc-vat-amount"\cf5 \strokec5 >\cf4 \strokec4 787.50\cf5 \strokec5 </\cf2 \strokec2 span\cf5 \strokec5 ></\cf2 \strokec2 span\cf5 \strokec5 >\cf4 \strokec4 \
+                                    \cf5 \strokec5 </\cf2 \strokec2 div\cf5 \strokec5 >\cf4 \strokec4 \
+                                    \cf5 \strokec5 <\cf2 \strokec2 div\cf4 \strokec4  \cf3 \strokec3 class\cf5 \strokec5 =\cf6 \strokec6 "flex justify-between font-bold text-lg mt-1 text-slate-900"\cf5 \strokec5 >\cf4 \strokec4 \
+                                        \cf5 \strokec5 <\cf2 \strokec2 span\cf5 \strokec5 >\cf4 \strokec4 \uc0\u3626 \u3640 \u3607 \u3608 \u3636 \u3607 \u3637 \u3656 \u3605 \u3657 \u3629 \u3591 \u3592 \u3656 \u3634 \u3618 \cf5 \strokec5 </\cf2 \strokec2 span\cf5 \strokec5 >\cf4 \strokec4 \
+                                        \cf5 \strokec5 <\cf2 \strokec2 span\cf5 \strokec5 >\cf4 \strokec4 = \cf5 \strokec5 <\cf2 \strokec2 span\cf4 \strokec4  \cf3 \strokec3 id\cf5 \strokec5 =\cf6 \strokec6 "calc-monthly-final"\cf5 \strokec5 >\cf4 \strokec4 12,037.50\cf5 \strokec5 </\cf2 \strokec2 span\cf5 \strokec5 ></\cf2 \strokec2 span\cf5 \strokec5 >\cf4 \strokec4 \
+                                    \cf5 \strokec5 </\cf2 \strokec2 div\cf5 \strokec5 >\cf4 \strokec4 \
+                                \cf5 \strokec5 </\cf2 \strokec2 div\cf5 \strokec5 >\cf4 \strokec4 \
+                            \cf5 \strokec5 </\cf2 \strokec2 div\cf5 \strokec5 >\cf4 \strokec4 \
+                        \cf5 \strokec5 </\cf2 \strokec2 div\cf5 \strokec5 >\cf4 \strokec4 \
+\
+                    \cf5 \strokec5 </\cf2 \strokec2 div\cf5 \strokec5 >\cf4 \strokec4 \
+                \cf5 \strokec5 </\cf2 \strokec2 div\cf5 \strokec5 >\cf4 \strokec4 \
+\
+            \cf5 \strokec5 </\cf2 \strokec2 div\cf5 \strokec5 >\cf4 \strokec4 \
+        \cf5 \strokec5 </\cf2 \strokec2 div\cf5 \strokec5 >\cf4 \strokec4 \
+    \cf5 \strokec5 </\cf2 \strokec2 main\cf5 \strokec5 >\cf4 \strokec4 \
+\
+    \cf5 \strokec5 <\cf2 \strokec2 footer\cf4 \strokec4  \cf3 \strokec3 class\cf5 \strokec5 =\cf6 \strokec6 "bg-white border-t border-slate-200 py-8 mt-12"\cf5 \strokec5 >\cf4 \strokec4 \
+        \cf5 \strokec5 <\cf2 \strokec2 div\cf4 \strokec4  \cf3 \strokec3 class\cf5 \strokec5 =\cf6 \strokec6 "max-w-7xl mx-auto px-4 text-center"\cf5 \strokec5 >\cf4 \strokec4 \
+            \cf5 \strokec5 <\cf2 \strokec2 p\cf4 \strokec4  \cf3 \strokec3 class\cf5 \strokec5 =\cf6 \strokec6 "text-slate-500 text-sm"\cf5 \strokec5 >\cf4 \strokec4 \uc0\u3614 \u3633 \u3602 \u3609 \u3634 \u3586 \u3638 \u3657 \u3609 \u3648 \u3614 \u3639 \u3656 \u3629 \u3585 \u3634 \u3619 \u3624 \u3638 \u3585 \u3625 \u3634 \u3605 \u3634 \u3617 \u3627 \u3621 \u3633 \u3585 \u3585 \u3634 \u3619 \u3588 \u3635 \u3609 \u3623 \u3603 \u3592 \u3634 \u3585 \u3648 \u3629 \u3585 \u3626 \u3634 \u3619  "\u3623 \u3636 \u3608 \u3637 \u3588 \u3635 \u3609 \u3623 \u3603 \u3588 \u3656 \u3634 \u3591 \u3623 \u3604 \u3619 \u3606 \u3618 \u3609 \u3605 \u3660 "\cf5 \strokec5 </\cf2 \strokec2 p\cf5 \strokec5 >\cf4 \strokec4 \
+        \cf5 \strokec5 </\cf2 \strokec2 div\cf5 \strokec5 >\cf4 \strokec4 \
+    \cf5 \strokec5 </\cf2 \strokec2 footer\cf5 \strokec5 >\cf4 \strokec4 \
+\
+    \cf7 \strokec7 <!-- Application Logic -->\cf4 \strokec4 \
+    \cf5 \strokec5 <\cf2 \strokec2 script\cf5 \strokec5 >\cf4 \strokec4 \
+        \cf7 \strokec7 // State Management\cf4 \strokec4 \
+        \cf13 \strokec13 const\cf4 \strokec4  state \cf8 \strokec8 =\cf4 \strokec4  \cf8 \strokec8 \{\cf4 \strokec4 \
+            price\cf8 \strokec8 :\cf4 \strokec4  \cf10 \strokec10 800000\cf8 \strokec8 ,\cf4 \strokec4 \
+            downPercent\cf8 \strokec8 :\cf4 \strokec4  \cf10 \strokec10 25\cf8 \strokec8 ,\cf4 \strokec4 \
+            interestRate\cf8 \strokec8 :\cf4 \strokec4  \cf10 \strokec10 2.5\cf8 \strokec8 ,\cf4 \strokec4 \
+            years\cf8 \strokec8 :\cf4 \strokec4  \cf10 \strokec10 5\cf8 \strokec8 ,\cf4 \strokec4 \
+            isUsedCar\cf8 \strokec8 :\cf4 \strokec4  \cf13 \strokec13 false\cf8 \strokec8 ,\cf4 \strokec4 \
+            charts\cf8 \strokec8 :\cf4 \strokec4  \cf8 \strokec8 \{\cf4 \strokec4 \
+                structure\cf8 \strokec8 :\cf4 \strokec4  \cf13 \strokec13 null\cf8 \strokec8 ,\cf4 \strokec4 \
+                comparison\cf8 \strokec8 :\cf4 \strokec4  \cf13 \strokec13 null\cf4 \strokec4 \
+            \cf8 \strokec8 \}\cf4 \strokec4 \
+        \cf8 \strokec8 \};\cf4 \strokec4 \
+\
+        \cf7 \strokec7 // DOM Elements\cf4 \strokec4 \
+        \cf13 \strokec13 const\cf4 \strokec4  els \cf8 \strokec8 =\cf4 \strokec4  \cf8 \strokec8 \{\cf4 \strokec4 \
+            inputs\cf8 \strokec8 :\cf4 \strokec4  \cf8 \strokec8 \{\cf4 \strokec4 \
+                priceText\cf8 \strokec8 :\cf4 \strokec4  document\cf8 \strokec8 .\cf4 \strokec4 getElementById\cf8 \strokec8 (\cf9 \strokec9 'input-price'\cf8 \strokec8 ),\cf4 \strokec4 \
+                priceSlider\cf8 \strokec8 :\cf4 \strokec4  document\cf8 \strokec8 .\cf4 \strokec4 getElementById\cf8 \strokec8 (\cf9 \strokec9 'slider-price'\cf8 \strokec8 ),\cf4 \strokec4 \
+                downPercentText\cf8 \strokec8 :\cf4 \strokec4  document\cf8 \strokec8 .\cf4 \strokec4 getElementById\cf8 \strokec8 (\cf9 \strokec9 'input-down-percent'\cf8 \strokec8 ),\cf4 \strokec4 \
+                downPercentSlider\cf8 \strokec8 :\cf4 \strokec4  document\cf8 \strokec8 .\cf4 \strokec4 getElementById\cf8 \strokec8 (\cf9 \strokec9 'slider-down'\cf8 \strokec8 ),\cf4 \strokec4 \
+                interestSlider\cf8 \strokec8 :\cf4 \strokec4  document\cf8 \strokec8 .\cf4 \strokec4 getElementById\cf8 \strokec8 (\cf9 \strokec9 'slider-interest'\cf8 \strokec8 ),\cf4 \strokec4 \
+                termButtons\cf8 \strokec8 :\cf4 \strokec4  document\cf8 \strokec8 .\cf4 \strokec4 querySelectorAll\cf8 \strokec8 (\cf9 \strokec9 '.term-btn'\cf8 \strokec8 ),\cf4 \strokec4 \
+                newCarBtn\cf8 \strokec8 :\cf4 \strokec4  document\cf8 \strokec8 .\cf4 \strokec4 getElementById\cf8 \strokec8 (\cf9 \strokec9 'btn-new-car'\cf8 \strokec8 ),\cf4 \strokec4 \
+                usedCarBtn\cf8 \strokec8 :\cf4 \strokec4  document\cf8 \strokec8 .\cf4 \strokec4 getElementById\cf8 \strokec8 (\cf9 \strokec9 'btn-used-car'\cf8 \strokec8 )\cf4 \strokec4 \
+            \cf8 \strokec8 \},\cf4 \strokec4 \
+            displays\cf8 \strokec8 :\cf4 \strokec4  \cf8 \strokec8 \{\cf4 \strokec4 \
+                downPayment\cf8 \strokec8 :\cf4 \strokec4  document\cf8 \strokec8 .\cf4 \strokec4 getElementById\cf8 \strokec8 (\cf9 \strokec9 'down-payment-display'\cf8 \strokec8 ),\cf4 \strokec4 \
+                downAmountText\cf8 \strokec8 :\cf4 \strokec4  document\cf8 \strokec8 .\cf4 \strokec4 getElementById\cf8 \strokec8 (\cf9 \strokec9 'down-amount-text'\cf8 \strokec8 ),\cf4 \strokec4 \
+                interest\cf8 \strokec8 :\cf4 \strokec4  document\cf8 \strokec8 .\cf4 \strokec4 getElementById\cf8 \strokec8 (\cf9 \strokec9 'interest-display'\cf8 \strokec8 ),\cf4 \strokec4 \
+                termMonths\cf8 \strokec8 :\cf4 \strokec4  document\cf8 \strokec8 .\cf4 \strokec4 getElementById\cf8 \strokec8 (\cf9 \strokec9 'term-months-text'\cf8 \strokec8 ),\cf4 \strokec4 \
+                vatWarning\cf8 \strokec8 :\cf4 \strokec4  document\cf8 \strokec8 .\cf4 \strokec4 getElementById\cf8 \strokec8 (\cf9 \strokec9 'vat-warning'\cf8 \strokec8 )\cf4 \strokec4 \
+            \cf8 \strokec8 \},\cf4 \strokec4 \
+            results\cf8 \strokec8 :\cf4 \strokec4  \cf8 \strokec8 \{\cf4 \strokec4 \
+                monthly\cf8 \strokec8 :\cf4 \strokec4  document\cf8 \strokec8 .\cf4 \strokec4 getElementById\cf8 \strokec8 (\cf9 \strokec9 'result-monthly'\cf8 \strokec8 ),\cf4 \strokec4 \
+                finance\cf8 \strokec8 :\cf4 \strokec4  document\cf8 \strokec8 .\cf4 \strokec4 getElementById\cf8 \strokec8 (\cf9 \strokec9 'result-finance'\cf8 \strokec8 ),\cf4 \strokec4 \
+                interest\cf8 \strokec8 :\cf4 \strokec4  document\cf8 \strokec8 .\cf4 \strokec4 getElementById\cf8 \strokec8 (\cf9 \strokec9 'result-interest'\cf8 \strokec8 ),\cf4 \strokec4 \
+                total\cf8 \strokec8 :\cf4 \strokec4  document\cf8 \strokec8 .\cf4 \strokec4 getElementById\cf8 \strokec8 (\cf9 \strokec9 'result-total'\cf8 \strokec8 )\cf4 \strokec4 \
+            \cf8 \strokec8 \},\cf4 \strokec4 \
+            calc\cf8 \strokec8 :\cf4 \strokec4  \cf8 \strokec8 \{\cf4 \strokec4 \
+                \cf7 \strokec7 // Calculation Breakdown Elements\cf4 \strokec4 \
+                price1\cf8 \strokec8 :\cf4 \strokec4  document\cf8 \strokec8 .\cf4 \strokec4 getElementById\cf8 \strokec8 (\cf9 \strokec9 'calc-price-1'\cf8 \strokec8 ),\cf4 \strokec4 \
+                price2\cf8 \strokec8 :\cf4 \strokec4  document\cf8 \strokec8 .\cf4 \strokec4 getElementById\cf8 \strokec8 (\cf9 \strokec9 'calc-price-2'\cf8 \strokec8 ),\cf4 \strokec4 \
+                downPercent\cf8 \strokec8 :\cf4 \strokec4  document\cf8 \strokec8 .\cf4 \strokec4 getElementById\cf8 \strokec8 (\cf9 \strokec9 'calc-down-percent'\cf8 \strokec8 ),\cf4 \strokec4 \
+                downTotal\cf8 \strokec8 :\cf4 \strokec4  document\cf8 \strokec8 .\cf4 \strokec4 getElementById\cf8 \strokec8 (\cf9 \strokec9 'calc-down-total'\cf8 \strokec8 ),\cf4 \strokec4 \
+                downTotal2\cf8 \strokec8 :\cf4 \strokec4  document\cf8 \strokec8 .\cf4 \strokec4 getElementById\cf8 \strokec8 (\cf9 \strokec9 'calc-down-total-2'\cf8 \strokec8 ),\cf4 \strokec4 \
+                finance\cf8 \strokec8 :\cf4 \strokec4  document\cf8 \strokec8 .\cf4 \strokec4 getElementById\cf8 \strokec8 (\cf9 \strokec9 'calc-finance'\cf8 \strokec8 ),\cf4 \strokec4 \
+                finance2\cf8 \strokec8 :\cf4 \strokec4  document\cf8 \strokec8 .\cf4 \strokec4 getElementById\cf8 \strokec8 (\cf9 \strokec9 'calc-finance-2'\cf8 \strokec8 ),\cf4 \strokec4 \
+                finance3\cf8 \strokec8 :\cf4 \strokec4  document\cf8 \strokec8 .\cf4 \strokec4 getElementById\cf8 \strokec8 (\cf9 \strokec9 'calc-finance-3'\cf8 \strokec8 ),\cf4 \strokec4 \
+                interest\cf8 \strokec8 :\cf4 \strokec4  document\cf8 \strokec8 .\cf4 \strokec4 getElementById\cf8 \strokec8 (\cf9 \strokec9 'calc-interest'\cf8 \strokec8 ),\cf4 \strokec4 \
+                years\cf8 \strokec8 :\cf4 \strokec4  document\cf8 \strokec8 .\cf4 \strokec4 getElementById\cf8 \strokec8 (\cf9 \strokec9 'calc-years'\cf8 \strokec8 ),\cf4 \strokec4 \
+                totalInterest\cf8 \strokec8 :\cf4 \strokec4  document\cf8 \strokec8 .\cf4 \strokec4 getElementById\cf8 \strokec8 (\cf9 \strokec9 'calc-total-interest'\cf8 \strokec8 ),\cf4 \strokec4 \
+                totalInterest2\cf8 \strokec8 :\cf4 \strokec4  document\cf8 \strokec8 .\cf4 \strokec4 getElementById\cf8 \strokec8 (\cf9 \strokec9 'calc-total-interest-2'\cf8 \strokec8 ),\cf4 \strokec4 \
+                grandTotal\cf8 \strokec8 :\cf4 \strokec4  document\cf8 \strokec8 .\cf4 \strokec4 getElementById\cf8 \strokec8 (\cf9 \strokec9 'calc-grand-total'\cf8 \strokec8 ),\cf4 \strokec4 \
+                grandTotal2\cf8 \strokec8 :\cf4 \strokec4  document\cf8 \strokec8 .\cf4 \strokec4 getElementById\cf8 \strokec8 (\cf9 \strokec9 'calc-grand-total-2'\cf8 \strokec8 ),\cf4 \strokec4 \
+                months\cf8 \strokec8 :\cf4 \strokec4  document\cf8 \strokec8 .\cf4 \strokec4 getElementById\cf8 \strokec8 (\cf9 \strokec9 'calc-months'\cf8 \strokec8 ),\cf4 \strokec4 \
+                monthlyBase\cf8 \strokec8 :\cf4 \strokec4  document\cf8 \strokec8 .\cf4 \strokec4 getElementById\cf8 \strokec8 (\cf9 \strokec9 'calc-monthly-base'\cf8 \strokec8 ),\cf4 \strokec4 \
+                vatSection\cf8 \strokec8 :\cf4 \strokec4  document\cf8 \strokec8 .\cf4 \strokec4 getElementById\cf8 \strokec8 (\cf9 \strokec9 'calc-vat-section'\cf8 \strokec8 ),\cf4 \strokec4 \
+                vatAmount\cf8 \strokec8 :\cf4 \strokec4  document\cf8 \strokec8 .\cf4 \strokec4 getElementById\cf8 \strokec8 (\cf9 \strokec9 'calc-vat-amount'\cf8 \strokec8 ),\cf4 \strokec4 \
+                monthlyFinal\cf8 \strokec8 :\cf4 \strokec4  document\cf8 \strokec8 .\cf4 \strokec4 getElementById\cf8 \strokec8 (\cf9 \strokec9 'calc-monthly-final'\cf8 \strokec8 )\cf4 \strokec4 \
+            \cf8 \strokec8 \}\cf4 \strokec4 \
+        \cf8 \strokec8 \};\cf4 \strokec4 \
+\
+        \cf7 \strokec7 // Formatters\cf4 \strokec4 \
+        \cf13 \strokec13 const\cf4 \strokec4  moneyFmt \cf8 \strokec8 =\cf4 \strokec4  \cf13 \strokec13 new\cf4 \strokec4  \cf11 \strokec11 Intl\cf8 \strokec8 .\cf11 \strokec11 NumberFormat\cf8 \strokec8 (\cf9 \strokec9 'th-TH'\cf8 \strokec8 ,\cf4 \strokec4  \cf8 \strokec8 \{\cf4 \strokec4  minimumFractionDigits\cf8 \strokec8 :\cf4 \strokec4  \cf10 \strokec10 0\cf8 \strokec8 ,\cf4 \strokec4  maximumFractionDigits\cf8 \strokec8 :\cf4 \strokec4  \cf10 \strokec10 0\cf4 \strokec4  \cf8 \strokec8 \});\cf4 \strokec4 \
+        \cf13 \strokec13 const\cf4 \strokec4  moneyDecFmt \cf8 \strokec8 =\cf4 \strokec4  \cf13 \strokec13 new\cf4 \strokec4  \cf11 \strokec11 Intl\cf8 \strokec8 .\cf11 \strokec11 NumberFormat\cf8 \strokec8 (\cf9 \strokec9 'th-TH'\cf8 \strokec8 ,\cf4 \strokec4  \cf8 \strokec8 \{\cf4 \strokec4  minimumFractionDigits\cf8 \strokec8 :\cf4 \strokec4  \cf10 \strokec10 2\cf8 \strokec8 ,\cf4 \strokec4  maximumFractionDigits\cf8 \strokec8 :\cf4 \strokec4  \cf10 \strokec10 2\cf4 \strokec4  \cf8 \strokec8 \});\cf4 \strokec4 \
+\
+        \cf7 \strokec7 // Initialization\cf4 \strokec4 \
+        \cf13 \strokec13 function\cf4 \strokec4  init\cf8 \strokec8 ()\cf4 \strokec4  \cf8 \strokec8 \{\cf4 \strokec4 \
+            setupEventListeners\cf8 \strokec8 ();\cf4 \strokec4 \
+            initCharts\cf8 \strokec8 ();\cf4 \strokec4 \
+            updateCalculations\cf8 \strokec8 ();\cf4 \strokec4 \
+        \cf8 \strokec8 \}\cf4 \strokec4 \
+\
+        \cf7 \strokec7 // Event Listeners\cf4 \strokec4 \
+        \cf13 \strokec13 function\cf4 \strokec4  setupEventListeners\cf8 \strokec8 ()\cf4 \strokec4  \cf8 \strokec8 \{\cf4 \strokec4 \
+            \cf7 \strokec7 // Price Inputs\cf4 \strokec4 \
+            els\cf8 \strokec8 .\cf4 \strokec4 inputs\cf8 \strokec8 .\cf4 \strokec4 priceText\cf8 \strokec8 .\cf4 \strokec4 addEventListener\cf8 \strokec8 (\cf9 \strokec9 'input'\cf8 \strokec8 ,\cf4 \strokec4  \cf8 \strokec8 (\cf4 \strokec4 e\cf8 \strokec8 )\cf4 \strokec4  \cf8 \strokec8 =>\cf4 \strokec4  \cf8 \strokec8 \{\cf4 \strokec4 \
+                state\cf8 \strokec8 .\cf4 \strokec4 price \cf8 \strokec8 =\cf4 \strokec4  \cf11 \strokec11 Number\cf8 \strokec8 (\cf4 \strokec4 e\cf8 \strokec8 .\cf4 \strokec4 target\cf8 \strokec8 .\cf4 \strokec4 value\cf8 \strokec8 );\cf4 \strokec4 \
+                els\cf8 \strokec8 .\cf4 \strokec4 inputs\cf8 \strokec8 .\cf4 \strokec4 priceSlider\cf8 \strokec8 .\cf4 \strokec4 value \cf8 \strokec8 =\cf4 \strokec4  state\cf8 \strokec8 .\cf4 \strokec4 price\cf8 \strokec8 ;\cf4 \strokec4 \
+                updateCalculations\cf8 \strokec8 ();\cf4 \strokec4 \
+            \cf8 \strokec8 \});\cf4 \strokec4 \
+            els\cf8 \strokec8 .\cf4 \strokec4 inputs\cf8 \strokec8 .\cf4 \strokec4 priceSlider\cf8 \strokec8 .\cf4 \strokec4 addEventListener\cf8 \strokec8 (\cf9 \strokec9 'input'\cf8 \strokec8 ,\cf4 \strokec4  \cf8 \strokec8 (\cf4 \strokec4 e\cf8 \strokec8 )\cf4 \strokec4  \cf8 \strokec8 =>\cf4 \strokec4  \cf8 \strokec8 \{\cf4 \strokec4 \
+                state\cf8 \strokec8 .\cf4 \strokec4 price \cf8 \strokec8 =\cf4 \strokec4  \cf11 \strokec11 Number\cf8 \strokec8 (\cf4 \strokec4 e\cf8 \strokec8 .\cf4 \strokec4 target\cf8 \strokec8 .\cf4 \strokec4 value\cf8 \strokec8 );\cf4 \strokec4 \
+                els\cf8 \strokec8 .\cf4 \strokec4 inputs\cf8 \strokec8 .\cf4 \strokec4 priceText\cf8 \strokec8 .\cf4 \strokec4 value \cf8 \strokec8 =\cf4 \strokec4  state\cf8 \strokec8 .\cf4 \strokec4 price\cf8 \strokec8 ;\cf4 \strokec4 \
+                updateCalculations\cf8 \strokec8 ();\cf4 \strokec4 \
+            \cf8 \strokec8 \});\cf4 \strokec4 \
+\
+            \cf7 \strokec7 // Down Payment Inputs\cf4 \strokec4 \
+            els\cf8 \strokec8 .\cf4 \strokec4 inputs\cf8 \strokec8 .\cf4 \strokec4 downPercentText\cf8 \strokec8 .\cf4 \strokec4 addEventListener\cf8 \strokec8 (\cf9 \strokec9 'input'\cf8 \strokec8 ,\cf4 \strokec4  \cf8 \strokec8 (\cf4 \strokec4 e\cf8 \strokec8 )\cf4 \strokec4  \cf8 \strokec8 =>\cf4 \strokec4  \cf8 \strokec8 \{\cf4 \strokec4 \
+                \cf13 \strokec13 let\cf4 \strokec4  val \cf8 \strokec8 =\cf4 \strokec4  \cf11 \strokec11 Number\cf8 \strokec8 (\cf4 \strokec4 e\cf8 \strokec8 .\cf4 \strokec4 target\cf8 \strokec8 .\cf4 \strokec4 value\cf8 \strokec8 );\cf4 \strokec4 \
+                \cf13 \strokec13 if\cf8 \strokec8 (\cf4 \strokec4 val \cf8 \strokec8 >\cf4 \strokec4  \cf10 \strokec10 100\cf8 \strokec8 )\cf4 \strokec4  val \cf8 \strokec8 =\cf4 \strokec4  \cf10 \strokec10 100\cf8 \strokec8 ;\cf4 \strokec4 \
+                state\cf8 \strokec8 .\cf4 \strokec4 downPercent \cf8 \strokec8 =\cf4 \strokec4  val\cf8 \strokec8 ;\cf4 \strokec4 \
+                els\cf8 \strokec8 .\cf4 \strokec4 inputs\cf8 \strokec8 .\cf4 \strokec4 downPercentSlider\cf8 \strokec8 .\cf4 \strokec4 value \cf8 \strokec8 =\cf4 \strokec4  state\cf8 \strokec8 .\cf4 \strokec4 downPercent\cf8 \strokec8 ;\cf4 \strokec4 \
+                updateCalculations\cf8 \strokec8 ();\cf4 \strokec4 \
+            \cf8 \strokec8 \});\cf4 \strokec4 \
+            els\cf8 \strokec8 .\cf4 \strokec4 inputs\cf8 \strokec8 .\cf4 \strokec4 downPercentSlider\cf8 \strokec8 .\cf4 \strokec4 addEventListener\cf8 \strokec8 (\cf9 \strokec9 'input'\cf8 \strokec8 ,\cf4 \strokec4  \cf8 \strokec8 (\cf4 \strokec4 e\cf8 \strokec8 )\cf4 \strokec4  \cf8 \strokec8 =>\cf4 \strokec4  \cf8 \strokec8 \{\cf4 \strokec4 \
+                state\cf8 \strokec8 .\cf4 \strokec4 downPercent \cf8 \strokec8 =\cf4 \strokec4  \cf11 \strokec11 Number\cf8 \strokec8 (\cf4 \strokec4 e\cf8 \strokec8 .\cf4 \strokec4 target\cf8 \strokec8 .\cf4 \strokec4 value\cf8 \strokec8 );\cf4 \strokec4 \
+                els\cf8 \strokec8 .\cf4 \strokec4 inputs\cf8 \strokec8 .\cf4 \strokec4 downPercentText\cf8 \strokec8 .\cf4 \strokec4 value \cf8 \strokec8 =\cf4 \strokec4  state\cf8 \strokec8 .\cf4 \strokec4 downPercent\cf8 \strokec8 ;\cf4 \strokec4 \
+                updateCalculations\cf8 \strokec8 ();\cf4 \strokec4 \
+            \cf8 \strokec8 \});\cf4 \strokec4 \
+\
+            \cf7 \strokec7 // Interest Input\cf4 \strokec4 \
+            els\cf8 \strokec8 .\cf4 \strokec4 inputs\cf8 \strokec8 .\cf4 \strokec4 interestSlider\cf8 \strokec8 .\cf4 \strokec4 addEventListener\cf8 \strokec8 (\cf9 \strokec9 'input'\cf8 \strokec8 ,\cf4 \strokec4  \cf8 \strokec8 (\cf4 \strokec4 e\cf8 \strokec8 )\cf4 \strokec4  \cf8 \strokec8 =>\cf4 \strokec4  \cf8 \strokec8 \{\cf4 \strokec4 \
+                state\cf8 \strokec8 .\cf4 \strokec4 interestRate \cf8 \strokec8 =\cf4 \strokec4  \cf11 \strokec11 Number\cf8 \strokec8 (\cf4 \strokec4 e\cf8 \strokec8 .\cf4 \strokec4 target\cf8 \strokec8 .\cf4 \strokec4 value\cf8 \strokec8 );\cf4 \strokec4 \
+                updateCalculations\cf8 \strokec8 ();\cf4 \strokec4 \
+            \cf8 \strokec8 \});\cf4 \strokec4 \
+\
+            \cf7 \strokec7 // Term Buttons\cf4 \strokec4 \
+            els\cf8 \strokec8 .\cf4 \strokec4 inputs\cf8 \strokec8 .\cf4 \strokec4 termButtons\cf8 \strokec8 .\cf4 \strokec4 forEach\cf8 \strokec8 (\cf4 \strokec4 btn \cf8 \strokec8 =>\cf4 \strokec4  \cf8 \strokec8 \{\cf4 \strokec4 \
+                btn\cf8 \strokec8 .\cf4 \strokec4 addEventListener\cf8 \strokec8 (\cf9 \strokec9 'click'\cf8 \strokec8 ,\cf4 \strokec4  \cf8 \strokec8 ()\cf4 \strokec4  \cf8 \strokec8 =>\cf4 \strokec4  \cf8 \strokec8 \{\cf4 \strokec4 \
+                    \cf7 \strokec7 // Update State\cf4 \strokec4 \
+                    state\cf8 \strokec8 .\cf4 \strokec4 years \cf8 \strokec8 =\cf4 \strokec4  \cf11 \strokec11 Number\cf8 \strokec8 (\cf4 \strokec4 btn\cf8 \strokec8 .\cf4 \strokec4 dataset\cf8 \strokec8 .\cf4 \strokec4 year\cf8 \strokec8 );\cf4 \strokec4 \
+                    \cf7 \strokec7 // Update UI Class\cf4 \strokec4 \
+                    els\cf8 \strokec8 .\cf4 \strokec4 inputs\cf8 \strokec8 .\cf4 \strokec4 termButtons\cf8 \strokec8 .\cf4 \strokec4 forEach\cf8 \strokec8 (\cf4 \strokec4 b \cf8 \strokec8 =>\cf4 \strokec4  \cf8 \strokec8 \{\cf4 \strokec4 \
+                        b\cf8 \strokec8 .\cf4 \strokec4 classList\cf8 \strokec8 .\cf4 \strokec4 remove\cf8 \strokec8 (\cf9 \strokec9 'bg-brand-500'\cf8 \strokec8 ,\cf4 \strokec4  \cf9 \strokec9 'text-white'\cf8 \strokec8 ,\cf4 \strokec4  \cf9 \strokec9 'border-brand-500'\cf8 \strokec8 ,\cf4 \strokec4  \cf9 \strokec9 'font-bold'\cf8 \strokec8 ,\cf4 \strokec4  \cf9 \strokec9 'shadow-md'\cf8 \strokec8 );\cf4 \strokec4 \
+                        b\cf8 \strokec8 .\cf4 \strokec4 classList\cf8 \strokec8 .\cf4 \strokec4 add\cf8 \strokec8 (\cf9 \strokec9 'border-slate-200'\cf8 \strokec8 ,\cf4 \strokec4  \cf9 \strokec9 'text-sm'\cf8 \strokec8 );\cf4 \strokec4 \
+                    \cf8 \strokec8 \});\cf4 \strokec4 \
+                    btn\cf8 \strokec8 .\cf4 \strokec4 classList\cf8 \strokec8 .\cf4 \strokec4 remove\cf8 \strokec8 (\cf9 \strokec9 'border-slate-200'\cf8 \strokec8 );\cf4 \strokec4 \
+                    btn\cf8 \strokec8 .\cf4 \strokec4 classList\cf8 \strokec8 .\cf4 \strokec4 add\cf8 \strokec8 (\cf9 \strokec9 'bg-brand-500'\cf8 \strokec8 ,\cf4 \strokec4  \cf9 \strokec9 'text-white'\cf8 \strokec8 ,\cf4 \strokec4  \cf9 \strokec9 'border-brand-500'\cf8 \strokec8 ,\cf4 \strokec4  \cf9 \strokec9 'font-bold'\cf8 \strokec8 ,\cf4 \strokec4  \cf9 \strokec9 'shadow-md'\cf8 \strokec8 );\cf4 \strokec4 \
+                    \
+                    updateCalculations\cf8 \strokec8 ();\cf4 \strokec4 \
+                \cf8 \strokec8 \});\cf4 \strokec4 \
+            \cf8 \strokec8 \});\cf4 \strokec4 \
+        \cf8 \strokec8 \}\cf4 \strokec4 \
+\
+        \cf7 \strokec7 // Helper to switch Car Type\cf4 \strokec4 \
+        window\cf8 \strokec8 .\cf4 \strokec4 setCarType \cf8 \strokec8 =\cf4 \strokec4  \cf8 \strokec8 (\cf4 \strokec4 type\cf8 \strokec8 )\cf4 \strokec4  \cf8 \strokec8 =>\cf4 \strokec4  \cf8 \strokec8 \{\cf4 \strokec4 \
+            state\cf8 \strokec8 .\cf4 \strokec4 isUsedCar \cf8 \strokec8 =\cf4 \strokec4  \cf8 \strokec8 (\cf4 \strokec4 type \cf8 \strokec8 ===\cf4 \strokec4  \cf9 \strokec9 'used'\cf8 \strokec8 );\cf4 \strokec4 \
+            \
+            \cf13 \strokec13 if\cf4 \strokec4  \cf8 \strokec8 (\cf4 \strokec4 state\cf8 \strokec8 .\cf4 \strokec4 isUsedCar\cf8 \strokec8 )\cf4 \strokec4  \cf8 \strokec8 \{\cf4 \strokec4 \
+                els\cf8 \strokec8 .\cf4 \strokec4 inputs\cf8 \strokec8 .\cf4 \strokec4 usedCarBtn\cf8 \strokec8 .\cf4 \strokec4 classList\cf8 \strokec8 .\cf4 \strokec4 remove\cf8 \strokec8 (\cf9 \strokec9 'text-slate-500'\cf8 \strokec8 ,\cf4 \strokec4  \cf9 \strokec9 'hover:text-slate-700'\cf8 \strokec8 );\cf4 \strokec4 \
+                els\cf8 \strokec8 .\cf4 \strokec4 inputs\cf8 \strokec8 .\cf4 \strokec4 usedCarBtn\cf8 \strokec8 .\cf4 \strokec4 classList\cf8 \strokec8 .\cf4 \strokec4 add\cf8 \strokec8 (\cf9 \strokec9 'bg-white'\cf8 \strokec8 ,\cf4 \strokec4  \cf9 \strokec9 'text-orange-600'\cf8 \strokec8 ,\cf4 \strokec4  \cf9 \strokec9 'shadow-sm'\cf8 \strokec8 );\cf4 \strokec4 \
+                \
+                els\cf8 \strokec8 .\cf4 \strokec4 inputs\cf8 \strokec8 .\cf4 \strokec4 newCarBtn\cf8 \strokec8 .\cf4 \strokec4 classList\cf8 \strokec8 .\cf4 \strokec4 add\cf8 \strokec8 (\cf9 \strokec9 'text-slate-500'\cf8 \strokec8 ,\cf4 \strokec4  \cf9 \strokec9 'hover:text-slate-700'\cf8 \strokec8 );\cf4 \strokec4 \
+                els\cf8 \strokec8 .\cf4 \strokec4 inputs\cf8 \strokec8 .\cf4 \strokec4 newCarBtn\cf8 \strokec8 .\cf4 \strokec4 classList\cf8 \strokec8 .\cf4 \strokec4 remove\cf8 \strokec8 (\cf9 \strokec9 'bg-white'\cf8 \strokec8 ,\cf4 \strokec4  \cf9 \strokec9 'text-brand-600'\cf8 \strokec8 ,\cf4 \strokec4  \cf9 \strokec9 'shadow-sm'\cf8 \strokec8 );\cf4 \strokec4 \
+                \
+                els\cf8 \strokec8 .\cf4 \strokec4 displays\cf8 \strokec8 .\cf4 \strokec4 vatWarning\cf8 \strokec8 .\cf4 \strokec4 classList\cf8 \strokec8 .\cf4 \strokec4 remove\cf8 \strokec8 (\cf9 \strokec9 'hidden'\cf8 \strokec8 );\cf4 \strokec4 \
+            \cf8 \strokec8 \}\cf4 \strokec4  \cf13 \strokec13 else\cf4 \strokec4  \cf8 \strokec8 \{\cf4 \strokec4 \
+                els\cf8 \strokec8 .\cf4 \strokec4 inputs\cf8 \strokec8 .\cf4 \strokec4 newCarBtn\cf8 \strokec8 .\cf4 \strokec4 classList\cf8 \strokec8 .\cf4 \strokec4 remove\cf8 \strokec8 (\cf9 \strokec9 'text-slate-500'\cf8 \strokec8 ,\cf4 \strokec4  \cf9 \strokec9 'hover:text-slate-700'\cf8 \strokec8 );\cf4 \strokec4 \
+                els\cf8 \strokec8 .\cf4 \strokec4 inputs\cf8 \strokec8 .\cf4 \strokec4 newCarBtn\cf8 \strokec8 .\cf4 \strokec4 classList\cf8 \strokec8 .\cf4 \strokec4 add\cf8 \strokec8 (\cf9 \strokec9 'bg-white'\cf8 \strokec8 ,\cf4 \strokec4  \cf9 \strokec9 'text-brand-600'\cf8 \strokec8 ,\cf4 \strokec4  \cf9 \strokec9 'shadow-sm'\cf8 \strokec8 );\cf4 \strokec4 \
+                \
+                els\cf8 \strokec8 .\cf4 \strokec4 inputs\cf8 \strokec8 .\cf4 \strokec4 usedCarBtn\cf8 \strokec8 .\cf4 \strokec4 classList\cf8 \strokec8 .\cf4 \strokec4 add\cf8 \strokec8 (\cf9 \strokec9 'text-slate-500'\cf8 \strokec8 ,\cf4 \strokec4  \cf9 \strokec9 'hover:text-slate-700'\cf8 \strokec8 );\cf4 \strokec4 \
+                els\cf8 \strokec8 .\cf4 \strokec4 inputs\cf8 \strokec8 .\cf4 \strokec4 usedCarBtn\cf8 \strokec8 .\cf4 \strokec4 classList\cf8 \strokec8 .\cf4 \strokec4 remove\cf8 \strokec8 (\cf9 \strokec9 'bg-white'\cf8 \strokec8 ,\cf4 \strokec4  \cf9 \strokec9 'text-orange-600'\cf8 \strokec8 ,\cf4 \strokec4  \cf9 \strokec9 'shadow-sm'\cf8 \strokec8 );\cf4 \strokec4 \
+                \
+                els\cf8 \strokec8 .\cf4 \strokec4 displays\cf8 \strokec8 .\cf4 \strokec4 vatWarning\cf8 \strokec8 .\cf4 \strokec4 classList\cf8 \strokec8 .\cf4 \strokec4 add\cf8 \strokec8 (\cf9 \strokec9 'hidden'\cf8 \strokec8 );\cf4 \strokec4 \
+            \cf8 \strokec8 \}\cf4 \strokec4 \
+            updateCalculations\cf8 \strokec8 ();\cf4 \strokec4 \
+        \cf8 \strokec8 \};\cf4 \strokec4 \
+\
+        \cf7 \strokec7 // Core Calculation Logic\cf4 \strokec4 \
+        \cf13 \strokec13 function\cf4 \strokec4  calculateLoan\cf8 \strokec8 (\cf4 \strokec4 price\cf8 \strokec8 ,\cf4 \strokec4  downPercent\cf8 \strokec8 ,\cf4 \strokec4  interestRate\cf8 \strokec8 ,\cf4 \strokec4  years\cf8 \strokec8 ,\cf4 \strokec4  isUsedCar\cf8 \strokec8 )\cf4 \strokec4  \cf8 \strokec8 \{\cf4 \strokec4 \
+            \cf13 \strokec13 const\cf4 \strokec4  downAmount \cf8 \strokec8 =\cf4 \strokec4  price \cf8 \strokec8 *\cf4 \strokec4  \cf8 \strokec8 (\cf4 \strokec4 downPercent \cf8 \strokec8 /\cf4 \strokec4  \cf10 \strokec10 100\cf8 \strokec8 );\cf4 \strokec4 \
+            \cf13 \strokec13 const\cf4 \strokec4  financeAmount \cf8 \strokec8 =\cf4 \strokec4  price \cf8 \strokec8 -\cf4 \strokec4  downAmount\cf8 \strokec8 ;\cf4 \strokec4 \
+            \cf13 \strokec13 const\cf4 \strokec4  totalInterest \cf8 \strokec8 =\cf4 \strokec4  financeAmount \cf8 \strokec8 *\cf4 \strokec4  \cf8 \strokec8 (\cf4 \strokec4 interestRate \cf8 \strokec8 /\cf4 \strokec4  \cf10 \strokec10 100\cf8 \strokec8 )\cf4 \strokec4  \cf8 \strokec8 *\cf4 \strokec4  years\cf8 \strokec8 ;\cf4 \strokec4 \
+            \cf13 \strokec13 const\cf4 \strokec4  totalDebt \cf8 \strokec8 =\cf4 \strokec4  financeAmount \cf8 \strokec8 +\cf4 \strokec4  totalInterest\cf8 \strokec8 ;\cf4 \strokec4 \
+            \cf13 \strokec13 const\cf4 \strokec4  months \cf8 \strokec8 =\cf4 \strokec4  years \cf8 \strokec8 *\cf4 \strokec4  \cf10 \strokec10 12\cf8 \strokec8 ;\cf4 \strokec4 \
+            \cf13 \strokec13 const\cf4 \strokec4  monthlyBase \cf8 \strokec8 =\cf4 \strokec4  totalDebt \cf8 \strokec8 /\cf4 \strokec4  months\cf8 \strokec8 ;\cf4 \strokec4 \
+            \
+            \cf13 \strokec13 const\cf4 \strokec4  vatPerMonth \cf8 \strokec8 =\cf4 \strokec4  isUsedCar \cf8 \strokec8 ?\cf4 \strokec4  monthlyBase \cf8 \strokec8 *\cf4 \strokec4  \cf10 \strokec10 0.07\cf4 \strokec4  \cf8 \strokec8 :\cf4 \strokec4  \cf10 \strokec10 0\cf8 \strokec8 ;\cf4 \strokec4 \
+            \cf13 \strokec13 const\cf4 \strokec4  monthlyTotal \cf8 \strokec8 =\cf4 \strokec4  monthlyBase \cf8 \strokec8 +\cf4 \strokec4  vatPerMonth\cf8 \strokec8 ;\cf4 \strokec4 \
+            \
+            \cf13 \strokec13 const\cf4 \strokec4  totalPaid \cf8 \strokec8 =\cf4 \strokec4  downAmount \cf8 \strokec8 +\cf4 \strokec4  \cf8 \strokec8 (\cf4 \strokec4 monthlyTotal \cf8 \strokec8 *\cf4 \strokec4  months\cf8 \strokec8 );\cf4 \strokec4  \cf7 \strokec7 // This includes the interest + VAT + Principal + Down\cf4 \strokec4 \
+\
+            \cf13 \strokec13 return\cf4 \strokec4  \cf8 \strokec8 \{\cf4 \strokec4 \
+                downAmount\cf8 \strokec8 ,\cf4 \strokec4 \
+                financeAmount\cf8 \strokec8 ,\cf4 \strokec4 \
+                totalInterest\cf8 \strokec8 ,\cf4 \strokec4 \
+                totalDebt\cf8 \strokec8 ,\cf4 \strokec4 \
+                months\cf8 \strokec8 ,\cf4 \strokec4 \
+                monthlyBase\cf8 \strokec8 ,\cf4 \strokec4 \
+                vatPerMonth\cf8 \strokec8 ,\cf4 \strokec4 \
+                monthlyTotal\cf8 \strokec8 ,\cf4 \strokec4 \
+                totalPaid\
+            \cf8 \strokec8 \};\cf4 \strokec4 \
+        \cf8 \strokec8 \}\cf4 \strokec4 \
+\
+        \cf13 \strokec13 function\cf4 \strokec4  updateCalculations\cf8 \strokec8 ()\cf4 \strokec4  \cf8 \strokec8 \{\cf4 \strokec4 \
+            \cf13 \strokec13 const\cf4 \strokec4  data \cf8 \strokec8 =\cf4 \strokec4  calculateLoan\cf8 \strokec8 (\cf4 \strokec4 state\cf8 \strokec8 .\cf4 \strokec4 price\cf8 \strokec8 ,\cf4 \strokec4  state\cf8 \strokec8 .\cf4 \strokec4 downPercent\cf8 \strokec8 ,\cf4 \strokec4  state\cf8 \strokec8 .\cf4 \strokec4 interestRate\cf8 \strokec8 ,\cf4 \strokec4  state\cf8 \strokec8 .\cf4 \strokec4 years\cf8 \strokec8 ,\cf4 \strokec4  state\cf8 \strokec8 .\cf4 \strokec4 isUsedCar\cf8 \strokec8 );\cf4 \strokec4 \
+\
+            \cf7 \strokec7 // Update UI Texts\cf4 \strokec4 \
+            els\cf8 \strokec8 .\cf4 \strokec4 displays\cf8 \strokec8 .\cf4 \strokec4 downPayment\cf8 \strokec8 .\cf4 \strokec4 textContent \cf8 \strokec8 =\cf4 \strokec4  \cf9 \strokec9 `\cf8 \strokec8 $\{\cf4 \strokec4 state\cf8 \strokec8 .\cf4 \strokec4 downPercent\cf8 \strokec8 \}\cf9 \strokec9 %`\cf8 \strokec8 ;\cf4 \strokec4 \
+            els\cf8 \strokec8 .\cf4 \strokec4 displays\cf8 \strokec8 .\cf4 \strokec4 downAmountText\cf8 \strokec8 .\cf4 \strokec4 textContent \cf8 \strokec8 =\cf4 \strokec4  moneyFmt\cf8 \strokec8 .\cf4 \strokec4 format\cf8 \strokec8 (\cf4 \strokec4 data\cf8 \strokec8 .\cf4 \strokec4 downAmount\cf8 \strokec8 );\cf4 \strokec4 \
+            els\cf8 \strokec8 .\cf4 \strokec4 displays\cf8 \strokec8 .\cf4 \strokec4 interest\cf8 \strokec8 .\cf4 \strokec4 textContent \cf8 \strokec8 =\cf4 \strokec4  \cf9 \strokec9 `\cf8 \strokec8 $\{\cf4 \strokec4 state\cf8 \strokec8 .\cf4 \strokec4 interestRate\cf8 \strokec8 .\cf4 \strokec4 toFixed\cf8 \strokec8 (\cf10 \strokec10 2\cf8 \strokec8 )\}\cf9 \strokec9 %`\cf8 \strokec8 ;\cf4 \strokec4 \
+            els\cf8 \strokec8 .\cf4 \strokec4 displays\cf8 \strokec8 .\cf4 \strokec4 termMonths\cf8 \strokec8 .\cf4 \strokec4 textContent \cf8 \strokec8 =\cf4 \strokec4  data\cf8 \strokec8 .\cf4 \strokec4 months\cf8 \strokec8 ;\cf4 \strokec4 \
+\
+            \cf7 \strokec7 // Results Card\cf4 \strokec4 \
+            els\cf8 \strokec8 .\cf4 \strokec4 results\cf8 \strokec8 .\cf4 \strokec4 monthly\cf8 \strokec8 .\cf4 \strokec4 textContent \cf8 \strokec8 =\cf4 \strokec4  moneyFmt\cf8 \strokec8 .\cf4 \strokec4 format\cf8 \strokec8 (\cf4 \strokec4 data\cf8 \strokec8 .\cf4 \strokec4 monthlyTotal\cf8 \strokec8 );\cf4 \strokec4 \
+            els\cf8 \strokec8 .\cf4 \strokec4 results\cf8 \strokec8 .\cf4 \strokec4 finance\cf8 \strokec8 .\cf4 \strokec4 textContent \cf8 \strokec8 =\cf4 \strokec4  moneyFmt\cf8 \strokec8 .\cf4 \strokec4 format\cf8 \strokec8 (\cf4 \strokec4 data\cf8 \strokec8 .\cf4 \strokec4 financeAmount\cf8 \strokec8 );\cf4 \strokec4 \
+            els\cf8 \strokec8 .\cf4 \strokec4 results\cf8 \strokec8 .\cf4 \strokec4 interest\cf8 \strokec8 .\cf4 \strokec4 textContent \cf8 \strokec8 =\cf4 \strokec4  moneyFmt\cf8 \strokec8 .\cf4 \strokec4 format\cf8 \strokec8 (\cf4 \strokec4 data\cf8 \strokec8 .\cf4 \strokec4 totalInterest\cf8 \strokec8 );\cf4 \strokec4 \
+            els\cf8 \strokec8 .\cf4 \strokec4 results\cf8 \strokec8 .\cf4 \strokec4 total\cf8 \strokec8 .\cf4 \strokec4 textContent \cf8 \strokec8 =\cf4 \strokec4  moneyFmt\cf8 \strokec8 .\cf4 \strokec4 format\cf8 \strokec8 (\cf4 \strokec4 data\cf8 \strokec8 .\cf4 \strokec4 totalPaid\cf8 \strokec8 );\cf4 \strokec4 \
+\
+            \cf7 \strokec7 // Calculation Breakdown Section\cf4 \strokec4 \
+            els\cf8 \strokec8 .\cf4 \strokec4 calc\cf8 \strokec8 .\cf4 \strokec4 price1\cf8 \strokec8 .\cf4 \strokec4 textContent \cf8 \strokec8 =\cf4 \strokec4  moneyFmt\cf8 \strokec8 .\cf4 \strokec4 format\cf8 \strokec8 (\cf4 \strokec4 state\cf8 \strokec8 .\cf4 \strokec4 price\cf8 \strokec8 );\cf4 \strokec4 \
+            els\cf8 \strokec8 .\cf4 \strokec4 calc\cf8 \strokec8 .\cf4 \strokec4 price2\cf8 \strokec8 .\cf4 \strokec4 textContent \cf8 \strokec8 =\cf4 \strokec4  moneyFmt\cf8 \strokec8 .\cf4 \strokec4 format\cf8 \strokec8 (\cf4 \strokec4 state\cf8 \strokec8 .\cf4 \strokec4 price\cf8 \strokec8 );\cf4 \strokec4 \
+            els\cf8 \strokec8 .\cf4 \strokec4 calc\cf8 \strokec8 .\cf4 \strokec4 downPercent\cf8 \strokec8 .\cf4 \strokec4 textContent \cf8 \strokec8 =\cf4 \strokec4  state\cf8 \strokec8 .\cf4 \strokec4 downPercent\cf8 \strokec8 ;\cf4 \strokec4 \
+            els\cf8 \strokec8 .\cf4 \strokec4 calc\cf8 \strokec8 .\cf4 \strokec4 downTotal\cf8 \strokec8 .\cf4 \strokec4 textContent \cf8 \strokec8 =\cf4 \strokec4  moneyFmt\cf8 \strokec8 .\cf4 \strokec4 format\cf8 \strokec8 (\cf4 \strokec4 data\cf8 \strokec8 .\cf4 \strokec4 downAmount\cf8 \strokec8 );\cf4 \strokec4 \
+            els\cf8 \strokec8 .\cf4 \strokec4 calc\cf8 \strokec8 .\cf4 \strokec4 downTotal2\cf8 \strokec8 .\cf4 \strokec4 textContent \cf8 \strokec8 =\cf4 \strokec4  moneyFmt\cf8 \strokec8 .\cf4 \strokec4 format\cf8 \strokec8 (\cf4 \strokec4 data\cf8 \strokec8 .\cf4 \strokec4 downAmount\cf8 \strokec8 );\cf4 \strokec4 \
+            els\cf8 \strokec8 .\cf4 \strokec4 calc\cf8 \strokec8 .\cf4 \strokec4 finance\cf8 \strokec8 .\cf4 \strokec4 textContent \cf8 \strokec8 =\cf4 \strokec4  moneyFmt\cf8 \strokec8 .\cf4 \strokec4 format\cf8 \strokec8 (\cf4 \strokec4 data\cf8 \strokec8 .\cf4 \strokec4 financeAmount\cf8 \strokec8 );\cf4 \strokec4 \
+            els\cf8 \strokec8 .\cf4 \strokec4 calc\cf8 \strokec8 .\cf4 \strokec4 finance2\cf8 \strokec8 .\cf4 \strokec4 textContent \cf8 \strokec8 =\cf4 \strokec4  moneyFmt\cf8 \strokec8 .\cf4 \strokec4 format\cf8 \strokec8 (\cf4 \strokec4 data\cf8 \strokec8 .\cf4 \strokec4 financeAmount\cf8 \strokec8 );\cf4 \strokec4 \
+            els\cf8 \strokec8 .\cf4 \strokec4 calc\cf8 \strokec8 .\cf4 \strokec4 finance3\cf8 \strokec8 .\cf4 \strokec4 textContent \cf8 \strokec8 =\cf4 \strokec4  moneyFmt\cf8 \strokec8 .\cf4 \strokec4 format\cf8 \strokec8 (\cf4 \strokec4 data\cf8 \strokec8 .\cf4 \strokec4 financeAmount\cf8 \strokec8 );\cf4 \strokec4 \
+            els\cf8 \strokec8 .\cf4 \strokec4 calc\cf8 \strokec8 .\cf4 \strokec4 interest\cf8 \strokec8 .\cf4 \strokec4 textContent \cf8 \strokec8 =\cf4 \strokec4  state\cf8 \strokec8 .\cf4 \strokec4 interestRate\cf8 \strokec8 ;\cf4 \strokec4 \
+            els\cf8 \strokec8 .\cf4 \strokec4 calc\cf8 \strokec8 .\cf4 \strokec4 years\cf8 \strokec8 .\cf4 \strokec4 textContent \cf8 \strokec8 =\cf4 \strokec4  state\cf8 \strokec8 .\cf4 \strokec4 years\cf8 \strokec8 ;\cf4 \strokec4 \
+            els\cf8 \strokec8 .\cf4 \strokec4 calc\cf8 \strokec8 .\cf4 \strokec4 totalInterest\cf8 \strokec8 .\cf4 \strokec4 textContent \cf8 \strokec8 =\cf4 \strokec4  moneyFmt\cf8 \strokec8 .\cf4 \strokec4 format\cf8 \strokec8 (\cf4 \strokec4 data\cf8 \strokec8 .\cf4 \strokec4 totalInterest\cf8 \strokec8 );\cf4 \strokec4 \
+            els\cf8 \strokec8 .\cf4 \strokec4 calc\cf8 \strokec8 .\cf4 \strokec4 totalInterest2\cf8 \strokec8 .\cf4 \strokec4 textContent \cf8 \strokec8 =\cf4 \strokec4  moneyFmt\cf8 \strokec8 .\cf4 \strokec4 format\cf8 \strokec8 (\cf4 \strokec4 data\cf8 \strokec8 .\cf4 \strokec4 totalInterest\cf8 \strokec8 );\cf4 \strokec4 \
+            els\cf8 \strokec8 .\cf4 \strokec4 calc\cf8 \strokec8 .\cf4 \strokec4 grandTotal\cf8 \strokec8 .\cf4 \strokec4 textContent \cf8 \strokec8 =\cf4 \strokec4  moneyFmt\cf8 \strokec8 .\cf4 \strokec4 format\cf8 \strokec8 (\cf4 \strokec4 data\cf8 \strokec8 .\cf4 \strokec4 totalDebt\cf8 \strokec8 );\cf4 \strokec4 \
+            els\cf8 \strokec8 .\cf4 \strokec4 calc\cf8 \strokec8 .\cf4 \strokec4 grandTotal2\cf8 \strokec8 .\cf4 \strokec4 textContent \cf8 \strokec8 =\cf4 \strokec4  moneyFmt\cf8 \strokec8 .\cf4 \strokec4 format\cf8 \strokec8 (\cf4 \strokec4 data\cf8 \strokec8 .\cf4 \strokec4 totalDebt\cf8 \strokec8 );\cf4 \strokec4 \
+            els\cf8 \strokec8 .\cf4 \strokec4 calc\cf8 \strokec8 .\cf4 \strokec4 months\cf8 \strokec8 .\cf4 \strokec4 textContent \cf8 \strokec8 =\cf4 \strokec4  data\cf8 \strokec8 .\cf4 \strokec4 months\cf8 \strokec8 ;\cf4 \strokec4 \
+            els\cf8 \strokec8 .\cf4 \strokec4 calc\cf8 \strokec8 .\cf4 \strokec4 monthlyBase\cf8 \strokec8 .\cf4 \strokec4 textContent \cf8 \strokec8 =\cf4 \strokec4  moneyDecFmt\cf8 \strokec8 .\cf4 \strokec4 format\cf8 \strokec8 (\cf4 \strokec4 data\cf8 \strokec8 .\cf4 \strokec4 monthlyBase\cf8 \strokec8 );\cf4 \strokec4 \
+\
+            \cf13 \strokec13 if\cf4 \strokec4  \cf8 \strokec8 (\cf4 \strokec4 state\cf8 \strokec8 .\cf4 \strokec4 isUsedCar\cf8 \strokec8 )\cf4 \strokec4  \cf8 \strokec8 \{\cf4 \strokec4 \
+                els\cf8 \strokec8 .\cf4 \strokec4 calc\cf8 \strokec8 .\cf4 \strokec4 vatSection\cf8 \strokec8 .\cf4 \strokec4 classList\cf8 \strokec8 .\cf4 \strokec4 remove\cf8 \strokec8 (\cf9 \strokec9 'hidden'\cf8 \strokec8 );\cf4 \strokec4 \
+                els\cf8 \strokec8 .\cf4 \strokec4 calc\cf8 \strokec8 .\cf4 \strokec4 vatAmount\cf8 \strokec8 .\cf4 \strokec4 textContent \cf8 \strokec8 =\cf4 \strokec4  moneyDecFmt\cf8 \strokec8 .\cf4 \strokec4 format\cf8 \strokec8 (\cf4 \strokec4 data\cf8 \strokec8 .\cf4 \strokec4 vatPerMonth\cf8 \strokec8 );\cf4 \strokec4 \
+                els\cf8 \strokec8 .\cf4 \strokec4 calc\cf8 \strokec8 .\cf4 \strokec4 monthlyFinal\cf8 \strokec8 .\cf4 \strokec4 textContent \cf8 \strokec8 =\cf4 \strokec4  moneyDecFmt\cf8 \strokec8 .\cf4 \strokec4 format\cf8 \strokec8 (\cf4 \strokec4 data\cf8 \strokec8 .\cf4 \strokec4 monthlyTotal\cf8 \strokec8 );\cf4 \strokec4 \
+            \cf8 \strokec8 \}\cf4 \strokec4  \cf13 \strokec13 else\cf4 \strokec4  \cf8 \strokec8 \{\cf4 \strokec4 \
+                els\cf8 \strokec8 .\cf4 \strokec4 calc\cf8 \strokec8 .\cf4 \strokec4 vatSection\cf8 \strokec8 .\cf4 \strokec4 classList\cf8 \strokec8 .\cf4 \strokec4 add\cf8 \strokec8 (\cf9 \strokec9 'hidden'\cf8 \strokec8 );\cf4 \strokec4 \
+            \cf8 \strokec8 \}\cf4 \strokec4 \
+\
+            \cf7 \strokec7 // Update Charts\cf4 \strokec4 \
+            updateCharts\cf8 \strokec8 (\cf4 \strokec4 data\cf8 \strokec8 );\cf4 \strokec4 \
+        \cf8 \strokec8 \}\cf4 \strokec4 \
+\
+        \cf13 \strokec13 function\cf4 \strokec4  initCharts\cf8 \strokec8 ()\cf4 \strokec4  \cf8 \strokec8 \{\cf4 \strokec4 \
+            \cf7 \strokec7 // Chart 1: Structure (Doughnut)\cf4 \strokec4 \
+            \cf13 \strokec13 const\cf4 \strokec4  ctxStructure \cf8 \strokec8 =\cf4 \strokec4  document\cf8 \strokec8 .\cf4 \strokec4 getElementById\cf8 \strokec8 (\cf9 \strokec9 'structureChart'\cf8 \strokec8 ).\cf4 \strokec4 getContext\cf8 \strokec8 (\cf9 \strokec9 '2d'\cf8 \strokec8 );\cf4 \strokec4 \
+            state\cf8 \strokec8 .\cf4 \strokec4 charts\cf8 \strokec8 .\cf4 \strokec4 structure \cf8 \strokec8 =\cf4 \strokec4  \cf13 \strokec13 new\cf4 \strokec4  \cf11 \strokec11 Chart\cf8 \strokec8 (\cf4 \strokec4 ctxStructure\cf8 \strokec8 ,\cf4 \strokec4  \cf8 \strokec8 \{\cf4 \strokec4 \
+                type\cf8 \strokec8 :\cf4 \strokec4  \cf9 \strokec9 'doughnut'\cf8 \strokec8 ,\cf4 \strokec4 \
+                data\cf8 \strokec8 :\cf4 \strokec4  \cf8 \strokec8 \{\cf4 \strokec4 \
+                    labels\cf8 \strokec8 :\cf4 \strokec4  \cf8 \strokec8 [\cf9 \strokec9 '\uc0\u3648 \u3591 \u3636 \u3609 \u3604 \u3634 \u3623 \u3609 \u3660  (Down)'\cf8 \strokec8 ,\cf4 \strokec4  \cf9 \strokec9 '\uc0\u3618 \u3629 \u3604 \u3592 \u3633 \u3604  (Principal)'\cf8 \strokec8 ,\cf4 \strokec4  \cf9 \strokec9 '\uc0\u3604 \u3629 \u3585 \u3648 \u3610 \u3637 \u3657 \u3618  (Interest)'\cf8 \strokec8 ,\cf4 \strokec4  \cf9 \strokec9 'VAT'\cf8 \strokec8 ],\cf4 \strokec4 \
+                    datasets\cf8 \strokec8 :\cf4 \strokec4  \cf8 \strokec8 [\{\cf4 \strokec4 \
+                        data\cf8 \strokec8 :\cf4 \strokec4  \cf8 \strokec8 [\cf10 \strokec10 0\cf8 \strokec8 ,\cf4 \strokec4  \cf10 \strokec10 0\cf8 \strokec8 ,\cf4 \strokec4  \cf10 \strokec10 0\cf8 \strokec8 ,\cf4 \strokec4  \cf10 \strokec10 0\cf8 \strokec8 ],\cf4 \strokec4 \
+                        backgroundColor\cf8 \strokec8 :\cf4 \strokec4  \cf8 \strokec8 [\cf4 \strokec4 \
+                            \cf9 \strokec9 '#d97706'\cf8 \strokec8 ,\cf4 \strokec4  \cf7 \strokec7 // Amber (Down)\cf4 \strokec4 \
+                            \cf9 \strokec9 '#0ea5e9'\cf8 \strokec8 ,\cf4 \strokec4  \cf7 \strokec7 // Sky Blue (Principal)\cf4 \strokec4 \
+                            \cf9 \strokec9 '#ef4444'\cf8 \strokec8 ,\cf4 \strokec4  \cf7 \strokec7 // Red (Interest)\cf4 \strokec4 \
+                            \cf9 \strokec9 '#94a3b8'\cf4 \strokec4   \cf7 \strokec7 // Slate (VAT)\cf4 \strokec4 \
+                        \cf8 \strokec8 ],\cf4 \strokec4 \
+                        borderWidth\cf8 \strokec8 :\cf4 \strokec4  \cf10 \strokec10 0\cf8 \strokec8 ,\cf4 \strokec4 \
+                        hoverOffset\cf8 \strokec8 :\cf4 \strokec4  \cf10 \strokec10 4\cf4 \strokec4 \
+                    \cf8 \strokec8 \}]\cf4 \strokec4 \
+                \cf8 \strokec8 \},\cf4 \strokec4 \
+                options\cf8 \strokec8 :\cf4 \strokec4  \cf8 \strokec8 \{\cf4 \strokec4 \
+                    responsive\cf8 \strokec8 :\cf4 \strokec4  \cf13 \strokec13 true\cf8 \strokec8 ,\cf4 \strokec4 \
+                    maintainAspectRatio\cf8 \strokec8 :\cf4 \strokec4  \cf13 \strokec13 false\cf8 \strokec8 ,\cf4 \strokec4 \
+                    plugins\cf8 \strokec8 :\cf4 \strokec4  \cf8 \strokec8 \{\cf4 \strokec4 \
+                        legend\cf8 \strokec8 :\cf4 \strokec4  \cf8 \strokec8 \{\cf4 \strokec4  position\cf8 \strokec8 :\cf4 \strokec4  \cf9 \strokec9 'bottom'\cf8 \strokec8 ,\cf4 \strokec4  labels\cf8 \strokec8 :\cf4 \strokec4  \cf8 \strokec8 \{\cf4 \strokec4  usePointStyle\cf8 \strokec8 :\cf4 \strokec4  \cf13 \strokec13 true\cf8 \strokec8 ,\cf4 \strokec4  font\cf8 \strokec8 :\cf4 \strokec4  \cf8 \strokec8 \{\cf4 \strokec4  family\cf8 \strokec8 :\cf4 \strokec4  \cf9 \strokec9 'Sarabun'\cf4 \strokec4  \cf8 \strokec8 \}\cf4 \strokec4  \cf8 \strokec8 \}\cf4 \strokec4  \cf8 \strokec8 \},\cf4 \strokec4 \
+                        tooltip\cf8 \strokec8 :\cf4 \strokec4  \cf8 \strokec8 \{\cf4 \strokec4 \
+                            callbacks\cf8 \strokec8 :\cf4 \strokec4  \cf8 \strokec8 \{\cf4 \strokec4 \
+                                label\cf8 \strokec8 :\cf4 \strokec4  \cf13 \strokec13 function\cf8 \strokec8 (\cf4 \strokec4 context\cf8 \strokec8 )\cf4 \strokec4  \cf8 \strokec8 \{\cf4 \strokec4 \
+                                    \cf13 \strokec13 return\cf4 \strokec4  \cf9 \strokec9 ' '\cf4 \strokec4  \cf8 \strokec8 +\cf4 \strokec4  context\cf8 \strokec8 .\cf4 \strokec4 label \cf8 \strokec8 +\cf4 \strokec4  \cf9 \strokec9 ': '\cf4 \strokec4  \cf8 \strokec8 +\cf4 \strokec4  moneyFmt\cf8 \strokec8 .\cf4 \strokec4 format\cf8 \strokec8 (\cf4 \strokec4 context\cf8 \strokec8 .\cf4 \strokec4 raw\cf8 \strokec8 )\cf4 \strokec4  \cf8 \strokec8 +\cf4 \strokec4  \cf9 \strokec9 ' \uc0\u3610 \u3634 \u3607 '\cf8 \strokec8 ;\cf4 \strokec4 \
+                                \cf8 \strokec8 \}\cf4 \strokec4 \
+                            \cf8 \strokec8 \},\cf4 \strokec4 \
+                            bodyFont\cf8 \strokec8 :\cf4 \strokec4  \cf8 \strokec8 \{\cf4 \strokec4  family\cf8 \strokec8 :\cf4 \strokec4  \cf9 \strokec9 'Sarabun'\cf4 \strokec4  \cf8 \strokec8 \}\cf4 \strokec4 \
+                        \cf8 \strokec8 \}\cf4 \strokec4 \
+                    \cf8 \strokec8 \}\cf4 \strokec4 \
+                \cf8 \strokec8 \}\cf4 \strokec4 \
+            \cf8 \strokec8 \});\cf4 \strokec4 \
+\
+            \cf7 \strokec7 // Chart 2: Comparison (Bar)\cf4 \strokec4 \
+            \cf13 \strokec13 const\cf4 \strokec4  ctxComparison \cf8 \strokec8 =\cf4 \strokec4  document\cf8 \strokec8 .\cf4 \strokec4 getElementById\cf8 \strokec8 (\cf9 \strokec9 'comparisonChart'\cf8 \strokec8 ).\cf4 \strokec4 getContext\cf8 \strokec8 (\cf9 \strokec9 '2d'\cf8 \strokec8 );\cf4 \strokec4 \
+            state\cf8 \strokec8 .\cf4 \strokec4 charts\cf8 \strokec8 .\cf4 \strokec4 comparison \cf8 \strokec8 =\cf4 \strokec4  \cf13 \strokec13 new\cf4 \strokec4  \cf11 \strokec11 Chart\cf8 \strokec8 (\cf4 \strokec4 ctxComparison\cf8 \strokec8 ,\cf4 \strokec4  \cf8 \strokec8 \{\cf4 \strokec4 \
+                type\cf8 \strokec8 :\cf4 \strokec4  \cf9 \strokec9 'bar'\cf8 \strokec8 ,\cf4 \strokec4 \
+                data\cf8 \strokec8 :\cf4 \strokec4  \cf8 \strokec8 \{\cf4 \strokec4 \
+                    labels\cf8 \strokec8 :\cf4 \strokec4  \cf8 \strokec8 [\cf9 \strokec9 '4 \uc0\u3611 \u3637 '\cf8 \strokec8 ,\cf4 \strokec4  \cf9 \strokec9 '5 \uc0\u3611 \u3637 '\cf8 \strokec8 ,\cf4 \strokec4  \cf9 \strokec9 '6 \uc0\u3611 \u3637 '\cf8 \strokec8 ],\cf4 \strokec4 \
+                    datasets\cf8 \strokec8 :\cf4 \strokec4  \cf8 \strokec8 [\cf4 \strokec4 \
+                        \cf8 \strokec8 \{\cf4 \strokec4 \
+                            label\cf8 \strokec8 :\cf4 \strokec4  \cf9 \strokec9 '\uc0\u3588 \u3656 \u3634 \u3591 \u3623 \u3604 /\u3648 \u3604 \u3639 \u3629 \u3609 '\cf8 \strokec8 ,\cf4 \strokec4 \
+                            data\cf8 \strokec8 :\cf4 \strokec4  \cf8 \strokec8 [\cf10 \strokec10 0\cf8 \strokec8 ,\cf4 \strokec4  \cf10 \strokec10 0\cf8 \strokec8 ,\cf4 \strokec4  \cf10 \strokec10 0\cf8 \strokec8 ],\cf4 \strokec4 \
+                            backgroundColor\cf8 \strokec8 :\cf4 \strokec4  \cf9 \strokec9 '#0ea5e9'\cf8 \strokec8 ,\cf4 \strokec4 \
+                            order\cf8 \strokec8 :\cf4 \strokec4  \cf10 \strokec10 1\cf4 \strokec4 \
+                        \cf8 \strokec8 \},\cf4 \strokec4 \
+                        \cf8 \strokec8 \{\cf4 \strokec4 \
+                            label\cf8 \strokec8 :\cf4 \strokec4  \cf9 \strokec9 '\uc0\u3604 \u3629 \u3585 \u3648 \u3610 \u3637 \u3657 \u3618 \u3619 \u3623 \u3617 '\cf8 \strokec8 ,\cf4 \strokec4 \
+                            data\cf8 \strokec8 :\cf4 \strokec4  \cf8 \strokec8 [\cf10 \strokec10 0\cf8 \strokec8 ,\cf4 \strokec4  \cf10 \strokec10 0\cf8 \strokec8 ,\cf4 \strokec4  \cf10 \strokec10 0\cf8 \strokec8 ],\cf4 \strokec4 \
+                            backgroundColor\cf8 \strokec8 :\cf4 \strokec4  \cf9 \strokec9 '#ef4444'\cf8 \strokec8 ,\cf4 \strokec4 \
+                            type\cf8 \strokec8 :\cf4 \strokec4  \cf9 \strokec9 'line'\cf8 \strokec8 ,\cf4 \strokec4 \
+                            borderColor\cf8 \strokec8 :\cf4 \strokec4  \cf9 \strokec9 '#ef4444'\cf8 \strokec8 ,\cf4 \strokec4 \
+                            borderWidth\cf8 \strokec8 :\cf4 \strokec4  \cf10 \strokec10 2\cf8 \strokec8 ,\cf4 \strokec4 \
+                            pointBackgroundColor\cf8 \strokec8 :\cf4 \strokec4  \cf9 \strokec9 '#fff'\cf8 \strokec8 ,\cf4 \strokec4 \
+                            pointBorderColor\cf8 \strokec8 :\cf4 \strokec4  \cf9 \strokec9 '#ef4444'\cf8 \strokec8 ,\cf4 \strokec4 \
+                            pointRadius\cf8 \strokec8 :\cf4 \strokec4  \cf10 \strokec10 4\cf8 \strokec8 ,\cf4 \strokec4 \
+                            yAxisID\cf8 \strokec8 :\cf4 \strokec4  \cf9 \strokec9 'y1'\cf8 \strokec8 ,\cf4 \strokec4 \
+                            order\cf8 \strokec8 :\cf4 \strokec4  \cf10 \strokec10 0\cf4 \strokec4 \
+                        \cf8 \strokec8 \}\cf4 \strokec4 \
+                    \cf8 \strokec8 ]\cf4 \strokec4 \
+                \cf8 \strokec8 \},\cf4 \strokec4 \
+                options\cf8 \strokec8 :\cf4 \strokec4  \cf8 \strokec8 \{\cf4 \strokec4 \
+                    responsive\cf8 \strokec8 :\cf4 \strokec4  \cf13 \strokec13 true\cf8 \strokec8 ,\cf4 \strokec4 \
+                    maintainAspectRatio\cf8 \strokec8 :\cf4 \strokec4  \cf13 \strokec13 false\cf8 \strokec8 ,\cf4 \strokec4 \
+                    scales\cf8 \strokec8 :\cf4 \strokec4  \cf8 \strokec8 \{\cf4 \strokec4 \
+                        y\cf8 \strokec8 :\cf4 \strokec4  \cf8 \strokec8 \{\cf4 \strokec4 \
+                            beginAtZero\cf8 \strokec8 :\cf4 \strokec4  \cf13 \strokec13 false\cf8 \strokec8 ,\cf4 \strokec4 \
+                            grid\cf8 \strokec8 :\cf4 \strokec4  \cf8 \strokec8 \{\cf4 \strokec4  display\cf8 \strokec8 :\cf4 \strokec4  \cf13 \strokec13 false\cf4 \strokec4  \cf8 \strokec8 \},\cf4 \strokec4 \
+                            title\cf8 \strokec8 :\cf4 \strokec4  \cf8 \strokec8 \{\cf4 \strokec4  display\cf8 \strokec8 :\cf4 \strokec4  \cf13 \strokec13 true\cf8 \strokec8 ,\cf4 \strokec4  text\cf8 \strokec8 :\cf4 \strokec4  \cf9 \strokec9 '\uc0\u3588 \u3656 \u3634 \u3591 \u3623 \u3604  (\u3610 \u3634 \u3607 /\u3648 \u3604 \u3639 \u3629 \u3609 )'\cf4 \strokec4  \cf8 \strokec8 \}\cf4 \strokec4 \
+                        \cf8 \strokec8 \},\cf4 \strokec4 \
+                        y1\cf8 \strokec8 :\cf4 \strokec4  \cf8 \strokec8 \{\cf4 \strokec4 \
+                            type\cf8 \strokec8 :\cf4 \strokec4  \cf9 \strokec9 'linear'\cf8 \strokec8 ,\cf4 \strokec4 \
+                            display\cf8 \strokec8 :\cf4 \strokec4  \cf13 \strokec13 true\cf8 \strokec8 ,\cf4 \strokec4 \
+                            position\cf8 \strokec8 :\cf4 \strokec4  \cf9 \strokec9 'right'\cf8 \strokec8 ,\cf4 \strokec4 \
+                            grid\cf8 \strokec8 :\cf4 \strokec4  \cf8 \strokec8 \{\cf4 \strokec4  drawOnChartArea\cf8 \strokec8 :\cf4 \strokec4  \cf13 \strokec13 false\cf4 \strokec4  \cf8 \strokec8 \},\cf4 \strokec4 \
+                            title\cf8 \strokec8 :\cf4 \strokec4  \cf8 \strokec8 \{\cf4 \strokec4  display\cf8 \strokec8 :\cf4 \strokec4  \cf13 \strokec13 true\cf8 \strokec8 ,\cf4 \strokec4  text\cf8 \strokec8 :\cf4 \strokec4  \cf9 \strokec9 '\uc0\u3604 \u3629 \u3585 \u3648 \u3610 \u3637 \u3657 \u3618 \u3619 \u3623 \u3617  (\u3610 \u3634 \u3607 )'\cf4 \strokec4  \cf8 \strokec8 \}\cf4 \strokec4 \
+                        \cf8 \strokec8 \}\cf4 \strokec4 \
+                    \cf8 \strokec8 \},\cf4 \strokec4 \
+                    plugins\cf8 \strokec8 :\cf4 \strokec4  \cf8 \strokec8 \{\cf4 \strokec4 \
+                        legend\cf8 \strokec8 :\cf4 \strokec4  \cf8 \strokec8 \{\cf4 \strokec4  position\cf8 \strokec8 :\cf4 \strokec4  \cf9 \strokec9 'bottom'\cf8 \strokec8 ,\cf4 \strokec4  labels\cf8 \strokec8 :\cf4 \strokec4  \cf8 \strokec8 \{\cf4 \strokec4  usePointStyle\cf8 \strokec8 :\cf4 \strokec4  \cf13 \strokec13 true\cf8 \strokec8 ,\cf4 \strokec4  font\cf8 \strokec8 :\cf4 \strokec4  \cf8 \strokec8 \{\cf4 \strokec4  family\cf8 \strokec8 :\cf4 \strokec4  \cf9 \strokec9 'Sarabun'\cf4 \strokec4  \cf8 \strokec8 \}\cf4 \strokec4  \cf8 \strokec8 \}\cf4 \strokec4  \cf8 \strokec8 \},\cf4 \strokec4 \
+                        tooltip\cf8 \strokec8 :\cf4 \strokec4  \cf8 \strokec8 \{\cf4 \strokec4 \
+                            callbacks\cf8 \strokec8 :\cf4 \strokec4  \cf8 \strokec8 \{\cf4 \strokec4 \
+                                label\cf8 \strokec8 :\cf4 \strokec4  \cf13 \strokec13 function\cf8 \strokec8 (\cf4 \strokec4 context\cf8 \strokec8 )\cf4 \strokec4  \cf8 \strokec8 \{\cf4 \strokec4 \
+                                    \cf13 \strokec13 return\cf4 \strokec4  \cf9 \strokec9 ' '\cf4 \strokec4  \cf8 \strokec8 +\cf4 \strokec4  context\cf8 \strokec8 .\cf4 \strokec4 dataset\cf8 \strokec8 .\cf4 \strokec4 label \cf8 \strokec8 +\cf4 \strokec4  \cf9 \strokec9 ': '\cf4 \strokec4  \cf8 \strokec8 +\cf4 \strokec4  moneyFmt\cf8 \strokec8 .\cf4 \strokec4 format\cf8 \strokec8 (\cf4 \strokec4 context\cf8 \strokec8 .\cf4 \strokec4 raw\cf8 \strokec8 )\cf4 \strokec4  \cf8 \strokec8 +\cf4 \strokec4  \cf9 \strokec9 ' \uc0\u3610 \u3634 \u3607 '\cf8 \strokec8 ;\cf4 \strokec4 \
+                                \cf8 \strokec8 \}\cf4 \strokec4 \
+                            \cf8 \strokec8 \},\cf4 \strokec4 \
+                            bodyFont\cf8 \strokec8 :\cf4 \strokec4  \cf8 \strokec8 \{\cf4 \strokec4  family\cf8 \strokec8 :\cf4 \strokec4  \cf9 \strokec9 'Sarabun'\cf4 \strokec4  \cf8 \strokec8 \}\cf4 \strokec4 \
+                        \cf8 \strokec8 \}\cf4 \strokec4 \
+                    \cf8 \strokec8 \}\cf4 \strokec4 \
+                \cf8 \strokec8 \}\cf4 \strokec4 \
+            \cf8 \strokec8 \});\cf4 \strokec4 \
+        \cf8 \strokec8 \}\cf4 \strokec4 \
+\
+        \cf13 \strokec13 function\cf4 \strokec4  updateCharts\cf8 \strokec8 (\cf4 \strokec4 currentData\cf8 \strokec8 )\cf4 \strokec4  \cf8 \strokec8 \{\cf4 \strokec4 \
+            \cf7 \strokec7 // Update Structure Chart\cf4 \strokec4 \
+            \cf13 \strokec13 const\cf4 \strokec4  vatTotal \cf8 \strokec8 =\cf4 \strokec4  state\cf8 \strokec8 .\cf4 \strokec4 isUsedCar \cf8 \strokec8 ?\cf4 \strokec4  \cf8 \strokec8 (\cf4 \strokec4 currentData\cf8 \strokec8 .\cf4 \strokec4 vatPerMonth \cf8 \strokec8 *\cf4 \strokec4  currentData\cf8 \strokec8 .\cf4 \strokec4 months\cf8 \strokec8 )\cf4 \strokec4  \cf8 \strokec8 :\cf4 \strokec4  \cf10 \strokec10 0\cf8 \strokec8 ;\cf4 \strokec4 \
+            state\cf8 \strokec8 .\cf4 \strokec4 charts\cf8 \strokec8 .\cf4 \strokec4 structure\cf8 \strokec8 .\cf4 \strokec4 data\cf8 \strokec8 .\cf4 \strokec4 datasets\cf8 \strokec8 [\cf10 \strokec10 0\cf8 \strokec8 ].\cf4 \strokec4 data \cf8 \strokec8 =\cf4 \strokec4  \cf8 \strokec8 [\cf4 \strokec4 \
+                currentData\cf8 \strokec8 .\cf4 \strokec4 downAmount\cf8 \strokec8 ,\cf4 \strokec4 \
+                currentData\cf8 \strokec8 .\cf4 \strokec4 financeAmount\cf8 \strokec8 ,\cf4 \strokec4 \
+                currentData\cf8 \strokec8 .\cf4 \strokec4 totalInterest\cf8 \strokec8 ,\cf4 \strokec4 \
+                vatTotal\
+            \cf8 \strokec8 ];\cf4 \strokec4 \
+            state\cf8 \strokec8 .\cf4 \strokec4 charts\cf8 \strokec8 .\cf4 \strokec4 structure\cf8 \strokec8 .\cf4 \strokec4 update\cf8 \strokec8 ();\cf4 \strokec4 \
+\
+            \cf7 \strokec7 // Update Comparison Chart (Calculate for Years - 1, Years, Years + 1)\cf4 \strokec4 \
+            \cf7 \strokec7 // But to keep it simple and clean, let's show fixed 4, 5, 6, 7 years or \cf4 \strokec4 \
+            \cf7 \strokec7 // Better: Show Current Year +/- 1 if possible, or just fixed range 4, 5, 6\cf4 \strokec4 \
+            \cf7 \strokec7 // Let's allow dynamic based on selection roughly or fixed standard terms for comparison\cf4 \strokec4 \
+            \
+            \cf13 \strokec13 const\cf4 \strokec4  termsToCompare \cf8 \strokec8 =\cf4 \strokec4  \cf8 \strokec8 [\cf10 \strokec10 4\cf8 \strokec8 ,\cf4 \strokec4  \cf10 \strokec10 5\cf8 \strokec8 ,\cf4 \strokec4  \cf10 \strokec10 6\cf8 \strokec8 ,\cf4 \strokec4  \cf10 \strokec10 7\cf8 \strokec8 ];\cf4 \strokec4 \
+            \cf13 \strokec13 const\cf4 \strokec4  comparisonData \cf8 \strokec8 =\cf4 \strokec4  termsToCompare\cf8 \strokec8 .\cf4 \strokec4 map\cf8 \strokec8 (\cf4 \strokec4 y \cf8 \strokec8 =>\cf4 \strokec4  calculateLoan\cf8 \strokec8 (\cf4 \strokec4 state\cf8 \strokec8 .\cf4 \strokec4 price\cf8 \strokec8 ,\cf4 \strokec4  state\cf8 \strokec8 .\cf4 \strokec4 downPercent\cf8 \strokec8 ,\cf4 \strokec4  state\cf8 \strokec8 .\cf4 \strokec4 interestRate\cf8 \strokec8 ,\cf4 \strokec4  y\cf8 \strokec8 ,\cf4 \strokec4  state\cf8 \strokec8 .\cf4 \strokec4 isUsedCar\cf8 \strokec8 ));\cf4 \strokec4 \
+            \
+            state\cf8 \strokec8 .\cf4 \strokec4 charts\cf8 \strokec8 .\cf4 \strokec4 comparison\cf8 \strokec8 .\cf4 \strokec4 data\cf8 \strokec8 .\cf4 \strokec4 labels \cf8 \strokec8 =\cf4 \strokec4  termsToCompare\cf8 \strokec8 .\cf4 \strokec4 map\cf8 \strokec8 (\cf4 \strokec4 y \cf8 \strokec8 =>\cf4 \strokec4  \cf9 \strokec9 `\cf8 \strokec8 $\{\cf4 \strokec4 y\cf8 \strokec8 \}\cf9 \strokec9  \uc0\u3611 \u3637 `\cf8 \strokec8 );\cf4 \strokec4 \
+            state\cf8 \strokec8 .\cf4 \strokec4 charts\cf8 \strokec8 .\cf4 \strokec4 comparison\cf8 \strokec8 .\cf4 \strokec4 data\cf8 \strokec8 .\cf4 \strokec4 datasets\cf8 \strokec8 [\cf10 \strokec10 0\cf8 \strokec8 ].\cf4 \strokec4 data \cf8 \strokec8 =\cf4 \strokec4  comparisonData\cf8 \strokec8 .\cf4 \strokec4 map\cf8 \strokec8 (\cf4 \strokec4 d \cf8 \strokec8 =>\cf4 \strokec4  d\cf8 \strokec8 .\cf4 \strokec4 monthlyTotal\cf8 \strokec8 );\cf4 \strokec4 \
+            state\cf8 \strokec8 .\cf4 \strokec4 charts\cf8 \strokec8 .\cf4 \strokec4 comparison\cf8 \strokec8 .\cf4 \strokec4 data\cf8 \strokec8 .\cf4 \strokec4 datasets\cf8 \strokec8 [\cf10 \strokec10 1\cf8 \strokec8 ].\cf4 \strokec4 data \cf8 \strokec8 =\cf4 \strokec4  comparisonData\cf8 \strokec8 .\cf4 \strokec4 map\cf8 \strokec8 (\cf4 \strokec4 d \cf8 \strokec8 =>\cf4 \strokec4  d\cf8 \strokec8 .\cf4 \strokec4 totalInterest\cf8 \strokec8 );\cf4 \strokec4 \
+            \
+            \cf7 \strokec7 // Highlight the current selection bar color? \cf4 \strokec4 \
+            \cf7 \strokec7 // Advanced: Change background color array based on state.years match\cf4 \strokec4 \
+            \cf13 \strokec13 const\cf4 \strokec4  barColors \cf8 \strokec8 =\cf4 \strokec4  termsToCompare\cf8 \strokec8 .\cf4 \strokec4 map\cf8 \strokec8 (\cf4 \strokec4 y \cf8 \strokec8 =>\cf4 \strokec4  y \cf8 \strokec8 ===\cf4 \strokec4  state\cf8 \strokec8 .\cf4 \strokec4 years \cf8 \strokec8 ?\cf4 \strokec4  \cf9 \strokec9 '#0ea5e9'\cf4 \strokec4  \cf8 \strokec8 :\cf4 \strokec4  \cf9 \strokec9 '#cbd5e1'\cf8 \strokec8 );\cf4 \strokec4 \
+            state\cf8 \strokec8 .\cf4 \strokec4 charts\cf8 \strokec8 .\cf4 \strokec4 comparison\cf8 \strokec8 .\cf4 \strokec4 data\cf8 \strokec8 .\cf4 \strokec4 datasets\cf8 \strokec8 [\cf10 \strokec10 0\cf8 \strokec8 ].\cf4 \strokec4 backgroundColor \cf8 \strokec8 =\cf4 \strokec4  barColors\cf8 \strokec8 ;\cf4 \strokec4 \
+            \
+            state\cf8 \strokec8 .\cf4 \strokec4 charts\cf8 \strokec8 .\cf4 \strokec4 comparison\cf8 \strokec8 .\cf4 \strokec4 update\cf8 \strokec8 ();\cf4 \strokec4 \
+        \cf8 \strokec8 \}\cf4 \strokec4 \
+\
+        \cf7 \strokec7 // Start\cf4 \strokec4 \
+        init\cf8 \strokec8 ();\cf4 \strokec4 \
+\
+    \cf5 \strokec5 </\cf2 \strokec2 script\cf5 \strokec5 >\cf4 \strokec4 \
+\cf5 \strokec5 </\cf2 \strokec2 body\cf5 \strokec5 >\cf4 \strokec4 \
+\cf5 \strokec5 </\cf2 \strokec2 html\cf5 \strokec5 >\cf4 \strokec4 \
+}
