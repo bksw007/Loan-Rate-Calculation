@@ -2,8 +2,8 @@ import type { Metadata, Viewport } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Flat Rate Calculation",
-  description: "Car loan flat rate calculator",
+  title: "โปรแกรมคำนวนค่างวด Loan Rate Calculation",
+  description: "Car and home loan rate calculation app",
   manifest: "/site.webmanifest?v=2",
   icons: {
     icon: [
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   appleWebApp: {
     capable: true,
     statusBarStyle: "default",
-    title: "Flat Rate"
+    title: "Loan Rate"
   }
 };
 

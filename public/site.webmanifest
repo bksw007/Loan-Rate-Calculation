@@ -1,7 +1,7 @@
 {
-  "name": "Flat Rate Calculation",
-  "short_name": "Flat Rate",
-  "description": "Car loan flat rate calculator",
+  "name": "โปรแกรมคำนวนค่างวด Loan Rate Calculation",
+  "short_name": "Loan Rate",
+  "description": "Car and home loan rate calculation app",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#f4f7fb",
