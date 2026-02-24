@@ -411,15 +411,6 @@ export default function Page() {
                 </div>
               </div>
 
-              <article className="chart-card lift-card">
-                <h4 className="heading-with-icon"><Icon><path d="M5 20V8" /><path d="M12 20V4" /><path d="M19 20v-9" /></Icon>หลักการคำนวณบ้านที่ใช้</h4>
-                <div className="formula">
-                  <p><span>วิธีคิดดอกเบี้ย</span><strong>ลดต้นลดดอก (Effective Rate)</strong></p>
-                  <p><span>วิธีจ่ายค่างวด</span><strong>ค่างวดคงที่ (Annuity/PMT)</strong></p>
-                  <p><span>สูตรค่างวด</span><strong>A = P * [r(1+r)^n / ((1+r)^n - 1)]</strong></p>
-                </div>
-              </article>
-
               <div className="breakdown lift-card">
                 <h4 className="heading-with-icon"><Icon><rect x="4" y="3" width="16" height="18" rx="2" /><path d="M8 8h8M8 12h8M8 16h5" /></Icon>ที่มาของตัวเลข</h4>
                 <div className="formula">
@@ -507,6 +498,15 @@ export default function Page() {
                   </select>
                 </div>
               </div>
+
+              <article className="chart-card lift-card">
+                <h4 className="heading-with-icon"><Icon><path d="M5 20V8" /><path d="M12 20V4" /><path d="M19 20v-9" /></Icon>หลักการคำนวณบ้านที่ใช้</h4>
+                <div className="formula">
+                  <p><span>วิธีคิดดอกเบี้ย</span><strong>ลดต้นลดดอก (Effective Rate)</strong></p>
+                  <p><span>วิธีจ่ายค่างวด</span><strong>ค่างวดคงที่ (Annuity/PMT)</strong></p>
+                  <p><span>สูตรค่างวด</span><strong>A = P * [r(1+r)^n / ((1+r)^n - 1)]</strong></p>
+                </div>
+              </article>
 
               <div className="breakdown lift-card">
                 <h4 className="heading-with-icon"><Icon><rect x="4" y="3" width="16" height="18" rx="2" /><path d="M8 8h8M8 12h8M8 16h5" /></Icon>ที่มาของตัวเลข</h4>
